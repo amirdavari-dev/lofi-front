@@ -13,6 +13,7 @@ import Footer from "@/components/Layouts/Footer";
 export default function Home() {
   return (
     <>
+    
       <NavbarStyle2 />
 
       <HeroSlider />
