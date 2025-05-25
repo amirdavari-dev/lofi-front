@@ -10,7 +10,6 @@ import OurTeamMember from "@/components/Common/OurTeamMember";
 import OurLatestBlog from "@/components/Common/OurLatestBlog";
 import NewsletterForm from "@/components/Common/NewsletterForm";
 import Footer from "@/components/Layouts/Footer";
-
 export default function Page() {
   return (
     <>
