@@ -48,7 +48,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon8.png"
+                    src="/images/icon/icon8.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -73,7 +73,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon9.png"
+                    src="/images/icon/icon9.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -98,7 +98,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon10.png"
+                    src="/images/icon/icon10.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -121,7 +121,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon11.png"
+                    src="/images/icon/icon29.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -144,7 +144,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon12.png"
+                    src="/images/icon/icon12.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -169,7 +169,7 @@ const OurServices: React.FC = () => {
               <div className="single-services-item with-boxshadow">
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon13.png"
+                    src="/images/icon/icon30.svg"
                     alt="image"
                     width={78}
                     height={78}

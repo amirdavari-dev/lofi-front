@@ -46,7 +46,7 @@ const AboutUs: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon4.png"
+                          src="/images/icon/icon4.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -59,7 +59,7 @@ const AboutUs: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon5.png"
+                          src="/images/icon/icon5.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -72,7 +72,7 @@ const AboutUs: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon6.png"
+                          src="/images/icon/icon6.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -85,7 +85,7 @@ const AboutUs: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon7.png"
+                          src="/images/icon/icon7.svg"
                           alt="image"
                           width={48}
                           height={48}
