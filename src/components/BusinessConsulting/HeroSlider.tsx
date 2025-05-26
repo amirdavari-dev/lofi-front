@@ -1,11 +1,12 @@
 "use client";
-  
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Link from "next/link";
-import Image from "next/image";
-
+// import Image from "next/image";
+import Lottie from "lottie-react";
+import animationData from "@/../public/images/Animation - 1748254043455.json";
 const HeroSlider: React.FC = () => {
   return (
     <>
@@ -22,9 +23,12 @@ const HeroSlider: React.FC = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-6 col-md-12">
                     <div className="home-content">
-                      <span className="sub-title">AWARD WINNING COMPANY</span>
+                      <span className="sub-title">
+                        TRUSTED DIGITAL MARKETING AGENCY
+                      </span>
                       <h1>
-                        Make Your Business More Money With Team Of Experts
+                        Boost Your Real Estate Sales with Proven Digital
+                        Strategies
                       </h1>
                       <Link href="/contact" className="default-btn style-two">
                         <span className="ri-arrow-right-s-line"></span>Get
@@ -34,12 +38,13 @@ const HeroSlider: React.FC = () => {
                   </div>
                   <div className="col-lg-6 col-md-12">
                     <div className="home-image">
-                      <Image
-                        src="/images/banner-img1.png"
+                    <Lottie animationData={animationData} loop={true} />
+                      {/* <Image
+                        src="/images/Animation - 1748254043455.json"
                         alt="banner-image"
                         width={830}
                         height={790}
-                      />
+                      /> */}
                     </div>
                   </div>
                 </div>
@@ -47,7 +52,7 @@ const HeroSlider: React.FC = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="banner-item">
               <div className="container">
                 <div className="row align-items-center">
@@ -76,7 +81,7 @@ const HeroSlider: React.FC = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </>

@@ -36,7 +36,7 @@ const FunFacts: React.FC = () => {
                   <i className="ri-user-smile-fill"></i>
                 </div>
                 <h3>289</h3>
-                <p>HAPPY CUSTOMERS</p>
+                <p>SATISFIED CLIENTS</p>
               </div>
             </div>
 
@@ -52,7 +52,7 @@ const FunFacts: React.FC = () => {
                   <i className="ri-medal-fill"></i>
                 </div>
                 <h3>15</h3>
-                <p>WINNING AWARD</p>
+                <p>INDUSTRY AWARDS</p>
               </div>
             </div>
 
@@ -67,8 +67,8 @@ const FunFacts: React.FC = () => {
                 <div className="icon bg-00A4C8">
                   <i className="ri-group-fill"></i>
                 </div>
-                <h3>149</h3>
-                <p>TEAM MEMBER</p>
+                <h3>25</h3>
+                <p>DIGITAL EXPERTS</p>
               </div>
             </div>
           </div>

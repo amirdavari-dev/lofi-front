@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Image from "next/image";
 
@@ -10,10 +10,10 @@ const FreeSEOQuotesForm: React.FC = () => {
         <div className="container">
           <div className="quote-content">
             <span className="sub-title">QUOTE</span>
-            <h2>Free SEO Quotes Now</h2>
+            <h2>FREE SEO & PERFORMANCE AUDIT</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Discover your website’s untapped potential. Get a comprehensive
+              analysis and actionable insights.
             </p>
 
             <form>
@@ -33,7 +33,7 @@ const FreeSEOQuotesForm: React.FC = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Enter your email address"
+                      placeholder="Email address"
                     />
                   </div>
                 </div>

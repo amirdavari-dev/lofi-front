@@ -1398,6 +1398,10 @@ Case Studies Area CSS
   padding-right: 15px;
   max-width: 540px;
 }
+.logo{
+  width: 100px;
+  height: 100px;
+}
 .single-case-studies-box .content .logo {
   margin-bottom: 25px;
 }
@@ -2251,7 +2255,16 @@ Feedback Area CSS
 .feedback-slides .swiper-button-prev {
   left: 0;
 }
-
+.comment-card {
+  width: 450px;
+  min-width: 450px;
+}
+@media(width>600px){
+  .comment-card {
+    width: 450px;
+    min-width: 450px;
+  }
+}
 /*================================================
 Blog Area CSS
 =================================================*/

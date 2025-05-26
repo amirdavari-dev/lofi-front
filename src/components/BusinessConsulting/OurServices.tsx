@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -13,10 +13,11 @@ const OurServices: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <span className="sub-title">OUR SERVICES</span>
-            <h2>We Offer Professional Services For Business</h2>
+            <h2>Comprehensive Digital Solutions for Real Estate Businesses</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              REAL REACH helps real estate companies maximize their online
+              presence, attract international buyers, and grow their business
+              effectively.
             </p>
           </div>
 
@@ -53,12 +54,14 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Branding</Link>
+                    <Link href="/services/details">
+                      SEO & Content Marketing
+                    </Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Boost your organic visibility, drive qualified traffic, and
+                  convert visitors into buyers with targeted content strategies.
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
@@ -76,12 +79,14 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Design</Link>
+                    <Link href="/services/details">
+                      Web Design & Development
+                    </Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Create modern, responsive, and SEO-optimized websites built on
+                  the latest frameworks like Node.js, Next.js, and Vue.js.
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
@@ -99,12 +104,12 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Content</Link>
+                    <Link href="/services/details">Performance Marketing</Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Achieve immediate results through optimized Google Ads, Meta
+                  Ads, and TikTok Ads, generating leads from day one.
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
@@ -122,12 +127,12 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Strategy</Link>
+                    <Link href="/services/details">Branding & Identity</Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Stand out with distinctive branding tailored to the
+                  international real estate market.
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
@@ -145,12 +150,14 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Marketing</Link>
+                    <Link href="/services/details">
+                      Video Production & Photography
+                    </Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Showcase your properties with professional videos and photos
+                  to attract more qualified buyers
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
@@ -168,12 +175,12 @@ const OurServices: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Technology</Link>
+                    <Link href="/services/details">CRM & Automation</Link>
                   </h3>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adiscing elit, sed do
-                  eiusmod tempor ut labore et dolore magna aliqua.
+                  Streamline your sales process with customized CRM solutions
+                  and automation for efficient client communication.
                 </p>
                 <Link href="/services/details" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More

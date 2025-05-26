@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,11 +13,7 @@ const OurCaseStudies: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <span className="sub-title">OUR CASE STUDIES</span>
-            <h2>We Get you Higher Revenues, Not just Higher Ranks</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <h2>Proven Results: Higher Traffic, More Sales</h2>
           </div>
 
           <Swiper
@@ -38,35 +34,40 @@ const OurCaseStudies: React.FC = () => {
                     <div className="content">
                       <div className="logo">
                         <Image
-                          src="/images/case-studies/elan.png"
+                          src="/images/case-studies/propertyturkey.png"
                           alt="image"
                           width={91}
                           height={83}
                         />
                       </div>
                       <h3>
-                        <Link href="/case-studies/details">eLan Education</Link>
+                        <Link href="/case-studies/details">
+                          Property Turkey
+                        </Link>
                       </h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo.
-                      </p>
+                      <ul>
+                        <li>
+                          Achieved 32K+ daily organic visitors and 800M+
+                          impressions
+                        </li>
+                        <li>
+                          Improved rankings across high-value real estate
+                          keywords
+                        </li>
+                      </ul>
                       <ul className="features-list">
                         <li>
                           <span>FRAMEWORK</span>
-                          WordPress
+                          Angular.js
                         </li>
                         <li>
                           <span>CATEGORY</span>
-                          Education
+                          Real Estate
                         </li>
                         <li>
                           <span>WEB LINK</span>
-                          <a href="#" target="_blank">
-                            www.elan.com
+                          <a href="https://propertyturkey.com" target="_blank">
+                            propertyturkey.com
                           </a>
                         </li>
                       </ul>
@@ -81,7 +82,7 @@ const OurCaseStudies: React.FC = () => {
                   <div className="col-lg-6 col-md-12 p-0">
                     <div className="image">
                       <Image
-                        src="/images/case-studies/case-studies1.png"
+                        src="/images/case-studies/Property turkey.png"
                         alt="image"
                         width={860}
                         height={703}
@@ -91,7 +92,6 @@ const OurCaseStudies: React.FC = () => {
                 </div>
               </div>
             </SwiperSlide>
-
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
@@ -99,35 +99,29 @@ const OurCaseStudies: React.FC = () => {
                     <div className="content">
                       <div className="logo">
                         <Image
-                          src="/images/case-studies/startp.png"
+                          src="/images/case-studies/azpoestate.png"
                           alt="image"
                           width={91}
                           height={83}
                         />
                       </div>
                       <h3>
-                        <Link href="/case-studies/details">StartP Startup</Link>
+                        <Link href="/case-studies/details">AZPO Estate</Link>
                       </h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo.
-                      </p>
+                      <p>Reopening...</p>
                       <ul className="features-list">
                         <li>
                           <span>FRAMEWORK</span>
-                          React.js
+                          Next.js
                         </li>
                         <li>
                           <span>CATEGORY</span>
-                          Startup
+                          Real Estate
                         </li>
                         <li>
                           <span>WEB LINK</span>
-                          <a href="#" target="_blank">
-                            www.startp.com
+                          <a href="https://azpo.com" target="_blank">
+                            azpo.com
                           </a>
                         </li>
                       </ul>
@@ -142,7 +136,7 @@ const OurCaseStudies: React.FC = () => {
                   <div className="col-lg-6 col-md-12 p-0">
                     <div className="image">
                       <Image
-                        src="/images/case-studies/case-studies2.png"
+                        src="/images/case-studies/AZPO Estate.png"
                         alt="image"
                         width={860}
                         height={703}
@@ -152,7 +146,6 @@ const OurCaseStudies: React.FC = () => {
                 </div>
               </div>
             </SwiperSlide>
-
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
@@ -160,35 +153,32 @@ const OurCaseStudies: React.FC = () => {
                     <div className="content">
                       <div className="logo">
                         <Image
-                          src="/images/case-studies/edmo.png"
+                          src="/images/case-studies/trust.png"
                           alt="image"
                           width={91}
                           height={83}
                         />
                       </div>
                       <h3>
-                        <Link href="/case-studies/details">Edmo Marketing</Link>
+                        <Link href="/case-studies/details">Trust United</Link>
                       </h3>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo.
+                        Increased leads by 150% through strategic SEO and PPC
+                        campaigns
                       </p>
                       <ul className="features-list">
                         <li>
                           <span>FRAMEWORK</span>
-                          Moodle
+                          Next.js
                         </li>
                         <li>
                           <span>CATEGORY</span>
-                          Marketing
+                          Real Estate
                         </li>
                         <li>
                           <span>WEB LINK</span>
-                          <a href="#" target="_blank">
-                            www.edmo.com
+                          <a href="https://trust-united.com" target="_blank">
+                           trust-united.com
                           </a>
                         </li>
                       </ul>
@@ -203,7 +193,64 @@ const OurCaseStudies: React.FC = () => {
                   <div className="col-lg-6 col-md-12 p-0">
                     <div className="image">
                       <Image
-                        src="/images/case-studies/case-studies3.png"
+                        src="/images/case-studies/Turst Unitded.png"
+                        alt="image"
+                        width={860}
+                        height={703}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="single-case-studies-box">
+                <div className="row align-items-center m-0">
+                  <div className="col-lg-6 col-md-12 p-0">
+                    <div className="content">
+                      <div className="logo">
+                        <Image
+                          src="/images/case-studies/trust.png"
+                          alt="image"
+                          width={91}
+                          height={83}
+                        />
+                      </div>
+                      <h3>
+                        <Link href="/case-studies/details">True Car</Link>
+                      </h3>
+                      <p>
+                        Increased leads by 150% through strategic SEO and PPC
+                        campaigns
+                      </p>
+                      <ul className="features-list">
+                        <li>
+                          <span>FRAMEWORK</span>
+                          Next.js
+                        </li>
+                        <li>
+                          <span>CATEGORY</span>
+                          Real Estate
+                        </li>
+                        <li>
+                          <span>WEB LINK</span>
+                          <a href="https://trust-united.com" target="_blank">
+                           trust-united.com
+                          </a>
+                        </li>
+                      </ul>
+                      <Link
+                        href="/case-studies/details"
+                        className="default-btn"
+                      >
+                        <span className="ri-arrow-right-s-line"></span>View More
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="col-lg-6 col-md-12 p-0">
+                    <div className="image">
+                      <Image
+                        src="/images/case-studies/truecar.png"
                         alt="image"
                         width={860}
                         height={703}

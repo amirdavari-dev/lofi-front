@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -38,10 +38,11 @@ const AboutUs: React.FC = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-content">
                 <span className="sub-title">ABOUT US</span>
-                <h2>We Are Award Winning Digital Marketing Company</h2>
+                <h2>Trusted Experts in Real Estate Digital Marketing</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  REAL REACH specializes in tailored digital marketing solutions
+                  that help real estate firms thrive in competitive markets like
+                  Dubai and Turkey.
                 </p>
 
                 <ul className="features-list">
@@ -55,7 +56,7 @@ const AboutUs: React.FC = () => {
                           height={48}
                         />
                       </div>
-                      <span>Brand Strategy</span>
+                      <span>Customized Strategies</span>
                     </div>
                   </li>
                   <li>
@@ -81,7 +82,7 @@ const AboutUs: React.FC = () => {
                           height={48}
                         />
                       </div>
-                      <span>Fast Delivery</span>
+                      <span>Rapid Results</span>
                     </div>
                   </li>
                   <li>
@@ -94,7 +95,7 @@ const AboutUs: React.FC = () => {
                           height={48}
                         />
                       </div>
-                      <span>Ongoing Report</span>
+                      <span>Transparent Reporting</span>
                     </div>
                   </li>
                 </ul>
