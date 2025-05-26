@@ -38,27 +38,10 @@ const Footer: React.FC = () => {
                 </div>
 
                 <ul className="social-links">
+                 
                   <li>
                     <a
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-facebook-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.twitter.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="ri-twitter-fill"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
+                      href="https://linkedin.com/in/ali-mosadegh-81a0751ba"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -67,7 +50,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/realreach.eu?igsh=OGd3c2s1amxxcXk5"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -83,19 +66,19 @@ const Footer: React.FC = () => {
                 <h3>Services</h3>
                 <ul className="services-links">
                   <li>
-                    <Link href="/services/details">Marketing</Link>
+                    <Link href="/services/details">SEO & Content Marketing</Link>
                   </li>
                   <li>
-                    <Link href="/services/details">Web Development</Link>
+                    <Link href="/services/details">Web Design & Development</Link>
                   </li>
                   <li>
-                    <Link href="/services/details">App Design</Link>
+                    <Link href="/services/details">Performance Marketing</Link>
                   </li>
                   <li>
-                    <Link href="/services/details">Product Branding</Link>
+                    <Link href="/services/details">Branding & Identity</Link>
                   </li>
                   <li>
-                    <Link href="/services/details">Content Writing</Link>
+                    <Link href="/services/details">Video Production & Photography</Link>
                   </li>
                 </ul>
               </div>
@@ -115,7 +98,7 @@ const Footer: React.FC = () => {
                     <Link href="/case-studies">Case Studies</Link>
                   </li>
                   <li>
-                    <Link href="/blog">Our News</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
                     <Link href="/contact">Contact Us</Link>
@@ -128,15 +111,15 @@ const Footer: React.FC = () => {
               <div className="single-footer-widget">
                 <h3>Contact Info</h3>
                 <ul className="footer-contact-info">
-                  <li>Address: 2750, Quadra Street Victoria, Canada</li>
+                  <li>Address: Dubai, UAE | Turkey, istanbul | Europe, Germany</li>
                   <li>
-                    Email: <a href="mailto:hello@lofi.com">hello@lofi.com</a>
+                    Email: <a href="mailto: info@realreach.eu">info@realreach.eu</a>
                   </li>
                   <li>
-                    Phone: <a href="tel:+44587154756">+44 587 154756</a>
+                    Phone (Dubai): <a href="tel:+971504086898">+971 50 408 6898</a>
                   </li>
                   <li>
-                    Fax: <a href="tel:+44587154756">+55 58715 4756</a>
+                    Phone (Turkey): <a href="tel:+905528935736">+90 552 893 57 36</a>
                   </li>
                 </ul>
               </div>
@@ -149,25 +132,8 @@ const Footer: React.FC = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-sm-6 col-md-6">
                 <p>
-                  &copy; <strong>Lofi</strong> is Proudly Owned by{" "}
-                  <a
-                    href="https://envytheme.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    EnvyTheme
-                  </a>
+                  &copy; 2020 - 2025, by RealReach
                 </p>
-              </div>
-              <div className="col-lg-6 col-sm-6 col-md-6">
-                <ul>
-                  <li>
-                    <Link href="/privacy-policy">Privacy Policy</Link>
-                  </li>
-                  <li>
-                    <Link href="/terms-conditions">Terms & Conditions</Link>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

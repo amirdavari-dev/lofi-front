@@ -30,16 +30,18 @@ const OurCaseStudies: React.FC = () => {
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-5 col-md-12 p-0">
                     <div className="content">
-                      <div className="logo">
-                        <Image
-                          src="/images/case-studies/propertyturkey.png"
-                          alt="image"
-                          width={91}
-                          height={83}
-                        />
-                      </div>
+                      {/* <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
+                        <div className="logo">
+                          <Image
+                            src="/images/case-studies/propertyturkey.png"
+                            alt="image"
+                            width={91}
+                            height={83}
+                          />
+                        </div>
+                      </div> */}
                       <h3>
                         <Link href="/case-studies/details">
                           Property Turkey
@@ -79,7 +81,7 @@ const OurCaseStudies: React.FC = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-7 col-md-12 p-0">
                     <div className="image">
                       <Image
                         src="/images/case-studies/Property turkey.png"
@@ -95,16 +97,18 @@ const OurCaseStudies: React.FC = () => {
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-5 col-md-12 p-0">
                     <div className="content">
-                      <div className="logo">
-                        <Image
-                          src="/images/case-studies/azpoestate.png"
-                          alt="image"
-                          width={91}
-                          height={83}
-                        />
-                      </div>
+                      {/* <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
+                        <div className="logo">
+                          <Image
+                            src="/images/case-studies/azpoestate.png"
+                            alt="image"
+                            width={91}
+                            height={83}
+                          />
+                        </div>
+                      </div> */}
                       <h3>
                         <Link href="/case-studies/details">AZPO Estate</Link>
                       </h3>
@@ -133,7 +137,7 @@ const OurCaseStudies: React.FC = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-7 col-md-12 p-0">
                     <div className="image">
                       <Image
                         src="/images/case-studies/AZPO Estate.png"
@@ -149,16 +153,19 @@ const OurCaseStudies: React.FC = () => {
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-5 col-md-12 p-0">
                     <div className="content">
-                      <div className="logo">
-                        <Image
-                          src="/images/case-studies/trust.png"
-                          alt="image"
-                          width={91}
-                          height={83}
-                        />
-                      </div>
+                      {/* <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
+                        <div className="logo">
+                          <Image
+                            src="/images/case-studies/trust.png"
+                            alt="image"
+                            width={91}
+                            height={83}
+                          />
+                        </div>
+                      </div> */}
+
                       <h3>
                         <Link href="/case-studies/details">Trust United</Link>
                       </h3>
@@ -178,7 +185,7 @@ const OurCaseStudies: React.FC = () => {
                         <li>
                           <span>WEB LINK</span>
                           <a href="https://trust-united.com" target="_blank">
-                           trust-united.com
+                            trust-united.com
                           </a>
                         </li>
                       </ul>
@@ -190,7 +197,7 @@ const OurCaseStudies: React.FC = () => {
                       </Link>
                     </div>
                   </div>
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-7 col-md-12 p-0">
                     <div className="image">
                       <Image
                         src="/images/case-studies/Turst Unitded.png"
@@ -206,23 +213,22 @@ const OurCaseStudies: React.FC = () => {
             <SwiperSlide>
               <div className="single-case-studies-box">
                 <div className="row align-items-center m-0">
-                  <div className="col-lg-6 col-md-12 p-0">
+                  <div className="col-lg-5 col-md-12 p-0">
                     <div className="content">
-                      <div className="logo">
-                        <Image
-                          src="/images/case-studies/trust.png"
-                          alt="image"
-                          width={91}
-                          height={83}
-                        />
-                      </div>
+                      {/* <div className="d-flex justify-content-center justify-content-lg-start align-items-center">
+                        <div className="logo">
+                          <Image
+                            src="/images/case-studies/truecar.jpeg"
+                            alt="image"
+                            width={91}
+                            height={83}
+                          />
+                        </div>
+                      </div> */}
                       <h3>
                         <Link href="/case-studies/details">True Car</Link>
                       </h3>
-                      <p>
-                        Increased leads by 150% through strategic SEO and PPC
-                        campaigns
-                      </p>
+                      <p>Reopening...</p>
                       <ul className="features-list">
                         <li>
                           <span>FRAMEWORK</span>
@@ -230,12 +236,12 @@ const OurCaseStudies: React.FC = () => {
                         </li>
                         <li>
                           <span>CATEGORY</span>
-                          Real Estate
+                          Car buying
                         </li>
                         <li>
                           <span>WEB LINK</span>
-                          <a href="https://trust-united.com" target="_blank">
-                           trust-united.com
+                          <a href="https://www.truecar.com" target="_blank">
+                            www.truecar.com
                           </a>
                         </li>
                       </ul>

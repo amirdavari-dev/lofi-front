@@ -11,11 +11,7 @@ const OurLatestBlog: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <span className="sub-title">OUR LATEST BLOG</span>
-            <h2>Our Latest Insights Are On Top All Times</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <h2>Stay Ahead with Real Estate Marketing Trends</h2>
           </div>
 
           <div className="row justify-content-center">

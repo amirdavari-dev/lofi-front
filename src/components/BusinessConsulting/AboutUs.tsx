@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Lottie from "lottie-react";
 
 const AboutUs: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const AboutUs: React.FC = () => {
                   width={676}
                   height={677}
                 />
+                {/* <Lottie animationData={animationData} loop={true} /> */}
 
                 <div className="shape5">
                   <Image

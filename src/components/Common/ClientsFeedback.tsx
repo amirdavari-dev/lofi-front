@@ -12,8 +12,8 @@ const ClientsFeedback: React.FC = () => {
             <h2>WHAT OUR CLIENTS SAY</h2>
           </div>
 
-          <div className="d-flex flex-row flex-nowrap overflow-x-scroll px-3 gap-3">
-            <div className="comment-card">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6">
               <div className="single-feedback-box with-boxshadow">
                 <div className="rating">
                   <i className="ri-star-fill"></i>
@@ -42,7 +42,7 @@ const ClientsFeedback: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="comment-card">
+            <div className="col-lg-4 col-md-6">
               <div className="single-feedback-box with-boxshadow">
                 <div className="rating">
                   <i className="ri-star-fill"></i>
@@ -73,7 +73,7 @@ const ClientsFeedback: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="comment-card">
+            <div className="col-lg-4 col-md-6">
               <div className="single-feedback-box with-boxshadow">
                 <div className="rating">
                   <i className="ri-star-fill"></i>
@@ -102,7 +102,7 @@ const ClientsFeedback: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="comment-card">
+            {/* <div className="col-lg-4 col-md-6">
               <div className="single-feedback-box with-boxshadow">
                 <div className="rating">
                   <i className="ri-star-fill"></i>
@@ -130,7 +130,7 @@ const ClientsFeedback: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

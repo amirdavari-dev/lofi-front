@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 
 const NewsletterForm: React.FC = () => {
@@ -8,12 +8,11 @@ const NewsletterForm: React.FC = () => {
       <div className="subscribe-area pb-100">
         <div className="container">
           <div className="subscribe-inner">
-            <span className="sub-title">READY TO GET STARTED</span>
-            <h2>Subscribe To Our Newsletter</h2>
+            <span className="sub-title">READY TO BOOST YOUR SALES?</span>
+            <h2>Subscribe to Our Real Estate Marketing Newsletter</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              Receive expert tips, industry news, and marketing strategies
+              directly to your inbox.
             </p>
 
             <form className="newsletter-form">
