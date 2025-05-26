@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Lottie from "lottie-react";
-
+import jsonlottie from "@/../public/images/aboutus-lottie.json"
 const AboutUs: React.FC = () => {
   return (
     <>
@@ -18,13 +18,7 @@ const AboutUs: React.FC = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <Image
-                  src="/images/about3.png"
-                  alt="image"
-                  width={676}
-                  height={677}
-                />
-                {/* <Lottie animationData={animationData} loop={true} /> */}
+                <Lottie animationData={jsonlottie} loop={true} />
 
                 <div className="shape5">
                   <Image

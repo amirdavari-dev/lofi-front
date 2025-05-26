@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-lg-4 col-sm-6 col-md-6">
               <div className="single-footer-widget">
-                <Link href="/" className="d-inline-block logo">
+                <Link href="/" className="d-inline-block logo-footer">
                   <Image
                     src="/images/logo.png"
                     alt="logo"
-                    width={114}
-                    height={41}
+                    width={350}
+                    height={160}
                   />
                 </Link>
 

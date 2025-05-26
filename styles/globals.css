@@ -38,7 +38,7 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 :root {
-  --mainColor: #029894;
+  --mainColor: #10335e;
   --optionalColor: #6f76a8;
   --whiteColor: #ffffff;
   --blackColor: #09114a;
@@ -1577,6 +1577,11 @@ Case Studies Area CSS
 .logo {
   width: 100px;
   height: 100px;
+}
+.logo-footer{
+  width: 400px;
+  min-width: 400px;
+  margin-bottom: 30px;
 }
 .single-case-studies-box .content .logo {
   margin-bottom: 25px;
@@ -3753,7 +3758,7 @@ Main Banner Area CSS
   position: relative;
   padding-top: 120px;
   background-color: #f9f9f9;
-  background-image: url(/images/bg/banner-bg.jpg);
+  background-image: url(/images/bg/banner-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
