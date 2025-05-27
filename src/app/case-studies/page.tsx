@@ -10,11 +10,11 @@ export default function Page() {
       {/* <Navbar /> */}
       <NavbarStyle2 />
       
-      <PageTitle homeText="Home" pageTitle="Case Studies" />
+      {/* <PageTitle homeText="Home" pageTitle="Case Studies" /> */}
 
       <CaseStudiesCard />
 
-      <GetStarted />
+      {/* <GetStarted /> */}
 
       <Footer />
     </>

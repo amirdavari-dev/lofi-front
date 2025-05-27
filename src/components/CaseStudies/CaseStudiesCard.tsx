@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,10 +11,11 @@ const CaseStudiesCard: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <span className="sub-title">OUR CASE STUDIES</span>
-            <h2>We Get you Higher Revenues, Not just Higher Ranks</h2>
+            <h2>We Get You Higher Revenues, Not Just Higher Ranks</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              From web development to SEO and performance marketing, we’ve
+              helped brands unlock traffic growth, visibility, and real business
+              outcomes.
             </p>
           </div>
 
@@ -23,36 +24,41 @@ const CaseStudiesCard: React.FC = () => {
               <div className="row align-items-center m-0">
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="content">
-                    <div className="logo">
+                    {/* <div className="logo">
                       <Image
-                        src="/images/case-studies/elan.png"
+                        src="/images/case-studies/Property turkey.png"
                         alt="image"
                         width={91}
                         height={83}
                       />
-                    </div>
+                    </div> */}
                     <h3>
-                      <Link href="/case-studies/details">eLan Education</Link>
+                      <Link href="/case-studies/details">Property Turkey</Link>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo.
+                      One of Turkey’s leading platforms for international
+                      property buyers, Property Turkey partnered with us to
+                      scale qualified leads, build SEO authority, and launch
+                      conversion-driven ad campaigns. Together, we built a
+                      system that turned their website into a lead-generation
+                      machine—boosting both visibility and revenue.
                     </p>
                     <ul className="features-list">
                       <li>
                         <span>FRAMEWORK</span>
-                        WordPress
+                        Angular.js
                       </li>
                       <li>
                         <span>CATEGORY</span>
-                        Education
+                        Real estate
                       </li>
                       <li>
                         <span>WEB LINK</span>
-                        <a href="#" target="_blank">
-                          www.elan.com
+                        <a
+                          href="https://www.propertyturkey.com"
+                          target="_blank"
+                        >
+                          www.propertyturkey.com
                         </a>
                       </li>
                     </ul>
@@ -64,7 +70,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies1.png"
+                      src="/images/case-studies/Property turkey.png"
                       alt="image"
                       width={860}
                       height={703}
@@ -78,36 +84,36 @@ const CaseStudiesCard: React.FC = () => {
               <div className="row align-items-center m-0">
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="content">
-                    <div className="logo">
+                    {/* <div className="logo">
                       <Image
                         src="/images/case-studies/startp.png"
                         alt="image"
                         width={91}
                         height={83}
                       />
-                    </div>
+                    </div> */}
                     <h3>
-                      <Link href="/case-studies/details">StartP Startup</Link>
+                      <Link href="/case-studies/details">Trust United</Link>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo.
+                      We redesigned and rebuilt the entire website and migrated
+                      over 375 properties (with multilingual content and media)
+                      while running a performance SEO campaign for real estate
+                      buyers in Dubai and Turkey.
                     </p>
                     <ul className="features-list">
                       <li>
                         <span>FRAMEWORK</span>
-                        React.js
+                        Next.js
                       </li>
                       <li>
                         <span>CATEGORY</span>
-                        Startup
+                        Real Estate
                       </li>
                       <li>
                         <span>WEB LINK</span>
-                        <a href="#" target="_blank">
-                          www.startp.com
+                        <a href="https://trust-united.com" target="_blank">
+                          trust-united.com
                         </a>
                       </li>
                     </ul>
@@ -119,7 +125,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies2.png"
+                      src="/images/case-studies/Turst Unitded.png"
                       alt="image"
                       width={860}
                       height={703}
@@ -133,36 +139,203 @@ const CaseStudiesCard: React.FC = () => {
               <div className="row align-items-center m-0">
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="content">
-                    <div className="logo">
+                    {/* <div className="logo">
                       <Image
                         src="/images/case-studies/edmo.png"
                         alt="image"
                         width={91}
                         height={83}
                       />
-                    </div>
+                    </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Edmo Marketing</Link>
+                      <Link href="/case-studies/details">
+                        Selectum Property
+                      </Link>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo.
+                      From UX/UI design to SEO and development, we built a
+                      performance-first real estate site with keyword-focused
+                      landing pages for property types, cities, and investment
+                      guides.
                     </p>
                     <ul className="features-list">
                       <li>
                         <span>FRAMEWORK</span>
-                        Moodle
+                        Next.js
                       </li>
                       <li>
                         <span>CATEGORY</span>
-                        Marketing
+                        Real Estate
                       </li>
                       <li>
                         <span>WEB LINK</span>
-                        <a href="#" target="_blank">
-                          www.edmo.com
+                        <a href="https://selectumproperty.com" target="_blank">
+                          selectumproperty.com
+                        </a>
+                      </li>
+                    </ul>
+                    <Link href="/case-studies/details" className="default-btn">
+                      <span className="ri-arrow-right-s-line"></span>View More
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="image">
+                    <Image
+                      src="/images/case-studies/case-studies3.png"
+                      alt="image"
+                      width={860}
+                      height={703}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="single-case-studies-box">
+              <div className="row align-items-center m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="content">
+                    {/* <div className="logo">
+                      <Image
+                        src="/images/case-studies/edmo.png"
+                        alt="image"
+                        width={91}
+                        height={83}
+                      />
+                    </div> */}
+                    <h3>
+                      <Link href="/case-studies/details">Alibaba</Link>
+                    </h3>
+                    <p>
+                      Optimized category and product pages for SEO at scale,
+                      focusing on Farsi-language search intent. Traffic grew by
+                      68% in six months, increasing inbound leads for travel
+                      packages.
+                    </p>
+                    <ul className="features-list">
+                      <li>
+                        <span>FRAMEWORK</span>
+                        Vue.js
+                      </li>
+                      <li>
+                        <span>CATEGORY</span>
+                        Travel & Tourism
+                      </li>
+                      <li>
+                        <span>WEB LINK</span>
+                        <a href="https://www.alibaba.ir" target="_blank">
+                          alibaba.ir
+                        </a>
+                      </li>
+                    </ul>
+                    <Link href="/case-studies/details" className="default-btn">
+                      <span className="ri-arrow-right-s-line"></span>View More
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="image">
+                    <Image
+                      src="/images/case-studies/case-studies3.png"
+                      alt="image"
+                      width={860}
+                      height={703}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="single-case-studies-box">
+              <div className="row align-items-center m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="content">
+                    {/* <div className="logo">
+                      <Image
+                        src="/images/case-studies/edmo.png"
+                        alt="image"
+                        width={91}
+                        height={83}
+                      />
+                    </div> */}
+                    <h3>
+                      <Link href="/case-studies/details">Doctoreto</Link>
+                    </h3>
+                    <p>
+                      We improved local SEO and implemented performance
+                      marketing funnels for a leading healthcare portal in Iran,
+                      helping boost appointment bookings via organic and paid
+                      channels.
+                    </p>
+                    <ul className="features-list">
+                      <li>
+                        <span>FRAMEWORK</span>
+                        Next.js
+                      </li>
+                      <li>
+                        <span>CATEGORY</span>
+                        HealthTech
+                      </li>
+                      <li>
+                        <span>WEB LINK</span>
+                        <a href="https://doctoreto.com" target="_blank">
+                          doctoreto.com
+                        </a>
+                      </li>
+                    </ul>
+                    <Link href="/case-studies/details" className="default-btn">
+                      <span className="ri-arrow-right-s-line"></span>View More
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="image">
+                    <Image
+                      src="/images/case-studies/case-studies3.png"
+                      alt="image"
+                      width={860}
+                      height={703}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="single-case-studies-box">
+              <div className="row align-items-center m-0">
+                <div className="col-lg-6 col-md-12 p-0">
+                  <div className="content">
+                    {/* <div className="logo">
+                      <Image
+                        src="/images/case-studies/edmo.png"
+                        alt="image"
+                        width={91}
+                        height={83}
+                      />
+                    </div> */}
+                    <h3>
+                      <Link href="/case-studies/details">Sisno Group</Link>
+                    </h3>
+                    <p>
+                      Developed and optimized the Georgian landing pages and
+                      implemented multilingual SEO for better targeting of
+                      investors from Turkey, Iran, and Russia in the Georgian
+                      real estate market.
+                    </p>
+                    <ul className="features-list">
+                      <li>
+                        <span>FRAMEWORK</span>
+                        WordPress + WPML
+                      </li>
+                      <li>
+                        <span>CATEGORY</span>
+                        Real Estate / Investment
+                      </li>
+                      <li>
+                        <span>WEB LINK</span>
+                        <a href="https://sisnogroup.ge" target="_blank">
+                          sisnogroup.ge
                         </a>
                       </li>
                     </ul>

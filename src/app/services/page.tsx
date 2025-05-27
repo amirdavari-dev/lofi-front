@@ -14,11 +14,11 @@ export default function Page() {
     <>
       <NavbarStyle2 />
 
-      <PageTitle homeText="Home" pageTitle="Services" />
+      {/* <PageTitle homeText="Home" pageTitle="Services" /> */}
 
       <ServicesItem />
 
-      <GetStarted />
+      {/* <GetStarted /> */}
 
       <OurCaseStudies />
 

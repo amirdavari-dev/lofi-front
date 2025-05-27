@@ -9,11 +9,11 @@ export default function Blog() {
     <>
       {/* <Navbar /> */}
       <NavbarStyle2 />
-      <PageTitle homeText="Home" pageTitle="Blog" />
+      {/* <PageTitle homeText="Home" pageTitle="Blog" /> */}
 
       <BlogCard />
 
-      <GetStarted />
+      {/* <GetStarted /> */}
 
       <Footer />
     </>
