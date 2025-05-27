@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Image from "next/image";
 
@@ -32,31 +32,37 @@ const AboutContent: React.FC = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-content">
                 <span className="sub-title">ABOUT US</span>
-                <h2>We Are Award Winning Digital Marketing Company</h2>
+                <h2>Real Results. Real Growth. REAL REACH.</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  REAL REACH is a performance-driven digital marketing agency
+                  focused on helping real estate businesses dominate online.
+                  Founded by seasoned marketing and SEO professionals, we bring
+                  a proven system that blends technical precision, compelling
+                  content, and result-oriented strategies. Our core mission is
+                  to empower real estate brands with digital tools to generate
+                  qualified leads, build lasting authority, and drive measurable
+                  sales growth.
                 </p>
 
                 <ul className="features-list">
                   <li>
                     <div className="d-flex align-items-center">
-                      <div className="icon">
+                      <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon4.png"
+                          src="/images/icon/icon4.svg"
                           alt="image"
                           width={48}
                           height={48}
                         />
                       </div>
-                      <span>Brand Strategy</span>
+                      <span>Customized Strategies</span>
                     </div>
                   </li>
                   <li>
                     <div className="d-flex align-items-center">
-                      <div className="icon">
+                      <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon5.png"
+                          src="/images/icon/icon5.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -67,28 +73,28 @@ const AboutContent: React.FC = () => {
                   </li>
                   <li>
                     <div className="d-flex align-items-center">
-                      <div className="icon">
+                      <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon6.png"
+                          src="/images/icon/icon6.svg"
                           alt="image"
                           width={48}
                           height={48}
                         />
                       </div>
-                      <span>Fast Delivery</span>
+                      <span>Rapid Results</span>
                     </div>
                   </li>
                   <li>
                     <div className="d-flex align-items-center">
-                      <div className="icon">
+                      <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon7.png"
+                          src="/images/icon/icon7.svg"
                           alt="image"
                           width={48}
                           height={48}
                         />
                       </div>
-                      <span>Ongoing Report</span>
+                      <span>Transparent Reporting</span>
                     </div>
                   </li>
                 </ul>
@@ -97,12 +103,12 @@ const AboutContent: React.FC = () => {
           </div>
 
           <div className="awards-list">
-            <h4>AWARDS AND INDUSTRY RECOGNITION</h4>
-            <div className="row justify-content-center">
+            <h4>We’ve worked with industry leaders such as :</h4>
+            <div className="row justify-content-center mb-5">
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards1.png"
+                    src="/images/awards/award7.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -112,7 +118,7 @@ const AboutContent: React.FC = () => {
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards2.png"
+                    src="/images/awards/award1.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -122,7 +128,7 @@ const AboutContent: React.FC = () => {
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards3.png"
+                    src="/images/awards/award2.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -132,7 +138,7 @@ const AboutContent: React.FC = () => {
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards4.png"
+                    src="/images/awards/award4.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -142,7 +148,7 @@ const AboutContent: React.FC = () => {
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards5.png"
+                    src="/images/awards/award5.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -152,7 +158,7 @@ const AboutContent: React.FC = () => {
               <div className="col-lg-2 col-4 col-sm-4 col-md-3">
                 <div className="awards-box">
                   <Image
-                    src="/images/awards/awards6.png"
+                    src="/images/awards/award6.svg"
                     alt="image"
                     width={100}
                     height={77}
@@ -160,6 +166,11 @@ const AboutContent: React.FC = () => {
                 </div>
               </div>
             </div>
+            <p className="font-weight-bold">
+              With a portfolio spanning over 350+ successful projects, we
+              deliver tailored digital strategies built around performance and
+              growth
+            </p>
           </div>
         </div>
       </div>

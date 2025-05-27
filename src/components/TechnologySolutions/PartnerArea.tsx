@@ -18,17 +18,17 @@ const PartnerArea: React.FC = () => {
               </div>
               <div className="col-lg-7 col-md-12">
                 <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters. It is a long established fact
-                  that a reader will be distracted by the.
+                  We believe in long-term partnerships over one-time projects.
+                  Our results speak for themselves—and so do our clients. From
+                  scaling SEO for legacy brands to building new online authority
+                  from scratch, we’re proud to work with companies who are as
+                  driven as we are.
                 </p>
               </div>
             </div>
           </div>
 
-          <PartnerSlider />
+          {/* <PartnerSlider /> */}
         </div>
       </div>
     </>

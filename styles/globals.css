@@ -1449,6 +1449,23 @@ Process Area CSS
   position: relative;
   z-index: 1;
 }
+.our-service-label-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.our-service-label-about span{
+  background-color: rgba(2, 152, 148, 0.15);
+  opacity: 0.8;
+  transition: var(--transition);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.our-service-label-about span:hover{
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+}
 .process-area::before {
   left: 0;
   right: 0;

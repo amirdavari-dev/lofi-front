@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -11,14 +11,14 @@ const TeamSlider: React.FC = () => {
         <div className="container">
           <div className="section-title style-two">
             <div className="row align-items-center">
-              <div className="col-lg-5 col-md-12">
+              <div className="col-lg-12 col-md-12">
                 <span className="sub-title">OUR EXPERTS</span>
                 <h2>
                   Meet Our Leadership <br />
-                  Preparing For Your Success
+                  Behind every result is a strategic team:
                 </h2>
               </div>
-              <div className="col-lg-7 col-md-12">
+              {/* <div className="col-lg-7 col-md-12">
                 <p>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
@@ -26,7 +26,7 @@ const TeamSlider: React.FC = () => {
                   normal distribution of letters. It is a long established fact
                   that a reader will be distracted by the.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -60,8 +60,8 @@ const TeamSlider: React.FC = () => {
                   ></div>
                 </div>
                 <div className="content">
-                  <h3>Sarah Taylor</h3>
-                  <span>Marketing Lead</span>
+                  <h3>Ali Reza Mosaddegh</h3>
+                  <span>SEO and Paid Ads Manager</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -75,8 +75,8 @@ const TeamSlider: React.FC = () => {
                   ></div>
                 </div>
                 <div className="content">
-                  <h3>Ben Stokes</h3>
-                  <span>Art Director</span>
+                  <h3>Amin Behravan</h3>
+                  <span>Digital Marketing & Sales</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -90,8 +90,8 @@ const TeamSlider: React.FC = () => {
                   ></div>
                 </div>
                 <div className="content">
-                  <h3>Ellyse Perry</h3>
-                  <span>Designer</span>
+                  <h3>Richard</h3>
+                  <span>Content & Videography</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -105,8 +105,8 @@ const TeamSlider: React.FC = () => {
                   ></div>
                 </div>
                 <div className="content">
-                  <h3>Steven Smith</h3>
-                  <span>Development</span>
+                  <h3>Amir Davari</h3>
+                  <span>Full-Stack Developer</span>
                 </div>
               </div>
             </SwiperSlide>
@@ -120,23 +120,8 @@ const TeamSlider: React.FC = () => {
                   ></div>
                 </div>
                 <div className="content">
-                  <h3>Suzie Bates</h3>
-                  <span>Front-End Development</span>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="single-team-box">
-                <div className="image">
-                  <div
-                    className="bg-6"
-                    style={{ backgroundImage: `url(/images/team/team6.jpg)` }}
-                  ></div>
-                </div>
-                <div className="content">
-                  <h3>David Warner</h3>
-                  <span>Head of Team</span>
+                  <h3>Arshia Mehrabi </h3>
+                  <span>Back-end Developer</span>
                 </div>
               </div>
             </SwiperSlide>

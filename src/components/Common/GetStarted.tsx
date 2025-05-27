@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -28,14 +28,12 @@ const GetStarted: React.FC = () => {
 
             <div className="col-lg-6 col-md-12">
               <div className="get-started-content">
-                <span className="sub-title">READY TO STARTED?</span>
-                <h2>
-                  Let&apos;s Talk Something <br /> Amazing Together
-                </h2>
+                <span className="sub-title"> READY TO GET STARTED?</span>
+                <h2>Let&apos;s Build Something Amazing Togethe</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Whether you&apos;re looking to scale your traffic, boost lead
+                  quality, or build a brand that converts—REAL REACH is ready to
+                  help.
                 </p>
 
                 <Link href="/contact" className="default-btn style-two">

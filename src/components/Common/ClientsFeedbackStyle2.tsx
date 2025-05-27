@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -12,7 +12,7 @@ const ClientsFeedbackStyle2: React.FC = () => {
         <div className="container">
           <div className="section-title">
             <span className="sub-title">CLIENT&apos;S FEEDBACK</span>
-            <h2>What Our Client&apos;s Say</h2>
+            {/* <h2>What Our Client&apos;s Say</h2> */}
           </div>
 
           <Swiper
@@ -46,10 +46,9 @@ const ClientsFeedbackStyle2: React.FC = () => {
                   <i className="ri-star-fill"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                  REAL REACH transformed our online performance. From day one,
+                  they brought clarity, results, and serious ROI.&quot; – Durmus
+                  Ozgen, TrustUnited.com
                 </p>
                 <div className="client-info">
                   <div className="d-flex align-items-center">
@@ -78,10 +77,9 @@ const ClientsFeedbackStyle2: React.FC = () => {
                   <i className="ri-star-half-fill"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                  &ldquo;Their team rebuilt our digital presence and delivered
+                  leads faster than we imagined. Highly recommended.&ldquo; –
+                  Savillas.ae
                 </p>
                 <div className="client-info">
                   <div className="d-flex align-items-center">
@@ -99,39 +97,6 @@ const ClientsFeedbackStyle2: React.FC = () => {
                 </div>
               </div>
             </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="single-feedback-box">
-                <div className="rating">
-                  <i className="ri-star-fill"></i>
-                  <i className="ri-star-fill"></i>
-                  <i className="ri-star-fill"></i>
-                  <i className="ri-star-fill"></i>
-                  <i className="ri-star-line"></i>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
-                </p>
-                <div className="client-info">
-                  <div className="d-flex align-items-center">
-                    <Image
-                      src="/images/user/user3.jpg"
-                      alt="image"
-                      width={300}
-                      height={300}
-                    />
-                    <div className="title">
-                      <h3>James Anderson</h3>
-                      <span>Developer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
             <SwiperSlide>
               <div className="single-feedback-box">
                 <div className="rating">
@@ -142,10 +107,8 @@ const ClientsFeedbackStyle2: React.FC = () => {
                   <i className="ri-star-half-fill"></i>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                  Professional, creative, responsive. A complete digital growth
+                  team.&quot; – Cameron Deggin, PropertyTurkey.com
                 </p>
                 <div className="client-info">
                   <div className="d-flex align-items-center">
