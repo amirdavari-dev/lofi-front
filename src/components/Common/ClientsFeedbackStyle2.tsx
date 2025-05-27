@@ -53,14 +53,14 @@ const ClientsFeedbackStyle2: React.FC = () => {
                 <div className="client-info">
                   <div className="d-flex align-items-center">
                     <Image
-                      src="/images/user/user1.jpg"
+                      src="/images/user/durmus.png"
                       alt="image"
                       width={300}
                       height={300}
                     />
                     <div className="title">
-                      <h3>John Smith</h3>
-                      <span>Web Developer</span>
+                      <h3>Dormush Ozcan</h3>
+                      <span>CEO, TrustUnited.com</span>
                     </div>
                   </div>
                 </div>
@@ -77,21 +77,21 @@ const ClientsFeedbackStyle2: React.FC = () => {
                   <i className="ri-star-half-fill"></i>
                 </div>
                 <p>
-                  &ldquo;Their team rebuilt our digital presence and delivered
-                  leads faster than we imagined. Highly recommended.&ldquo; –
+                  Their team rebuilt our digital presence and delivered
+                  leads faster than we imagined. Highly recommended. –
                   Savillas.ae
                 </p>
                 <div className="client-info">
                   <div className="d-flex align-items-center">
                     <Image
-                      src="/images/user/user2.jpg"
+                      src="/images/user/savills.png"
                       alt="image"
                       width={300}
                       height={300}
                     />
                     <div className="title">
-                      <h3>Sarah Taylor</h3>
-                      <span>UX/UI Designer</span>
+                      <h3>Savillas</h3>
+                      <span>CEO </span>
                     </div>
                   </div>
                 </div>
@@ -108,19 +108,19 @@ const ClientsFeedbackStyle2: React.FC = () => {
                 </div>
                 <p>
                   Professional, creative, responsive. A complete digital growth
-                  team.&quot; – Cameron Deggin, PropertyTurkey.com
+                  team. – Cameron Deggin, PropertyTurkey.com
                 </p>
                 <div className="client-info">
                   <div className="d-flex align-items-center">
                     <Image
-                      src="/images/user/user4.jpg"
+                      src="/images/user/Cameron Deggin.jpeg"
                       alt="image"
                       width={300}
                       height={300}
                     />
                     <div className="title">
-                      <h3>David Conway</h3>
-                      <span>Developer</span>
+                      <h3> Cameron Deggin</h3>
+                      <span>CEO PropertyTurkey.com</span>
                     </div>
                   </div>
                 </div>

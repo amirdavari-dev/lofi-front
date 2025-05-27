@@ -22,7 +22,7 @@ const OurTeamMember: React.FC = () => {
                   >
                     <div className="single-team-member">
                       <Image
-                        src="/images/team/alimosadegh.png"
+                        src="/images/team/Alisquare.jpg"
                         alt="team"
                         width={684}
                         height={666}
@@ -45,7 +45,7 @@ const OurTeamMember: React.FC = () => {
                   >
                     <div className="single-team-member">
                       <Image
-                        src="/images/team/team13.jpg"
+                        src="/images/team/AminSqaure.jpg"
                         alt="team"
                         width={684}
                         height={666}

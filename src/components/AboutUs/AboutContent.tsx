@@ -12,7 +12,7 @@ const AboutContent: React.FC = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
                 <Image
-                  src="/images/about.jpg"
+                  src="/images/about.png"
                   alt="image"
                   width={600}
                   height={617}
@@ -43,13 +43,21 @@ const AboutContent: React.FC = () => {
                   qualified leads, build lasting authority, and drive measurable
                   sales growth.
                 </p>
+                {/* <ul>
+                  <li>
+                    We operate internationally with a strong presence in Dubai
+                    and Turkey, offering a complete suite of services—from SEO
+                    and content marketing to high-converting websites, video
+                    production, performance advertising, and CRM automation.
+                  </li>
+                </ul> */}
 
                 <ul className="features-list">
                   <li>
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon4.svg"
+                          src="/images/icon/icon9.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -62,7 +70,7 @@ const AboutContent: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon5.svg"
+                          src="/images/icon/icon8.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -75,7 +83,7 @@ const AboutContent: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon6.svg"
+                          src="/images/icon/icon10.svg"
                           alt="image"
                           width={48}
                           height={48}
@@ -88,7 +96,7 @@ const AboutContent: React.FC = () => {
                     <div className="d-flex align-items-center">
                       <div className="icon bg-f9f9f9">
                         <Image
-                          src="/images/icon/icon7.svg"
+                          src="/images/icon/icon29.svg"
                           alt="image"
                           width={48}
                           height={48}

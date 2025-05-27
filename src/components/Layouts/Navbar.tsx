@@ -35,12 +35,12 @@ const Navbar: React.FC = () => {
     <>
       <header className="header-area">
         {/* TopHeader */}
-        <TopHeader />
+        {/* <TopHeader /> */}
 
         <div id="navbar" className="navbar-area">
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container">
-              <Link href="/" className="navbar-brand d-lg-none">
+              <Link href="/" className="navbar-brand">
                 <Image
                   src="/images/logo.png"
                   alt="Site logo"

@@ -157,9 +157,10 @@ textarea.form-control {
   margin-bottom: 50px;
 }
 .section-title .sub-title {
-  background-color: rgba(2, 152, 148, 0.15);
+  background-color: var(--mainColor);
   transition: var(--transition);
-  color: var(--mainColor);
+  color: #fff;
+  border: 1px solid var(--mainColor);
   display: inline-block;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -169,8 +170,8 @@ textarea.form-control {
   font-weight: 300;
 }
 .section-title .sub-title:hover {
-  background-color: var(--mainColor);
-  color: var(--whiteColor);
+  background-color: #fff;
+  color: var(--mainColor);
 }
 .section-title h2 {
   margin-bottom: 0;
@@ -791,8 +792,8 @@ Header Area CSS
   margin-left: auto;
 }
 .navbar-area .navbar .others-option .default-btn {
-  color: #dc84fc;
-  background-color: rgba(220, 132, 252, 0.15);
+  color: #fff;
+  background-color: #10335e;
   font-weight: normal;
   border: 1px solid rgba(220, 132, 252, 0.4) !important;
   padding-top: 11px;
@@ -804,17 +805,17 @@ Header Area CSS
   left: 25px;
   right: auto;
   font-size: 20px;
-  color: #dc84fc;
+  color: #fff;
   margin-top: -1px;
 }
 .navbar-area .navbar .others-option .default-btn:hover {
-  background-color: #dc84fc;
-  border-color: #dc84fc;
-  color: var(--whiteColor);
+  background-color: #fff;
+  border-color: var(--mainColor);
+  color: var(--mainColor);
   opacity: 1;
 }
 .navbar-area .navbar .others-option .default-btn:hover span {
-  color: var(--whiteColor);
+  color: var(--mainColor);
   opacity: 1;
 }
 
@@ -1060,9 +1061,9 @@ About Area CSS
   padding-left: 15px;
 }
 .about-content .sub-title {
-  background-color: rgba(2, 152, 148, 0.15);
+  background-color: var(--mainColor);
   transition: var(--transition);
-  color: var(--mainColor);
+  color: white;
   display: inline-block;
   margin-bottom: 15px;
   letter-spacing: 1px;
@@ -1070,10 +1071,11 @@ About Area CSS
   padding: 4px 30px;
   font-size: 14px;
   font-weight: 300;
+  border: 1px solid var(--mainColor);
 }
 .about-content .sub-title:hover {
-  background-color: var(--mainColor);
-  color: var(--whiteColor);
+  background-color: #fff;
+  color: var(--mainColor);
 }
 .about-content h2 {
   margin-bottom: 10px;
@@ -1130,8 +1132,8 @@ About Area CSS
   padding-right: 100px;
 }
 .awards-list h4 {
-  background-color: rgba(2, 152, 148, 0.15);
-  color: var(--mainColor);
+  background-color: var(--mainColor);
+  color: #fff;
   display: inline-block;
   margin-bottom: 50px;
   letter-spacing: 1px;
@@ -1449,22 +1451,23 @@ Process Area CSS
   position: relative;
   z-index: 1;
 }
-.our-service-label-about{
+.our-service-label-about {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
 }
-.our-service-label-about span{
-  background-color: rgba(2, 152, 148, 0.15);
-  opacity: 0.8;
+.our-service-label-about span {
+  background-color: var(--mainColor);
+  color: #fff;
+  border: 1px solid var(--mainColor);
   transition: var(--transition);
   padding: 5px 10px;
   border-radius: 10px;
 }
-.our-service-label-about span:hover{
-  background-color: var(--mainColor);
-  color: var(--whiteColor);
+.our-service-label-about span:hover {
+  background-color: #fff;
+  color: var(--mainColor);
 }
 .process-area::before {
   left: 0;
@@ -1595,7 +1598,7 @@ Case Studies Area CSS
   width: 100px;
   height: 100px;
 }
-.logo-footer{
+.logo-footer {
   width: 400px;
   min-width: 400px;
   margin-bottom: 30px;

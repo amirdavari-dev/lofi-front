@@ -1,4 +1,3 @@
-import Navbar from "@/components/Layouts/Navbar";
 import PageTitle from "@/components/Common/PageTitle";
 import ServicesItem from "../../components/Services/ServicesItem";
 import OurCaseStudies from "@/components/Common/OurCaseStudies";
@@ -8,11 +7,12 @@ import PricingTable from "@/components/Pricing/PricingTable";
 import Faq from "@/components/Common/Faq";
 import GetStarted from "@/components/Common/GetStarted";
 import Footer from "@/components/Layouts/Footer";
+import NavbarStyle2 from "@/components/Layouts/NavbarStyle2";
 
 export default function Page() {
   return (
     <>
-      <Navbar />
+      <NavbarStyle2 />
 
       <PageTitle homeText="Home" pageTitle="Services" />
 

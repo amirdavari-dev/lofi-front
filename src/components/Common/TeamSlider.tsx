@@ -56,7 +56,7 @@ const TeamSlider: React.FC = () => {
                 <div className="image">
                   <div
                     className="bg-1"
-                    style={{ backgroundImage: `url(/images/team/team1.jpg)` }}
+                    style={{ backgroundImage: `url(/images/team/Alisquare.jpg)` }}
                   ></div>
                 </div>
                 <div className="content">
@@ -71,7 +71,7 @@ const TeamSlider: React.FC = () => {
                 <div className="image">
                   <div
                     className="bg-2"
-                    style={{ backgroundImage: `url(/images/team/team2.jpg)` }}
+                    style={{ backgroundImage: `url(/images/team/AminSqaure.jpg)` }}
                   ></div>
                 </div>
                 <div className="content">
