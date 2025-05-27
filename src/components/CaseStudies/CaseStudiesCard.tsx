@@ -58,7 +58,7 @@ const CaseStudiesCard: React.FC = () => {
                           href="https://www.propertyturkey.com"
                           target="_blank"
                         >
-                          www.propertyturkey.com
+                          propertyturkey.com
                         </a>
                       </li>
                     </ul>
@@ -182,7 +182,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies3.png"
+                      src="/images/case-studies/selectum property.png"
                       alt="image"
                       width={860}
                       height={703}
@@ -237,7 +237,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies3.png"
+                      src="/images/case-studies/Alibaba.png"
                       alt="image"
                       width={860}
                       height={703}
@@ -292,7 +292,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies3.png"
+                      src="/images/case-studies/Doctoreto.png"
                       alt="image"
                       width={860}
                       height={703}
@@ -347,7 +347,7 @@ const CaseStudiesCard: React.FC = () => {
                 <div className="col-lg-6 col-md-12 p-0">
                   <div className="image">
                     <Image
-                      src="/images/case-studies/case-studies3.png"
+                      src="/images/case-studies/Sisnogroup.png"
                       alt="image"
                       width={860}
                       height={703}
