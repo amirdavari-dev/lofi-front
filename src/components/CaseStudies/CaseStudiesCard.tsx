@@ -33,7 +33,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Property Turkey</Link>
+                      <Link href="/case-studies/property-turkey">Property Turkey</Link>
                     </h3>
                     <p>
                       One of Turkey’s leading platforms for international

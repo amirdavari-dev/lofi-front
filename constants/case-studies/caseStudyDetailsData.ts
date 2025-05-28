@@ -1,4 +1,33 @@
-const caseStudiesDetail = [
+export type CaseDetailsType = {
+  key: string;
+  image: string;
+  name: string;
+  description: string;
+  appType: string;
+  category: string;
+  link: string;
+  challenge: {
+    label: string;
+    description: string;
+    buletList: string[];
+  };
+  solution: {
+    label: string;
+    description: string;
+    categories: Array<{
+      label: string;
+      buletList: string[];
+    }>;
+    blockQutes: string;
+  };
+  result: {
+    label: string;
+    description: string;
+    table: string;
+    images: string[];
+  };
+};
+const caseStudiesDetail: Array<CaseDetailsType> = [
   {
     key: "property-turkey",
     image: "/images/case-studies/Property turkey.png",
@@ -36,18 +65,29 @@ const caseStudiesDetail = [
         },
         {
           label: "Performance Marketing Execution:",
-          buletList: ["Meta & Google Ads targeting high-intent keywords like “buy property in Istanbul” and “real estate investment in Turkey”", "Custom landing pages with WhatsApp lead capture & CRM integration", "Retargeting campaigns for bounced visitors & ad viewers", "A/B testing for visuals, ad copy, and landing page variations"],
+          buletList: [
+            "Meta & Google Ads targeting high-intent keywords like “buy property in Istanbul” and “real estate investment in Turkey”",
+            "Custom landing pages with WhatsApp lead capture & CRM integration",
+            "Retargeting campaigns for bounced visitors & ad viewers",
+            "A/B testing for visuals, ad copy, and landing page variations",
+          ],
         },
         {
           label: "Tools & Tactics Used:",
-          buletList: ["Facebook Lead Ads, Google Search & Display, WhatsApp click-to-chat", "Weekly performance reviews, conversion tracking, and budget scaling using CPA targets"],
+          buletList: [
+            "Facebook Lead Ads, Google Search & Display, WhatsApp click-to-chat",
+            "Weekly performance reviews, conversion tracking, and budget scaling using CPA targets",
+          ],
         },
       ],
-      blockQutes : "📣 Client Testimonial “The SEO strategy implemented by the team has significantly boosted our online presence and lead generation. We’ve seen a remarkable increase in quality traffic and conversions.” — CEO of PropertyTurkey.com"
+      blockQutes:
+        "📣 Client Testimonial “The SEO strategy implemented by the team has significantly boosted our online presence and lead generation. We’ve seen a remarkable increase in quality traffic and conversions.” — CEO of PropertyTurkey.com",
     },
     result: {
-      label: "📈 The Result Massive Growth in Conversions, Engagement, and Lead Volume",
-      description: "By integrating SEO and performance marketing, we transformed Property Turkey’s website into a high-performing lead engine. Here’s what changed:",
+      label:
+        "📈 The Result Massive Growth in Conversions, Engagement, and Lead Volume",
+      description:
+        "By integrating SEO and performance marketing, we transformed Property Turkey’s website into a high-performing lead engine. Here’s what changed:",
       table: `
         <table class="table table-bordered table-hover table-responsive">
             <thead class="table-light">
@@ -137,34 +177,32 @@ const caseStudiesDetail = [
       images: ["", "", ""],
     },
   },
-  //   {
-  //     image: "",
-  //     name: "",
-  //     description: "",
-  //     appType: "",
-  //     category: "",
-  //     link: "",
-  //     challenge: {
-  //       label: "",
-  //       description: "",
-  //       buletList: ["", "", "", "", ""],
-  //     },
-  //     solution: {
-  //       label: "",
-  //       description: "",
-  //       categories: [
-  //         {
-  //           label: "",
-  //           buletList: ["", "", "", ""],
-  //         },
-  //       ],
-  //     },
-  //     result: {
-  //       label: "",
-  //       description: "",
-  //       table: "",
-  //       images: ["", "", ""],
-  //     },
-  //   },
+  {
+    key: "",
+    image: "",
+    name: "",
+    description: "",
+    appType: "",
+    category: "",
+    link: "",
+    challenge: {
+      label: "",
+      description: "",
+      buletList: [],
+    },
+    solution: {
+      label: "",
+      description: "",
+      categories: [],
+      blockQutes: "",
+    },
+    result: {
+      label: "",
+      description: "",
+      table: "",
+      images: [],
+    },
+  },
 ];
-export default caseStudiesDetail
+
+export default caseStudiesDetail;
