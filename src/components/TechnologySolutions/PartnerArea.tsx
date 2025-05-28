@@ -28,7 +28,7 @@ const PartnerArea: React.FC = () => {
             </div>
           </div>
 
-          {/* <PartnerSlider /> */}
+          <PartnerSlider />
         </div>
       </div>
     </>

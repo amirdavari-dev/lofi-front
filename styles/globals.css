@@ -1041,7 +1041,7 @@ About Area CSS
   z-index: 1;
 }
 .about-area.bg-gradient-image {
-  background-image: url(/images/bg/bg2.jpg);
+  background-image: url(/images/bg/banner-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1226,6 +1226,7 @@ About Area CSS
 Partner Area CSS
 =================================================*/
 .partner-area.hover .partner-item img {
+  margin: 0 auto;
   filter: blur(2px);
   opacity: 0.4;
 }
@@ -1502,7 +1503,7 @@ Process Area CSS
   padding-left: 80px;
   padding-right: 80px;
   padding-bottom: 20px;
-  background-image: url(/images/bg/bg6.jpg);
+  background-image: url(/images/bg/banner-bg-procces.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1557,6 +1558,12 @@ Case Studies Area CSS
 }
 .case-studies-area.bg-gradient-image {
   background-image: url(/images/bg/bg5.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-gradient-image-feedback {
+  background-image: url(/images/bg/banner-bg-procces.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

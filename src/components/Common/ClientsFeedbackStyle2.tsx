@@ -8,7 +8,7 @@ import Image from "next/image";
 const ClientsFeedbackStyle2: React.FC = () => {
   return (
     <>
-      <div className="feedback-area bg-gradient-image pt-100 pb-70">
+      <div className="feedback-area bg-gradient-image-feedback pt-100 pb-70">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">CLIENT&apos;S FEEDBACK</span>

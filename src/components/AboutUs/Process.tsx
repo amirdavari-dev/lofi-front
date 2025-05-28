@@ -13,6 +13,7 @@ const Process: React.FC = () => {
         <div className="container">
           <div className="process-inner">
             <div className="row justify-content-center">
+              
               <div
                 className="col-lg-4 col-md-6 col-sm-6"
                 data-aos="fade-up"
@@ -23,7 +24,7 @@ const Process: React.FC = () => {
                 <div className="single-process-box">
                   <div className="icon">
                     <Image
-                      src="/images/icon/icon14.png"
+                      src="/images/icon/Brand Strategy.svg"
                       alt="image"
                       width={150}
                       height={145}
@@ -47,7 +48,7 @@ const Process: React.FC = () => {
                 <div className="single-process-box">
                   <div className="icon">
                     <Image
-                      src="/images/icon/icon15.png"
+                      src="/images/icon/Fast Delivery.svg"
                       alt="image"
                       width={150}
                       height={145}
@@ -71,7 +72,7 @@ const Process: React.FC = () => {
                 <div className="single-process-box">
                   <div className="icon">
                     <Image
-                      src="/images/icon/icon16.png"
+                      src="/images/icon/Ongoing Reporting.svg"
                       alt="image"
                       width={150}
                       height={145}

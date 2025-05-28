@@ -25,12 +25,12 @@ const PartnerSlider: React.FC = () => {
           768: {
             slidesPerView: 4,
           },
-          992: {
-            slidesPerView: 5,
-          },
-          1024: {
-            slidesPerView: 6,
-          },
+          // 992: {
+          //   slidesPerView: 4,
+          // },
+          // 1024: {
+          //   slidesPerView: 6,
+          // },
         }}
         modules={[Autoplay]}
         className="partner-slides"
@@ -38,7 +38,7 @@ const PartnerSlider: React.FC = () => {
         <SwiperSlide>
           <div className="partner-item">
             <Image
-              src="/images/partner/partner1.png"
+              src="/images/partner/tiktok.svg"
               alt="image"
               width={175}
               height={35}
@@ -49,7 +49,7 @@ const PartnerSlider: React.FC = () => {
         <SwiperSlide>
           <div className="partner-item">
             <Image
-              src="/images/partner/partner2.png"
+              src="/images/partner/google-cloud.svg"
               alt="image"
               width={175}
               height={35}
@@ -60,7 +60,7 @@ const PartnerSlider: React.FC = () => {
         <SwiperSlide>
           <div className="partner-item">
             <Image
-              src="/images/partner/partner3.png"
+              src="/images/partner/google-partner.svg"
               alt="image"
               width={175}
               height={35}
@@ -71,40 +71,7 @@ const PartnerSlider: React.FC = () => {
         <SwiperSlide>
           <div className="partner-item">
             <Image
-              src="/images/partner/partner4.png"
-              alt="image"
-              width={175}
-              height={35}
-            />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="partner-item">
-            <Image
-              src="/images/partner/partner5.png"
-              alt="image"
-              width={175}
-              height={35}
-            />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="partner-item">
-            <Image
-              src="/images/partner/partner6.png"
-              alt="image"
-              width={175}
-              height={35}
-            />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="partner-item">
-            <Image
-              src="/images/partner/partner7.png"
+              src="/images/partner/meta-partner.svg"
               alt="image"
               width={175}
               height={35}

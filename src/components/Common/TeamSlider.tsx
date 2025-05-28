@@ -7,7 +7,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 const TeamSlider: React.FC = () => {
   return (
     <>
-      <div className="team-area bg-gradient-image ptb-100">
+      <div className="team-area bg-gradient-image-feedback ptb-100">
         <div className="container">
           <div className="section-title style-two">
             <div className="row align-items-center">
@@ -86,7 +86,7 @@ const TeamSlider: React.FC = () => {
                 <div className="image">
                   <div
                     className="bg-3"
-                    style={{ backgroundImage: `url(/images/team/team3.jpg)` }}
+                    style={{ backgroundImage: `url(/images/team/default.png)` }}
                   ></div>
                 </div>
                 <div className="content">
@@ -101,7 +101,7 @@ const TeamSlider: React.FC = () => {
                 <div className="image">
                   <div
                     className="bg-4"
-                    style={{ backgroundImage: `url(/images/team/team4.jpg)` }}
+                    style={{ backgroundImage: `url(/images/team/default.png)` }}
                   ></div>
                 </div>
                 <div className="content">
@@ -116,7 +116,7 @@ const TeamSlider: React.FC = () => {
                 <div className="image">
                   <div
                     className="bg-5"
-                    style={{ backgroundImage: `url(/images/team/team5.jpg)` }}
+                    style={{ backgroundImage: `url(/images/team/default.png)` }}
                   ></div>
                 </div>
                 <div className="content">
