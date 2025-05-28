@@ -1,9 +1,39 @@
 "use client";
-  
+
 import React from "react";
 import Image from "next/image";
-
-const CaseStudiesDetailsContent: React.FC = () => {
+type Prop = {
+  details: {
+    key: string;
+    image: string;
+    name: string;
+    description: string;
+    appType: string;
+    category: string;
+    link: string;
+    challenge: {
+      label: string;
+      description: string;
+      buletList: string[];
+    };
+    solution: {
+      label: string;
+      description: string;
+      categories: {
+        label: string;
+        buletList: string[];
+      }[];
+      blockQutes: string;
+    };
+    result: {
+      label: string;
+      description: string;
+      table: string;
+      images: string[];
+    };
+  };
+};
+const CaseStudiesDetailsContent = ({ details }: Prop) => {
   return (
     <>
       <div className="case-studies-details-area ptb-100">
@@ -12,7 +42,7 @@ const CaseStudiesDetailsContent: React.FC = () => {
             <div className="col-lg-6 col-md-12">
               <div className="image">
                 <Image
-                  src="/images/case-studies/case-studies10.png"
+                  src={details.image}
                   alt="image"
                   width={760}
                   height={585}
@@ -21,33 +51,30 @@ const CaseStudiesDetailsContent: React.FC = () => {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="content">
-                <Image
+                {/* <Image
                   src="/images/case-studies/elan.png"
                   alt="image"
                   width={91}
                   height={83}
-                />
-                <h1>eLan Education</h1>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                </p>
+                /> */}
+                <h1>{details.name}</h1>
+                <p>{details.description}</p>
                 <ul className="meta">
                   <li>
                     <i className="ri-folder-2-line"></i>
                     <span>APP</span>
-                    WordPress
+                    {details.appType}
                   </li>
                   <li>
                     <i className="ri-price-tag-3-line"></i>
                     <span>CATEGORY</span>
-                    Development
+                    {details.category}
                   </li>
                   <li>
                     <i className="ri-global-line"></i>
                     <span>LINK</span>
-                    <a href="#" target="_blank">
-                      www.example.com
+                    <a href={`https://${details.link}`} target="_blank">
+                      {details.link}
                     </a>
                   </li>
                 </ul>
@@ -65,34 +92,12 @@ const CaseStudiesDetailsContent: React.FC = () => {
                 </div>
                 <div className="col-lg-7 col-md-12">
                   <div className="content">
-                    <h3>
-                      So, What Exactly is Positioning and Why Does It Matter?
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur{" "}
-                      <strong>adipisicing</strong> elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea <a href="#">commodo</a> consequat.
-                      Duis aute irure dolor in reprehenderit in sed quia non
-                      numquam eius modi tempora incidunt ut labore et dolore
-                      magnam aliquam quaerat voluptatem.
-                    </p>
+                    <h3>{details.challenge.label}</h3>
+                    <p>{details.challenge.description}</p>
                     <ul>
-                      <li>a console</li>
-                      <li>Two Joy-Con controllers that are detachable</li>
-                      <li>
-                        A grip that enables you to combine them into a single{" "}
-                        <a href="#">gamepad</a> for play on the
-                      </li>
-                      <li>
-                        Two straps for turning the Joy-Cons into individual
-                        controllers
-                      </li>
-                      <li>
-                        A dock which you can use to connect your console to the{" "}
-                        <strong>television</strong> for traditional gameplay
-                      </li>
+                      {details.challenge.buletList.map((bulet, index) => {
+                        return <li key={index}>{bulet}</li>;
+                      })}
                     </ul>
                   </div>
                 </div>
@@ -106,26 +111,11 @@ const CaseStudiesDetailsContent: React.FC = () => {
                 </div>
                 <div className="col-lg-7 col-md-12">
                   <div className="content">
-                    <h3>
-                      How We Defined Our Positioning: a Step-by-Step Overview
-                    </h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur{" "}
-                      <strong>adipisicing</strong> elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea <a href="#">commodo</a> consequat.
-                      Duis aute irure dolor in reprehenderit in sed quia non
-                      numquam eius modi tempora incidunt ut labore et dolore
-                      magnam aliquam quaerat voluptatem.
-                    </p>
+                    <h3>{details.solution.label}</h3>
+                    <p>{details.solution.description}</p>
                     <blockquote className="wp-block-quote">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable when content of a page when
-                        looking at its layout.
-                      </p>
-                      <cite>Tom Cruise</cite>
+                      <p>{details.solution.blockQutes}</p>
+                      {/* <cite>Tom Cruise</cite> */}
                     </blockquote>
                   </div>
                 </div>
@@ -139,17 +129,8 @@ const CaseStudiesDetailsContent: React.FC = () => {
                 </div>
                 <div className="col-lg-7 col-md-12">
                   <div className="content">
-                    <h3>When Content Of a Page When Looking at Its Layout</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur{" "}
-                      <strong>adipisicing</strong> elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea <a href="#">commodo</a> consequat.
-                      Duis aute irure dolor in reprehenderit in sed quia non
-                      numquam eius modi tempora incidunt ut labore et dolore
-                      magnam aliquam quaerat voluptatem.
-                    </p>
+                    <h3>{details.result.label}</h3>
+                    <p>{details.result.description}</p>
                     <ul className="wp-block-gallery columns-3">
                       <li className="blocks-gallery-item">
                         <figure>
@@ -182,13 +163,9 @@ const CaseStudiesDetailsContent: React.FC = () => {
                         </figure>
                       </li>
                     </ul>
-                    <p>
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                      laboris nisi ut aliquip ex ea <a href="#">commodo</a>{" "}
-                      consequat. Duis aute irure dolor in reprehenderit in sed
-                      quia non numquam eius modi tempora incidunt ut labore et
-                      dolore magnam aliquam quaerat voluptatem.
-                    </p>
+                    <div
+                      dangerouslySetInnerHTML={{ __html: details.result.table }}
+                    ></div>
                   </div>
                 </div>
               </div>
