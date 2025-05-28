@@ -10,6 +10,7 @@ import OurTeamMember from "@/components/Common/OurTeamMember";
 import OurLatestBlog from "@/components/Common/OurLatestBlog";
 import NewsletterForm from "@/components/Common/NewsletterForm";
 import Footer from "@/components/Layouts/Footer";
+import Faq from "@/components/Common/Faq";
 export default function Home() {
   return (
     <>
@@ -32,7 +33,8 @@ export default function Home() {
 
       <OurTeamMember />
 
-      <OurLatestBlog />
+      <Faq />
+      {/* <OurLatestBlog /> */}
 
       <NewsletterForm />
 

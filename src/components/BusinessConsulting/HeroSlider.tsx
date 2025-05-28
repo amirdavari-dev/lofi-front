@@ -39,12 +39,6 @@ const HeroSlider: React.FC = () => {
                   <div className="col-lg-6 col-md-12">
                     <div className="home-image">
                       <Lottie animationData={animationData} loop={true} />
-                      {/* <Image
-                        src="/images/Animation - 1748254043455.json"
-                        alt="banner-image"
-                        width={830}
-                        height={790}
-                      /> */}
                     </div>
                   </div>
                 </div>

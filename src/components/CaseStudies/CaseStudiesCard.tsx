@@ -62,7 +62,7 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    <Link href="/case-studies/property-turkey" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
                     </Link>
                   </div>
@@ -93,7 +93,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Trust United</Link>
+                      <Link style={{pointerEvents: "none"}} href="/case-studies/details">Trust United</Link>
                     </h3>
                     <p>
                       We redesigned and rebuilt the entire website and migrated
@@ -117,9 +117,9 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    {/* <Link style={{pointerEvents: "none"}} href="/case-studies/details" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 p-0">
@@ -148,7 +148,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">
+                      <Link style={{pointerEvents: "none"}} href="/case-studies/details">
                         Selectum Property
                       </Link>
                     </h3>
@@ -174,9 +174,9 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    {/* <Link style={{pointerEvents: "none"}} href="/case-studies/details" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 p-0">
@@ -205,7 +205,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Alibaba</Link>
+                      <Link style={{pointerEvents: "none"}} href="/case-studies/details">Alibaba</Link>
                     </h3>
                     <p>
                       Optimized category and product pages for SEO at scale,
@@ -229,9 +229,9 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    {/* <Link style={{pointerEvents: "none"}} href="/case-studies/details" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 p-0">
@@ -260,7 +260,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Doctoreto</Link>
+                      <Link style={{pointerEvents: "none"}} href="/case-studies/details">Doctoreto</Link>
                     </h3>
                     <p>
                       We improved local SEO and implemented performance
@@ -284,9 +284,9 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    {/* <Link style={{pointerEvents: "none"}} href="/case-studies/details" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 p-0">
@@ -315,7 +315,7 @@ const CaseStudiesCard: React.FC = () => {
                       />
                     </div> */}
                     <h3>
-                      <Link href="/case-studies/details">Sisno Group</Link>
+                      <Link style={{pointerEvents: "none"}} href="/case-studies/details">Sisno Group</Link>
                     </h3>
                     <p>
                       Developed and optimized the Georgian landing pages and
@@ -339,9 +339,9 @@ const CaseStudiesCard: React.FC = () => {
                         </a>
                       </li>
                     </ul>
-                    <Link href="/case-studies/details" className="default-btn">
+                    {/* <Link style={{pointerEvents: "none"}} href="/case-studies/details" className="default-btn">
                       <span className="ri-arrow-right-s-line"></span>View More
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-12 p-0">

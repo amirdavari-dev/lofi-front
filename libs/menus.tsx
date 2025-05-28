@@ -45,30 +45,30 @@ export const menus = [
   },
   {
     label: "Case Studies",
-    link: "#",
-    submenu: [
-      {
-        label: "Case Studies",
-        link: "/case-studies/",
-      },
-      {
-        label: "Case Studies Details",
-        link: "/case-studies/details/",
-      },
-      // {
-      //   label: "Case Studies #2",
-      //   link: "/case-studies/2/",
-      // },
-      // {
-      //   label: "Case Studies #3",
-      //   link: "/case-studies/3/",
-      // },
-    ],
+    link: "/case-studies",
+    // submenu: [
+    //   {
+    //     label: "Case Studies",
+    //     link: "/case-studies/",
+    //   },
+    //   {
+    //     label: "Case Studies Details",
+    //     link: "/case-studies/details/",
+    //   },
+    //   {
+    //     label: "Case Studies #2",
+    //     link: "/case-studies/2/",
+    //   },
+    //   {
+    //     label: "Case Studies #3",
+    //     link: "/case-studies/3/",
+    //   },
+    // ],
   },
-  {
-    label: "Team",
-    link: "/team/",
-  },
+  // {
+  //   label: "Team",
+  //   link: "/team/",
+  // },
   // {
   //   label: "Pricing",
   //   link: "/pricing/",

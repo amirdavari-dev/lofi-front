@@ -159,7 +159,7 @@ const OurTeamMember: React.FC = () => {
                 <h2>
                   Meet the dedicated professionals behind REAL REACH&apos;s success.
                 </h2>
-                <Link href="/team" className="default-btn style-two">
+                <Link href="/about-us" className="default-btn style-two">
                   <span className="ri-arrow-right-s-line"></span>Meet Our Team
                 </Link>
               </div>

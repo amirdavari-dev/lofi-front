@@ -11,7 +11,8 @@ import {
 const Faq: React.FC = () => {
   return (
     <>
-      <div className="faq-area bg-gradient-image ptb-100">
+      <div className="faq-area ptb-100">
+      {/* bg-gradient-image */}
         <div className="container">
           <div className="section-title">
             <span className="sub-title">FAQ</span>
