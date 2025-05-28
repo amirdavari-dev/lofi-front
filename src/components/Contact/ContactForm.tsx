@@ -9,8 +9,8 @@ const ContactForm: React.FC = () => {
         <div className="container">
           <div className="contact-form">
             <div className="section-title">
-              <h2>Get In Touch!</h2>
-              <p>Contact us with your details & ready to start with us</p>
+              <h2>Let’s Connect</h2>
+              <p>Fill out the form and one of our consultants will reach out to you shortly.</p>
             </div>
 
             <form>
@@ -22,7 +22,7 @@ const ContactForm: React.FC = () => {
                       type="text"
                       name="name"
                       className="form-control"
-                      placeholder="Eg: Sarah Taylor"
+                      placeholder="Your full name"
                       required
                     />
                   </div>
@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
                       type="text"
                       name="email"
                       className="form-control"
-                      placeholder="hello@sarah.com"
+                      placeholder="your@email.com"
                       required
                     />
                   </div>
@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
                       type="text"
                       name="subject"
                       className="form-control"
-                      placeholder="Enter your subject"
+                      placeholder="How can we help you?"
                       required
                     />
                   </div>
@@ -61,7 +61,7 @@ const ContactForm: React.FC = () => {
                       type="text"
                       name="number"
                       className="form-control"
-                      placeholder="Enter your phone number"
+                      placeholder="WhatsApp number or mobile"
                       required
                     />
                   </div>
@@ -75,7 +75,7 @@ const ContactForm: React.FC = () => {
                       cols={30}
                       rows={6}
                       className="form-control"
-                      placeholder="Your message..."
+                      placeholder="Let us know what you’re looking for (SEO, website, content, etc.)"
                       required
                     ></textarea>
                   </div>

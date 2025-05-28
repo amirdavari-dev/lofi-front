@@ -22,12 +22,13 @@ const Footer: React.FC = () => {
                 </Link>
 
                 <div className="newsletter-form">
-                  <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+                  <p><strong>Subscribe to Our Insights</strong></p>
+                  <p>Get the latest strategies in SEO, performance marketing, and digital growth for real estate.</p>
                   <form data-toggle="validator">
                     <input
                       type="email"
                       className="input-newsletter"
-                      placeholder="Enter your email"
+                      placeholder="Enter your email address"
                       name="EMAIL"
                       required
                     />

@@ -14,7 +14,7 @@ const ContactInfo: React.FC = () => {
                   <i className="ri-map-pin-2-line"></i>
                 </div>
                 <h3>Address:</h3>
-                <p>2750 Open Space, Quadra Street Line Victoria, Canada</p>
+                <p>Dubai, UAE | Turkey, istanbul | Europe, Germany</p>
               </div>
             </div>
 
@@ -25,9 +25,9 @@ const ContactInfo: React.FC = () => {
                 </div>
                 <h3>Working Hours:</h3>
                 <p>
-                  Open Saturday to Friday
+                  Monday to Saturday
                   <br />
-                  From 06:00 PM to 20:00 AM
+                  10:00 AM – 6:00 PM
                 </p>
               </div>
             </div>
@@ -39,9 +39,9 @@ const ContactInfo: React.FC = () => {
                 </div>
                 <h3>Email Address:</h3>
                 <p>
-                  <a href="mailto:hello@lofi.com">hello@lofi.com</a>
+                  <a href="mailto:info@realreach.eu">info@realreach.eu</a>
                   <br />
-                  <a href="mailto:info@lofi.com">info@lofi.com</a>
+                  <a href="mailto:support@realreach.eu">support@realreach.eu</a>
                 </p>
               </div>
             </div>
@@ -53,9 +53,9 @@ const ContactInfo: React.FC = () => {
                 </div>
                 <h3>Toll Free:</h3>
                 <p>
-                  <a href="tel:+44587154756">+44 587 154756</a>
+                  <a href="tel:+971 50 4080 6898">+971 50 4080 6898 (UAE)</a>
                   <br />
-                  <a href="tel:+44587154756">+55 58715 4756</a>
+                  <a href="tel:+90 552 893 65 36">+90 552 893 65 36 (TR)</a>
                 </p>
               </div>
             </div>

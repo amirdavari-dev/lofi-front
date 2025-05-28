@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <NavbarStyle2 />
 
-      <PageTitle homeText="Home" pageTitle="Contact Us" />
+      {/* <PageTitle homeText="Home" pageTitle="Contact Us" /> */}
 
       <ContactInfo />
 
