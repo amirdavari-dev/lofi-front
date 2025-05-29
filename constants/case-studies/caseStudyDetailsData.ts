@@ -1,3 +1,6 @@
+import { ComponentType } from "react";
+import PropertyTurkeyChart from "./propertyTurkeyChart";
+
 export type CaseDetailsType = {
   key: string;
   image: string;
@@ -26,6 +29,7 @@ export type CaseDetailsType = {
     table: string;
     images: string[];
   };
+  chart?: ComponentType;
 };
 const caseStudiesDetail: Array<CaseDetailsType> = [
   {
@@ -176,33 +180,34 @@ const caseStudiesDetail: Array<CaseDetailsType> = [
       `,
       images: ["", "", ""],
     },
+    chart: PropertyTurkeyChart as ComponentType,
   },
-  {
-    key: "",
-    image: "",
-    name: "",
-    description: "",
-    appType: "",
-    category: "",
-    link: "",
-    challenge: {
-      label: "",
-      description: "",
-      buletList: [],
-    },
-    solution: {
-      label: "",
-      description: "",
-      categories: [],
-      blockQutes: "",
-    },
-    result: {
-      label: "",
-      description: "",
-      table: "",
-      images: [],
-    },
-  },
+  // {
+  //   key: "",
+  //   image: "",
+  //   name: "",
+  //   description: "",
+  //   appType: "",
+  //   category: "",
+  //   link: "",
+  //   challenge: {
+  //     label: "",
+  //     description: "",
+  //     buletList: [],
+  //   },
+  //   solution: {
+  //     label: "",
+  //     description: "",
+  //     categories: [],
+  //     blockQutes: "",
+  //   },
+  //   result: {
+  //     label: "",
+  //     description: "",
+  //     table: "",
+  //     images: [],
+  //   },
+  // },
 ];
 
 export default caseStudiesDetail;

@@ -2,36 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
+import { CaseDetailsType } from "../../../constants/case-studies/caseStudyDetailsData";
 type Prop = {
-  details: {
-    key: string;
-    image: string;
-    name: string;
-    description: string;
-    appType: string;
-    category: string;
-    link: string;
-    challenge: {
-      label: string;
-      description: string;
-      buletList: string[];
-    };
-    solution: {
-      label: string;
-      description: string;
-      categories: {
-        label: string;
-        buletList: string[];
-      }[];
-      blockQutes: string;
-    };
-    result: {
-      label: string;
-      description: string;
-      table: string;
-      images: string[];
-    };
-  };
+  details: CaseDetailsType;
 };
 const CaseStudiesDetailsContent = ({ details }: Prop) => {
   return (
@@ -168,6 +141,13 @@ const CaseStudiesDetailsContent = ({ details }: Prop) => {
                     ></div>
                   </div>
                 </div>
+              </div>
+              <div className="row">
+                {details.chart &&
+                  (() => {
+                    const ChartComponent = details.chart;
+                    return <ChartComponent />;
+                  })()}
               </div>
             </div>
           </div>
