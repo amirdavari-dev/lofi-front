@@ -5,8 +5,10 @@ import MenuItem from "./MenuItem";
 import { menus } from "../../../libs/menus";
 import Link from "next/link";
 import Image from "next/image";
-
+import { usePathname } from "next/navigation";
 const NavbarStyle2: React.FC = () => {
+  const pathname = usePathname();
+  const detailsServiceCheck = /^\/services\/.+/;
   const [menu, setMenu] = useState(true);
   const toggleNavbar = () => {
     setMenu(!menu);
@@ -32,7 +34,11 @@ const NavbarStyle2: React.FC = () => {
 
   return (
     <>
-      <header className="header-area header-style-two">
+      <header
+        className={`header-area header-style-two ${
+          detailsServiceCheck.test(pathname) ? "bg-white" : ""
+        } `}
+      >
         <div id="navbar" className="navbar-area">
           <nav className="navbar navbar-expand-md navbar-light">
             <div className="container">
