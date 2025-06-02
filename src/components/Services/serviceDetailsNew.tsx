@@ -38,9 +38,9 @@ const ServiceDetailsNew = () => {
       />
       {/* <Script src="/service-page/js/main.js" strategy="afterInteractive" /> */}
       <div className="page_wrapper">
-        <div id="preloader">
+        {/* <div id="preloader">
           <div id="loader"></div>
-        </div>
+        </div> */}
 
         <section className="banner_section">
           <div className="container">

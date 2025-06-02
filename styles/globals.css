@@ -2488,6 +2488,198 @@ Feedback Area CSS
 /*================================================
 Blog Area CSS
 =================================================*/
+/* blog new */
+.blog-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 15px;
+  margin: 100px;
+}
+.blog-sidebar {
+  padding: 1rem;
+  position: sticky;
+  top: 10px;
+}
+.blog-content {
+  padding: 1rem;
+}
+.blog-sidebar .first-section,
+.blog-sidebar .second-section,
+.blog-sidebar .third-section,
+.blog-sidebar .fourth-section {
+  background-color: #f9fcff;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.blog-sidebar .sidebar-header {
+  font-weight: 600;
+  padding: 0 20px;
+  color: var(--mainColor);
+}
+.blog-sidebar .sidebar-header span {
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin-top: 5px;
+  background-color: var(--mainColor);
+}
+.blog-sidebar .table-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px 0px;
+}
+.blog-sidebar .table-content-item {
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  text-align: start;
+  transition: var(--transition);
+  position: relative;
+}
+.table-content-item:hover {
+  color: var(--mainColor);
+}
+.blog-table-content-item-active {
+  color: var(--mainColor);
+  font-weight: 600;
+}
+.blog-table-content-item-off {
+  color: #33333399;
+  font-weight: 600;
+}
+.blog-sidebar .table-content-item .content-item-shape {
+  display: block;
+  background-color: var(--mainColor);
+  width: 4px;
+  height: 54px;
+  border-radius: 0px 100px 100px 0px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.blog-sidebar .header-card {
+  color: var(--mainColor);
+  font-weight: 600;
+  position: relative;
+  padding: 0px 20px;
+}
+.blog-sidebar .header-card span {
+  width: 4px;
+  height: 36px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #1b3e6980;
+  border-radius: 0px 100px 100px 0px;
+}
+.blog-sidebar .second-section .explain-realrich {
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+  padding: 0px 20px;
+}
+.blog-sidebar .second-section .company-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 10px;
+  background-color: white;
+  border: 0.5px solid var(--mainColor);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 0 20px 10px 20px;
+}
+.blog-sidebar .second-section .company-logo-container > figure {
+  margin-bottom: 0;
+}
+.blog-sidebar .second-section .sidebar-link,
+.blog-sidebar .third-section .sidebar-link,
+.blog-sidebar .fourth-section .sidebar-link {
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0 3px;
+  padding: 0 20px;
+}
+.sidebar-link:hover img {
+  transition: var(--transition);
+  margin-left: 10px;
+  /* transform: translateX(10px); */
+}
+.blog-sidebar .second-section .sidebar-link:hover,
+.blog-sidebar .third-section .sidebar-link:hover,
+.blog-sidebar .fourth-section .sidebar-link:hover {
+  color: var(--mainColor);
+  transition: var(--transition);
+}
+.blog-sidebar .third-section .header-case-study {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.blog-sidebar .third-section .explain-case-study {
+  font-weight: 300;
+  font-size: 12px;
+  color: black;
+  padding: 0 20px;
+}
+.blog-sidebar .fourth-section .learn-more-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px 0;
+}
+.blog-sidebar .fourth-section .learn-more-links li a {
+  font-weight: 300;
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0 4px;
+}
+.blog-sidebar .fourth-section .learn-more-links li a:hover {
+  color: var(--mainColor);
+  transition: var(--transition);
+}
+.blog-sidebar .fourth-section .learn-more-links li a .learn-more-link-shape {
+  width: 13px;
+  min-width: 13px;
+  height: 13px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  position: relative;
+}
+.blog-sidebar
+  .fourth-section
+  .learn-more-links
+  li
+  a
+  .learn-more-link-shape
+  > span {
+  width: 7px;
+  min-width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* blog new */
+
 .single-blog-post {
   margin-bottom: 30px;
 }
@@ -2526,6 +2718,10 @@ Blog Area CSS
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .single-blog-post .content .default-btn {
   margin-top: 5px;
@@ -7271,6 +7467,5 @@ Footer Area CSS
 .service-sidebar .sidebar-box ul li a i {
   float: right;
 } /*# sourceMappingURL=globals.css.map */
-
 
 /* ----------------- service details new design ---------------------- */

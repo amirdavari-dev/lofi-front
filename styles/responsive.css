@@ -136,7 +136,14 @@
   .main-banner-image .shape {
     display: none;
   }
-  .shape1, .shape2, .shape3, .shape4, .shape5, .shape6, .shape7, .shape8 {
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape4,
+  .shape5,
+  .shape6,
+  .shape7,
+  .shape8 {
     display: none;
   }
   .single-features-box {
@@ -674,12 +681,14 @@
   .blog-details-desc .comment-respond .comment-form .form-check {
     margin-top: 20px;
   }
-  blockquote, .blockquote {
+  blockquote,
+  .blockquote {
     padding: 20px !important;
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  blockquote p, .blockquote p {
+  blockquote p,
+  .blockquote p {
     font-size: 15px !important;
   }
   .case-studies-details-header .col-lg-6:nth-child(1) {
@@ -996,7 +1005,9 @@
     padding-right: 52px;
     padding-bottom: 10px;
   }
-  .shape10, .shape11, .shape12 {
+  .shape10,
+  .shape11,
+  .shape12 {
     display: none;
   }
   .subscribe-inner {
@@ -1454,10 +1465,16 @@
   .ico-landing-banner-content .banner-pre-token-sale-ends #timer div span {
     font-size: 14.5px;
   }
-  .ico-landing-banner-content .banner-pre-token-sale-ends .pre-token-sale-ends-btn li {
+  .ico-landing-banner-content
+    .banner-pre-token-sale-ends
+    .pre-token-sale-ends-btn
+    li {
     margin-bottom: 5px;
   }
-  .ico-landing-banner-content .banner-pre-token-sale-ends .pre-token-sale-ends-btn li:last-child {
+  .ico-landing-banner-content
+    .banner-pre-token-sale-ends
+    .pre-token-sale-ends-btn
+    li:last-child {
     margin-bottom: 0;
   }
   .ico-landing-banner-image {
@@ -1501,14 +1518,24 @@
   .token-distribution-card .distribution-list.without-wrap {
     margin-left: 0;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .title {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .title {
     font-size: 18px;
     margin-bottom: 18px;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .content {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .content {
     padding: 20px;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .content h3 {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .content
+    h3 {
     font-size: 20px;
   }
   .ico-faq-image {
@@ -1609,7 +1636,10 @@
   .section-title.with-max-width {
     margin: 0 auto 30px;
   }
-  .navbar-area-with-position-relative.with-black-color .navbar .navbar-toggler .icon-bar {
+  .navbar-area-with-position-relative.with-black-color
+    .navbar
+    .navbar-toggler
+    .icon-bar {
     background: #fff;
   }
   .navbar-area-with-position-relative.with-black-color.is-sticky .navbar {
@@ -1780,7 +1810,14 @@
     width: 695px;
     height: 695px;
   }
-  .shape1, .shape2, .shape3, .shape4, .shape5, .shape6, .shape7, .shape8 {
+  .shape1,
+  .shape2,
+  .shape3,
+  .shape4,
+  .shape5,
+  .shape6,
+  .shape7,
+  .shape8 {
     display: none;
   }
   .single-features-box {
@@ -1933,7 +1970,8 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .page-title-area .shape1, .page-title-area .shape3 {
+  .page-title-area .shape1,
+  .page-title-area .shape3 {
     display: block;
   }
   .page-title-content h1 {
@@ -2081,10 +2119,12 @@
   .blog-details-desc .article-content .social-links {
     right: -65px;
   }
-  blockquote, .blockquote {
+  blockquote,
+  .blockquote {
     padding: 40px !important;
   }
-  blockquote p, .blockquote p {
+  blockquote p,
+  .blockquote p {
     font-size: 18px !important;
   }
   .single-pricing-box {
@@ -2320,7 +2360,9 @@
     padding-left: 30px;
     padding-right: 50px;
   }
-  .shape10, .shape11, .shape12 {
+  .shape10,
+  .shape11,
+  .shape12 {
     display: none;
   }
   .subscribe-inner {
@@ -2357,7 +2399,10 @@
     right: 50px;
     top: -2px;
   }
-  .navbar-area-with-position-relative .welch-responsive-nav .mean-container a.meanmenu-reveal {
+  .navbar-area-with-position-relative
+    .welch-responsive-nav
+    .mean-container
+    a.meanmenu-reveal {
     padding-top: 2px;
   }
   .navbar-area-with-position-relative.with-black-color.is-sticky {
@@ -2625,14 +2670,24 @@
     text-align: center;
     margin-top: 30px;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .title {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .title {
     font-size: 18px;
     margin-bottom: 18px;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .content {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .content {
     padding: 20px;
   }
-  .roadmap-style-list-tab #roadmap-style-item .roadmap-style-card.with-black-color .content h3 {
+  .roadmap-style-list-tab
+    #roadmap-style-item
+    .roadmap-style-card.with-black-color
+    .content
+    h3 {
     font-size: 20px;
   }
   .ico-faq-image {
@@ -2849,7 +2904,8 @@
   .blog-details-desc .article-content ul {
     font-size: 16px;
   }
-  blockquote p, .blockquote p {
+  blockquote p,
+  .blockquote p {
     font-size: 19px !important;
   }
   .case-studies-details-header .image {
@@ -2912,11 +2968,20 @@
   .header-area.header-style-two .navbar-area .navbar .others-option {
     margin-left: 10px;
   }
-  .header-area.header-style-two .navbar-area .navbar .others-option .default-btn {
+  .header-area.header-style-two
+    .navbar-area
+    .navbar
+    .others-option
+    .default-btn {
     padding-left: 42px;
     padding-right: 15px;
   }
-  .header-area.header-style-two .navbar-area .navbar .others-option .default-btn span {
+  .header-area.header-style-two
+    .navbar-area
+    .navbar
+    .others-option
+    .default-btn
+    span {
     left: 15px;
   }
   .home-area::before {
@@ -2979,7 +3044,9 @@
   .quote-area::before {
     height: 40px;
   }
-  .shape10, .shape11, .shape12 {
+  .shape10,
+  .shape11,
+  .shape12 {
     display: none;
   }
   /* Start "Cybersecurity Demo Responsive, Cryptocurrency Demo Responsive & ICO Landing Demo Responsive" */
@@ -3372,4 +3439,24 @@
   .ico-landing-banner-area .container-fluid {
     max-width: 2070px;
   }
-}/*# sourceMappingURL=responsive.css.map */
+} /*# sourceMappingURL=responsive.css.map */
+@media (width >= 1400px) {
+  .blog-container {
+    grid-template-columns: 75% 25%;
+  }
+}
+@media (width <= 1400px) {
+  .blog-sidebar .table-content-item{
+    font-size: 14px;
+  }
+}
+@media (width <= 992px) {
+  .blog-container {
+    grid-template-columns:100%;
+    margin: 10px;
+  }
+  .blog-sidebar {
+    display: none;
+  }
+  
+}

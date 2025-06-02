@@ -1,5 +1,5 @@
 "use client";
-  
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -34,7 +34,7 @@ const OurServices: React.FC = () => {
               >
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon8.png"
+                    src="/images/icon/icon8.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -92,7 +92,7 @@ const OurServices: React.FC = () => {
               >
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon9.png"
+                    src="/images/icon/icon9.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -149,7 +149,7 @@ const OurServices: React.FC = () => {
               >
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon10.png"
+                    src="/images/icon/icon10.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -206,7 +206,7 @@ const OurServices: React.FC = () => {
               >
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon11.png"
+                    src="/images/icon/icon11.svg"
                     alt="image"
                     width={78}
                     height={78}
@@ -264,7 +264,7 @@ const OurServices: React.FC = () => {
               >
                 <div className="d-flex align-items-center">
                   <Image
-                    src="/images/icon/icon12.png"
+                    src="/images/icon/icon12.svg"
                     alt="image"
                     width={78}
                     height={78}

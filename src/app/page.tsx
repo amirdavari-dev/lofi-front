@@ -14,29 +14,29 @@ import Faq from "@/components/Common/Faq";
 export default function Home() {
   return (
     <>
-    
       <NavbarStyle2 />
+      <main>
+        <HeroSlider />
 
-      <HeroSlider />
+        <OurServices />
 
-      <OurServices />
+        <AboutUs />
 
-      <AboutUs />
+        <FunFacts />
 
-      <FunFacts />
+        <FreeSEOQuotesForm />
 
-      <FreeSEOQuotesForm />
+        <ClientsFeedback />
 
-      <ClientsFeedback />
+        <OurCaseStudies />
 
-      <OurCaseStudies />
+        <OurTeamMember />
 
-      <OurTeamMember />
+        <Faq />
+        {/* <OurLatestBlog /> */}
 
-      <Faq />
-      {/* <OurLatestBlog /> */}
-
-      <NewsletterForm />
+        <NewsletterForm />
+      </main>
 
       <Footer />
     </>
