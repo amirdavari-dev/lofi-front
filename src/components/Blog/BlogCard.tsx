@@ -11,7 +11,7 @@ const BlogCard = ({ image_name, title, description  , id}: BlogItem) => {
     <article className="col-lg-4 col-md-6 col-sm-6">
       <div className="single-blog-post">
         <figure className="image">
-          <Link href={`/blog/${id}`} className="d-block">
+          <Link href={`/blog/${id}/`} className="d-block">
             <Image
               src={imagePath}
               alt={`${title} | Blog`}
@@ -23,11 +23,11 @@ const BlogCard = ({ image_name, title, description  , id}: BlogItem) => {
         </figure>
         <div className="content">
           <h3>
-            <Link href={`/blog/${id}`}>{title}</Link>
+            <Link href={`/blog/${id}/`}>{title}</Link>
           </h3>
           <p>{description}</p>
 
-          <Link href={`/blog/${id}`} className="default-btn">
+          <Link href={`/blog/${id}/`} className="default-btn">
             <span className="ri-arrow-right-s-line"></span>Read More
           </Link>
         </div>

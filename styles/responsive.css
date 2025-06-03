@@ -3440,23 +3440,225 @@
     max-width: 2070px;
   }
 } /*# sourceMappingURL=responsive.css.map */
+
 @media (width >= 1400px) {
   .blog-container {
     grid-template-columns: 75% 25%;
   }
+  .blog-container .blog-content .blog-first-section .social-agents {
+    font-size: 20px;
+  }
+  .blog-container
+    .blog-content
+    .blog-first-section
+    .realrich-blog-enjoy
+    .realrich-blog-enjoy-figcaption
+    > p:first-child {
+    font-size: 18px;
+  }
+  .blog-container
+    .blog-content
+    .blog-first-section
+    .realrich-blog-enjoy
+    .realrich-blog-enjoy-figcaption
+    > .page-numbers:last-child {
+    font-size: 18px;
+  }
+  .blog-container .blog-content .blog-first-section .realrich-blog-enjoy > img {
+    width: 60px;
+    height: 60px;
+  }
+  .blog-container .blog-content .blog-podcast-section .podcast-player {
+    height: 100px;
+    gap: 0 30px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agent-women {
+    width: 130px;
+    height: 160px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agent-men {
+    width: 200px;
+    height: 160px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-explain
+    > p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
 }
 @media (width <= 1400px) {
-  .blog-sidebar .table-content-item{
+  .blog-sidebar .table-content-item {
     font-size: 14px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agent-women {
+    width: 86px;
+    height: 160px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agent-men {
+    width: 110px;
+    height: 160px;
+  }
+  .blog-container .blog-content .blog-podcast-section .podcast-player {
+    grid-template-columns: 30% 70%;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-player-tools
+    .sound-range-podcast {
+    display: none;
+  }
+}
+@media (width <= 1200px) {
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-player-tools
+    .sound-range-podcast {
+    display: none;
+  }
+  .blog-container .blog-content .blog-podcast-section .podcast-player {
+    gap: 0 20px;
+  }
+  .blog-container .blog-content .blog-podcast-section .podcast-player {
+    gap: 0 30px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-explain
+    > p {
+    font-size: 10px;
   }
 }
 @media (width <= 992px) {
   .blog-container {
-    grid-template-columns:100%;
+    grid-template-columns: 100%;
     margin: 10px;
   }
   .blog-sidebar {
     display: none;
   }
-  
+  .blog-container .blog-content .target-head {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .blog-container .blog-content .blog-first-section .realrich-blog-enjoy > img {
+    width: 60px;
+    height: 60px;
+  }
+  .blog-container .blog-content .blog-podcast-section .podcast-player {
+    height: 69px;
+    grid-template-columns: 35% 65%;
+    gap: 0 10px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-player-tools
+    .podcast-play {
+    width: 20px;
+    height: 20px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agents-parent
+    .agent-women {
+    width: 70px;
+    left: 10px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .agents-parent
+    .agent-men {
+    width:90px;
+    left: 40px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-explain
+    > p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 9px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-explain
+    > figure
+    > img {
+    width: 68px;
+    height: 10px;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-player-tools
+    .time-podcast
+    > button {
+    display: none;
+  }
+  .blog-container
+    .blog-content
+    .blog-podcast-section
+    .podcast-player
+    .podcast-content
+    .podcast-player-tools {
+    gap: 0 8px;
+  }
+  .blog-container .blog-content .blog-first-section {
+    margin-bottom: 10px;
+  }
+  .blog-container .blog-content .blog-why-podcast-section h4 ,.blog-container .blog-content .blog-why-podcast-section p{
+    font-size: 13px;
+  }
+  .blog-container .blog-content .blog-why-podcast-section p{
+    padding: 5px 20px;
+  }
 }
