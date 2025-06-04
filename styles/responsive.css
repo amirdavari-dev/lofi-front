@@ -3559,6 +3559,11 @@
     font-size: 10px;
   }
 }
+@media (width > 1200px) {
+  .blog-container .blog-content .blog-first-section .social-agents {
+    font-size: 12px;
+  }
+}
 @media (width <= 992px) {
   .blog-container {
     grid-template-columns: 100%;
@@ -3568,7 +3573,7 @@
     display: none;
   }
   .blog-container .blog-content .target-head {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 40px;
   }
   .blog-container .blog-content .blog-first-section .realrich-blog-enjoy > img {
@@ -3617,7 +3622,7 @@
     > p {
     color: white;
     margin-bottom: 0;
-    font-size: 9px;
+    font-size: 14px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -3660,5 +3665,13 @@
   }
   .blog-container .blog-content .blog-why-podcast-section p{
     padding: 5px 20px;
+  }
+  .blog-container
+  .blog-content
+  .blog-podcast-section
+  .podcast-player
+  .podcast-content
+  .podcast-explain{
+    margin-bottom: 5px;
   }
 }

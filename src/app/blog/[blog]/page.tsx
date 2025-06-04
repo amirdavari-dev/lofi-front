@@ -6,6 +6,7 @@ import { BlogItem } from "../../../../types/blogTypes";
 import Image from "next/image";
 import Link from "next/link";
 import PodcastLayout from "@/components/Blog/podcast/podcastLaout";
+import { headers } from "next/headers";
 type Props = {
   params: Promise<{
     blog: string;
@@ -13,10 +14,54 @@ type Props = {
 };
 export default async function Page({ params }: Props) {
   const { blog } = await params;
+  const header = await headers();
+  const host = header.get("host");
   const blogDetails: BlogItem = await getBlog({ blogId: +blog });
+  const blogDate = new Date(blogDetails.create_at);
+  const year = blogDate.getFullYear();
+  const month = String(blogDate.getMonth() + 1).padStart(2, "0");
+  const day = String(blogDate.getDate()).padStart(2, "0");
+  const formatBlogDate = `${year}-${month}-${day}`;
+  const extension = blogDetails.audio_name.split(".").pop();
+
+  const schemaPodcast = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: blogDetails.title_podcast,
+    description: blogDetails.description_podcast,
+    url: `http://${host}/blog/${blog}`,
+    datePublished: formatBlogDate,
+    associatedMedia: {
+      "@type": "MediaObject",
+      contentUrl:
+        process.env.NEXT_PUBLIC_BASE_URL +
+        `/files/blog-audies/${blogDetails.audio_name}`,
+      encodingFormat: `audio/${extension}`,
+      // duration: "PT12M35S",
+    },
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: blogDetails.category_podcast,
+    },
+    image:
+      process.env.NEXT_PUBLIC_BASE_URL +
+      `/files/blog-images/${blogDetails.cover_podcast}`,
+    publisher: {
+      "@type": "Organization",
+      name: "RealReach",
+      logo: {
+        "@type": "ImageObject",
+        url: `http://${host}/favicon.ico`,
+      },
+    },
+  };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaPodcast) }}
+      />
       {/* <Navbar /> */}
       <NavbarStyle2 />
       <main>

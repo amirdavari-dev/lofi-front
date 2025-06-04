@@ -2,7 +2,7 @@ import { httpService } from "../http-service";
 
 export const getBlogs = async () => {
   try {
-    const blogs = await httpService.get("/front/blogs");
+    const blogs = await httpService.get("/front/blogs");    
     if (blogs.status === 200) return blogs.data;
     else return false;
   } catch (error) {
