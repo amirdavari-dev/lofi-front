@@ -39,7 +39,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Branding</Link>
+                    <Link href="/services/realestate-content-marketing">Branding</Link>
                   </h3>
                 </div>
                 <p>
@@ -70,7 +70,7 @@ const ServicesItem: React.FC = () => {
                     </span>
                   </li>
                 </ul>
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/realestate-content-marketing" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>
@@ -97,7 +97,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Design</Link>
+                    <Link href="/services/realestate-marketing">Design</Link>
                   </h3>
                 </div>
                 <p>
@@ -128,7 +128,7 @@ const ServicesItem: React.FC = () => {
                   </li>
                 </ul>
 
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/realestate-marketing" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>
@@ -155,7 +155,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Content</Link>
+                    <Link href="/services/realestate-seo">Content</Link>
                   </h3>
                 </div>
                 <p>
@@ -186,7 +186,7 @@ const ServicesItem: React.FC = () => {
                   </li>
                 </ul>
 
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/realestate-seo" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>
@@ -213,7 +213,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Strategy</Link>
+                    <Link href="/services/hushlead">Strategy</Link>
                   </h3>
                 </div>
                 <p>
@@ -245,7 +245,7 @@ const ServicesItem: React.FC = () => {
                   </li>
                 </ul>
 
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/hushlead" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>
@@ -272,7 +272,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Marketing</Link>
+                    <Link href="/services/realestate-content-marketing">Marketing</Link>
                   </h3>
                 </div>
                 <p>
@@ -306,7 +306,7 @@ const ServicesItem: React.FC = () => {
                   </li>
                 </ul>
 
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/realestate-content-marketing" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>
@@ -333,7 +333,7 @@ const ServicesItem: React.FC = () => {
                     height={78}
                   />
                   <h3>
-                    <Link href="/services/details">Technology</Link>
+                    <Link href="/services/realestate-content-marketing">Technology</Link>
                   </h3>
                 </div>
                 <p>
@@ -365,7 +365,7 @@ const ServicesItem: React.FC = () => {
                   </li>
                 </ul>
 
-                <Link href="/services/details" className="default-btn">
+                <Link href="/services/realestate-content-marketing" className="default-btn">
                   <span className="ri-arrow-right-s-line"></span>Learn More
                 </Link>
               </div>

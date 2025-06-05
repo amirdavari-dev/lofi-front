@@ -10,7 +10,11 @@ import "@/../styles/css/responsive - Copy.css";
 import { useEffect } from "react";
 import Link from "next/link";
 import LeadForm from "./leadform";
-const ServiceDetailsNew = () => {
+import { serviceDetailsContent } from "../../../constants/services/serviceDetailsContent";
+import NotFound from "@/app/not-found";
+const ServiceDetailsNew = ({ service }: { service: string }) => {
+  console.log(service);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "/service-page/js/main.js";
@@ -24,6 +28,10 @@ const ServiceDetailsNew = () => {
     };
   }, []);
   // "" | "" | "" | ""
+  const serviceDetails = serviceDetailsContent.find(
+    (serviceDetails) => serviceDetails.keyService === service
+  );
+  if (!serviceDetails) return <NotFound />;
   return (
     <>
       <Script src="/service-page/js/jquery.js" strategy="afterInteractive" />
@@ -84,14 +92,8 @@ const ServiceDetailsNew = () => {
                 data-aos-duration="1500"
               >
                 <div className="banner_text">
-                  <h1>
-                    Content That Does the Talking — So You Can Do the Closing.
-                  </h1>
-                  <p>
-                    Sell effortlessly with real estate content marketing — build
-                    trust before the buyer arrives, and close deals with
-                    warmed-up leads.
-                  </p>
+                  <h1>{serviceDetails?.bannerSection.title}</h1>
+                  <p>{serviceDetails?.bannerSection.description}</p>
                 </div>
 
                 <div
@@ -134,71 +136,30 @@ const ServiceDetailsNew = () => {
           >
             <div className="banner_images">
               <div className="row d-flex justify-content-center">
-                <div className="col-md-2 col-lg-2 col-sm-4 col-xs-4 d-none d-lg-block">
-                  <div className="banner_screen screen1">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_position_animatin"
-                      src="/images/services/hero-image-5.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-
-                <div className="col-md-4 col-lg-2 col-sm-4 col-xs-4">
-                  <div className="banner_screen screen2">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_animation"
-                      src="/images/services/hero-image-4.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-
-                <div className="col-md-4 col-lg-3 col-sm-4 col-xs-4">
-                  <div className="banner_screen screen3">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_position_animatin"
-                      src="/images/services/hero-image-1.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-
-                <div className="col-md-4 col-lg-2 col-sm-4 col-xs-4">
-                  <div className="banner_screen screen4">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_animation"
-                      src="/images/services/hero-image-2.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-
-                <div className="col-md-2 col-lg-2 col-sm-4 col-xs-4 d-none d-lg-block">
-                  <div className="banner_screen screen5">
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_position_animatin"
-                      src="/images/services/hero-image-3.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
+                {serviceDetails.bannerImages?.map((banner, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="col-md-2 col-lg-2 col-sm-4 col-xs-4 d-none d-lg-block"
+                    >
+                      <div className="banner_screen screen1">
+                        <Image
+                          width={300}
+                          height={300}
+                          className="moving_position_animatin"
+                          src={banner}
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
         </section>
 
-        <section className="row_am download_section">
+        {/* <section className="row_am download_section">
           <div className="container">
             <ul className="app_btn" data-aos="fade-in" data-aos-duration="1500">
               <li>
@@ -239,7 +200,7 @@ const ServiceDetailsNew = () => {
               </li>
             </ul>
           </div>
-        </section>
+        </section> */}
 
         <section className="row_am statistic_section">
           <div className="container">
@@ -265,7 +226,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>M+</span>
                     </p>
-                    <p>Views</p>
+                    <p>{serviceDetails.statisticSection.first.title}</p>
                   </div>
                 </li>
               </div>
@@ -291,7 +252,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>M+</span>
                     </p>
-                    <p>Gained Followers</p>
+                    <p>{serviceDetails.statisticSection.second.title}</p>
                   </div>
                 </li>
               </div>
@@ -317,7 +278,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>+</span>
                     </p>
-                    <p>Leads</p>
+                    <p>{serviceDetails.statisticSection.third.title}</p>
                   </div>
                 </li>
               </div>
@@ -343,7 +304,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>+</span>
                     </p>
-                    <p>Clients</p>
+                    <p>{serviceDetails.statisticSection.fourth.title}</p>
                   </div>
                 </li>
               </div>
@@ -360,95 +321,46 @@ const ServiceDetailsNew = () => {
                 data-aos-duration="1500"
                 data-aos-delay="300"
               >
-                <h2>
-                  Wasting Thousands on Ads & Outreach,
-                  <br /> but Still No Quality Leads?
-                </h2>
-                <p>
-                  You’re answering the same questions over and over. Prospects
-                  ghost after initial contact. Your team wastes time chasing
-                  uninterested people instead of closing real buyers.
-                  <br /> And the worst part? Your competitors are building trust
-                  before the conversation even starts — with content that
-                  educates, nurtures, and positions them as experts.
-                </p>
+                <h2
+                  dangerouslySetInnerHTML={{
+                    __html: serviceDetails?.featuresSection.title ?? "",
+                  }}
+                ></h2>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: serviceDetails?.featuresSection.description ?? "",
+                  }}
+                ></p>
               </div>
 
               <div className="features_block">
                 <div className="row">
-                  <div className="col-md-4">
-                    <div
-                      className="feature_box"
-                      data-aos="fade-up"
-                      data-aos-duration="1500"
-                    >
-                      <div className="image">
-                        <Image
-                          width={300}
-                          height={300}
-                          src="/images/services/features1.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <h4>📉 Cold Leads, Wasted Effort</h4>
-                        <p>
-                          Your inbox is full of leads that go nowhere. You’re
-                          chasing unqualified prospects who aren’t ready to buy
-                          — wasting time your team should spend closing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div
-                      className="feature_box"
-                      data-aos="fade-up"
-                      data-aos-duration="1900"
-                    >
-                      <div className="image">
-                        <Image
-                          width={300}
-                          height={300}
-                          src="/images/services/features3.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <h4>⏳ Repeating the Same Sales Pitch</h4>
-                        <p>
-                          Your agents answer the same questions over and over.
-                          Without educational content, every conversation starts
-                          from scratch — costing time and energy.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div
-                      className="feature_box"
-                      data-aos="fade-up"
-                      data-aos-duration="1700"
-                    >
-                      <div className="image">
-                        <Image
-                          width={300}
-                          height={300}
-                          src="/images/services/features2.png"
-                          alt="image"
-                        />
-                      </div>
-                      <div className="text">
-                        <h4>🔇 Invisible in Search Results</h4>
-                        <p>
-                          If you’re not ranking for key property or
-                          location-based searches, you’re losing deals to
-                          competitors who get found first — and appear more
-                          credible.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  {serviceDetails?.featuresSection.featureList.map(
+                    (feature, index) => {
+                      return (
+                        <div key={index} className="col-md-4">
+                          <div
+                            className="feature_box"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                          >
+                            <div className="image d-flex justify-content-center">
+                              <Image
+                                width={300}
+                                height={300}
+                                src={feature.image}
+                                alt="image"
+                              />
+                            </div>
+                            <div className="text">
+                              <h4>{feature.title}</h4>
+                              <p>{feature.description}</p>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    }
+                  )}
                 </div>
               </div>
             </div>
@@ -469,7 +381,7 @@ const ServiceDetailsNew = () => {
                       width={300}
                       height={300}
                       className="moving_position_animatin"
-                      src="/images/services/about-frame.png"
+                      src={serviceDetails.aboutAppsection.images[0]}
                       alt="image"
                     />
                   </div>
@@ -478,7 +390,7 @@ const ServiceDetailsNew = () => {
                       width={300}
                       height={300}
                       className="moving_animation"
-                      src="/images/services/about-screen.png"
+                      src={serviceDetails.aboutAppsection.images[1]}
                       alt="image"
                     />
                   </div>
@@ -492,49 +404,36 @@ const ServiceDetailsNew = () => {
                     data-aos-duration="1500"
                     data-aos-delay="100"
                   >
-                    <h2>Here’s What Happens When You Start Doing It Right</h2>
+                    <h2>{serviceDetails?.aboutAppsection.title}</h2>
 
-                    <p>
-                      When your real estate content marketing is built for your
-                      potential buyers, you build relationship with your leads
-                      even before they pick up the phone to call you, or fill
-                      that form. and this way you...
-                    </p>
+                    <p>{serviceDetails?.aboutAppsection.description}</p>
 
                     <ul className="list">
-                      <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Attract a
-                        consistent flow of inbound, high-intent buyers
-                      </li>
-                      <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Spend
-                        less on ads by growing organic traffic over time
-                      </li>
-                      <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Rank
-                        higher on Google for property and location-based
-                        searches
-                      </li>
-                      <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Engage
-                        prospects who are already informed and ready to take
-                        action
-                      </li>
-                      <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Save your
-                        team time by answering key questions before the call
-                      </li>
+                      {serviceDetails?.aboutAppsection.aboutAppList.map(
+                        (about, index) => {
+                          return (
+                            <li
+                              key={index}
+                              data-aos="fade-up"
+                              data-aos-duration="1500"
+                            >
+                              <i className="icofont-verification-check"></i>{" "}
+                              {about}
+                            </li>
+                          );
+                        }
+                      )}
                     </ul>
                   </div>
 
-                  <a
-                    href="#"
+                  <Link
+                    href="/contact"
                     className="btn puprple_btn"
                     data-aos="fade-in"
                     data-aos-duration="1500"
                   >
-                    yes I want that!
-                  </a>
+                    {serviceDetails?.aboutAppsection.link}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -552,52 +451,24 @@ const ServiceDetailsNew = () => {
                     data-aos-duration="1500"
                     data-aos-delay="100"
                   >
-                    <h2>
-                      How It Works? A Real Estate Content Engine Built to
-                      Perform
-                    </h2>
-                    <p>
-                      We combine SEO, storytelling, and strategic distribution
-                      to turn your content into a lead-generation system, your
-                      content will handle the heavy work, building relationship
-                      with your prospects, ignite interest in them, convert them
-                      to a HOT lead, even while you are sleeping.
-                    </p>
+                    <h2>{serviceDetails?.modernUiSection.title}</h2>
+                    <p>{serviceDetails?.modernUiSection.description}</p>
                   </div>
                   <ul className="design_block">
-                    <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>✅ Strategic Content Plan</h4>
-                      <p>
-                        We start with keyword research and audience insights to
-                        map content around what real estate buyers are already
-                        searching for — from location guides to investment tips.
-                      </p>
-                    </li>
-                    <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>🎯 SEO + Visibility Optimization</h4>
-                      <p>
-                        Every page, blog, and landing is optimized to rank for
-                        location-specific and intent-driven searches like “buy
-                        apartment in Dubai Marina” or “villas with ROI.”
-                      </p>
-                    </li>
-                    <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>🤝 Trust-Building Formats</h4>
-                      <p>
-                        We produce the right content formats to match the buyer
-                        journey: blog posts, social captions, WhatsApp replies,
-                        email nurture sequences, and more — all designed to warm
-                        leads before they contact you.
-                      </p>
-                    </li>
-                    <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>🔄 Integrated with Your Sales Funnel</h4>
-                      <p>
-                        We connect your content to landing pages, lead forms,
-                        and CRM workflows — so your sales team spends less time
-                        explaining and more time closing.
-                      </p>
-                    </li>
+                    {serviceDetails?.modernUiSection.modernUiList.map(
+                      (modern, index) => {
+                        return (
+                          <li
+                            key={index}
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                          >
+                            <h4>{modern.title}</h4>
+                            <p>{modern.description}</p>
+                          </li>
+                        );
+                      }
+                    )}
                   </ul>
                 </div>
               </div>
@@ -609,10 +480,11 @@ const ServiceDetailsNew = () => {
                 >
                   <div className="left_img">
                     <Image
-                      width={300}
+                      width={180}
                       height={300}
                       className="moving_position_animatin"
-                      src="/images/services/modern01.png"
+                      src={serviceDetails.modernUiSection.images[0]}
+                      // src="/images/services/modern01.png"
                       alt="image"
                     />
                   </div>
@@ -621,21 +493,14 @@ const ServiceDetailsNew = () => {
                       width={300}
                       height={300}
                       className="moving_position_animatin"
-                      src="/images/services/secure_data.png"
+                      src={serviceDetails.modernUiSection.images[1]}
                       alt="image"
                     />
                     <Image
                       width={300}
                       height={300}
                       className="moving_position_animatin"
-                      src="/images/services/modern02.png"
-                      alt="image"
-                    />
-                    <Image
-                      width={300}
-                      height={300}
-                      className="moving_position_animatin"
-                      src="/images/services/modern03.png"
+                      src={serviceDetails.modernUiSection.images[2]}
                       alt="image"
                     />
                   </div>
@@ -654,128 +519,57 @@ const ServiceDetailsNew = () => {
                 data-aos-duration="1500"
                 data-aos-delay="300"
               >
-                <h2>
-                  🎯 How We Turn Views Into Buyers – In 3 Conversion-Driven
-                  Steps
-                </h2>
-                <p>
-                  Here&apos;s what happens when you use Real Estate conent
-                  marketing this is how we turn content into qualified real
-                  estate leads that actually convert:
-                </p>
+                <h2>{serviceDetails?.howItWorks.title}</h2>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: serviceDetails?.howItWorks.description ?? "",
+                  }}
+                ></p>
               </div>
               <div className="step_block">
                 <ul>
-                  <li>
-                    <div
-                      className="step_text"
-                      data-aos="fade-right"
-                      data-aos-duration="1500"
-                    >
-                      <h4>Attract the Right Audience</h4>
-                      <div className="app_icon">
-                        <a href="#">
-                          <i className="icofont-brand-android-robot"></i>
-                        </a>
-                        <a href="#">
-                          <i className="icofont-brand-apple"></i>
-                        </a>
-                        <a href="#">
-                          <i className="icofont-brand-windows"></i>
-                        </a>
-                      </div>
-                      <p>
-                        We create SEO-optimized, high-value content based on
-                        what real estate buyers are searching for and have
-                        interest in — so the right people land on your website
-                        and social media channels from the start. (yes you read
-                        it right, social media in 2025 is all about keywords and
-                        intent too)
-                      </p>
-                    </div>
-                    <div className="step_number">
-                      <h3>01</h3>
-                    </div>
-                    <div
-                      className="step_img"
-                      data-aos="fade-left"
-                      data-aos-duration="1500"
-                    >
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/download_app.jpg"
-                        alt="image"
-                      />
-                    </div>
-                  </li>
-
-                  <li>
-                    <div
-                      className="step_text"
-                      data-aos="fade-left"
-                      data-aos-duration="1500"
-                    >
-                      <h4>Build Trust Before the Inquiry</h4>
-                      {/* <span>14 days free trial</span> */}
-                      <p>
-                        Each blog, Reel, video, guide, and landing page is
-                        designed to answer buyer questions, agitate their pain,
-                        capture their interest, highlight your expertise, and
-                        warm up leads before they ever fill out a form or pick
-                        up the phone to call you.
-                      </p>
-                    </div>
-                    <div className="step_number">
-                      <h3>02</h3>
-                    </div>
-                    <div
-                      className="step_img"
-                      data-aos="fade-right"
-                      data-aos-duration="1500"
-                    >
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/create_account.jpg"
-                        alt="image"
-                      />
-                    </div>
-                  </li>
-
-                  <li>
-                    <div
-                      className="step_text"
-                      data-aos="fade-right"
-                      data-aos-duration="1500"
-                    >
-                      <h4>Convert with Purpose-Built CTAs</h4>
-                      {/* <span>
-                        Have any questions check our <a href="#">FAQs</a>
-                      </span> */}
-                      <p>
-                        We lead viewers toward action, covertly and overtly —
-                        with custom CTAs, Lead magnets, WhatsApp integration,
-                        and CRM-ready lead forms that make it easy to engage,
-                        book, or request more info.
-                      </p>
-                    </div>
-                    <div className="step_number">
-                      <h3>03</h3>
-                    </div>
-                    <div
-                      className="step_img"
-                      data-aos="fade-left"
-                      data-aos-duration="1500"
-                    >
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/enjoy_app.jpg"
-                        alt="image"
-                      />
-                    </div>
-                  </li>
+                  {serviceDetails?.howItWorks.howItWorksList.map(
+                    (howIt, index) => {
+                      return (
+                        <li key={index}>
+                          <div
+                            className="step_text"
+                            data-aos="fade-right"
+                            data-aos-duration="1500"
+                          >
+                            <h4>{howIt.title}</h4>
+                            <div className="app_icon">
+                              <a href="#">
+                                <i className="icofont-brand-android-robot"></i>
+                              </a>
+                              <a href="#">
+                                <i className="icofont-brand-apple"></i>
+                              </a>
+                              <a href="#">
+                                <i className="icofont-brand-windows"></i>
+                              </a>
+                            </div>
+                            <p>{howIt.description}</p>
+                          </div>
+                          <div className="step_number">
+                            <h3>0{index + 1}</h3>
+                          </div>
+                          <div
+                            className="step_img"
+                            data-aos="fade-left"
+                            data-aos-duration="1500"
+                          >
+                            <Image
+                              width={300}
+                              height={300}
+                              src={howIt.img}
+                              alt="image"
+                            />
+                          </div>
+                        </li>
+                      );
+                    }
+                  )}
                 </ul>
               </div>
             </div>
@@ -790,12 +584,8 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              <h2>What Real Estate Pros Say About Us</h2>
-              <p>
-                Buyers aren’t the only ones we help. Agents, developers, and
-                marketing teams trust us to turn content into qualified leads —
-                month after month.
-              </p>
+              <h2>{serviceDetails?.testimonialSection.title}</h2>
+              <p>{serviceDetails?.testimonialSection.description}</p>
             </div>
             <div
               className="testimonial_block"
@@ -803,117 +593,46 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
             >
               <div id="testimonial_slider" className="owl-carousel owl-theme">
-                <div className="item">
-                  <div className="testimonial_slide_box">
-                    <div className="rating">
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                    </div>
-                    <p className="review">
-                      “We were tired of cold leads that ghosted. Once we
-                      launched content marketing with this team, inquiries got
-                      more qualified — and conversions went up.” — Shayna John,
-                      Marketing Lead, Careative Inc
-                    </p>
-                    <div className="testimonial_img">
-                      <Image
-                        width={100}
-                        height={100}
-                        src="/images/services/testimonial_user1.png"
-                        alt="image"
-                      />
-                    </div>
-                    <h3>Durmuş Özge</h3>
-                    <span className="designation">Founder & Owner</span>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="testimonial_slide_box">
-                    <div className="rating">
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                    </div>
-                    <p className="review">
-                      “We were tired of cold leads that ghosted. Once we
-                      launched content marketing with this team, inquiries got
-                      more qualified — and conversions went up.” — Shayna John,
-                      Marketing Lead, Careative Inc
-                    </p>
-                    <div className="testimonial_img">
-                      <Image
-                        width={100}
-                        height={100}
-                        src="/images/services/testimonial_user1.png"
-                        alt="image"
-                      />
-                    </div>
-                    <h3>Durmuş Özge</h3>
-                    <span className="designation">Founder & Owner</span>
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="testimonial_slide_box">
-                    <div className="rating">
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                      <span>
-                        <i className="icofont-star-new"></i>
-                      </span>
-                    </div>
-                    <p className="review">
-                      “We were tired of cold leads that ghosted. Once we
-                      launched content marketing with this team, inquiries got
-                      more qualified — and conversions went up.” — Shayna John,
-                      Marketing Lead, Careative Inc
-                    </p>
-                    <div className="testimonial_img">
-                      <Image
-                        width={100}
-                        height={100}
-                        src="/images/services/testimonial_user1.png"
-                        alt="image"
-                      />
-                    </div>
-                    <h3>Durmuş Özge</h3>
-                    <span className="designation">Founder & Owner</span>
-                  </div>
-                </div>
+                {serviceDetails?.testimonialSection.commentList.map(
+                  (comment, index) => {
+                    return (
+                      <div key={index} className="item">
+                        <div className="testimonial_slide_box">
+                          <div className="rating">
+                            <span>
+                              <i className="icofont-star-new"></i>
+                            </span>
+                            <span>
+                              <i className="icofont-star-new"></i>
+                            </span>
+                            <span>
+                              <i className="icofont-star-new"></i>
+                            </span>
+                            <span>
+                              <i className="icofont-star-new"></i>
+                            </span>
+                            <span>
+                              <i className="icofont-star-new"></i>
+                            </span>
+                          </div>
+                          <p className="review">{comment.description}</p>
+                          <div className="testimonial_img">
+                            <Image
+                              width={100}
+                              height={100}
+                              src={comment.img}
+                              alt={`${comment.name} image`}
+                            />
+                          </div>
+                          <h3>{comment.name}</h3>
+                          <span className="designation">
+                            {comment.position}
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  }
+                )}
               </div>
 
               <div className="total_review">
@@ -962,15 +681,12 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="100"
             >
-              <h2>
-                Trusted by <span>150+</span> Real Estate Brands, Developers &
-                Agents
-              </h2>
-              <p>
-                From boutique agencies to international property groups — real
-                estate professionals trust us to turn content into closings, and
-                browsers into buyers.
-              </p>
+              <h2
+                dangerouslySetInnerHTML={{
+                  __html: serviceDetails?.trustedSection.title ?? "",
+                }}
+              ></h2>
+              <p>{serviceDetails?.trustedSection.description}</p>
             </div>
 
             <div
@@ -980,630 +696,87 @@ const ServiceDetailsNew = () => {
               data-aos-delay="100"
             >
               <div id="company_slider" className="owl-carousel owl-theme">
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/paypal.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/spoty.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/shopboat.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/slack.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/envato.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/paypal.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/spoty.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="logo">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/shopboat.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
+                {serviceDetails?.trustedSection.trustBrand.map(
+                  (brand, index) => {
+                    return (
+                      <div key={index} className="item">
+                        <div className="logo">
+                          <Image
+                            width={300}
+                            height={300}
+                            src={brand}
+                            alt="image"
+                          />
+                        </div>
+                      </div>
+                    );
+                  }
+                )}
               </div>
             </div>
           </div>
         </section>
-
-        {/* <section className="row_am pricing_section" id="pricing">
-          <div className="container">
-            <div
-              className="section_title"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="300"
-            >
-              <h2>
-                Best & simple <span>pricing</span>
-              </h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
-              </p>
-            </div>
-            <div
-              className="toggle_block"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <span className="month active">Monthly</span>
-              <div className="tog_block">
-                <span className="tog_btn"></span>
+        {serviceDetails?.faqSection.faqs && (
+          <section className="row_am faq_section">
+            <div className="container">
+              <div
+                className="section_title"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                data-aos-delay="300"
+              >
+                <h2
+                  dangerouslySetInnerHTML={{
+                    __html: serviceDetails?.faqSection.title ?? "",
+                  }}
+                ></h2>
+                <p>{serviceDetails?.faqSection.description}</p>
               </div>
-              <span className="years">Yearly</span>
-              <span className="offer">50% off</span>
-            </div>
-
-            <div
-              className="pricing_pannel monthly_plan active"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <div className="row">
-                <div className="col-md-4">
-                  <div className="pricing_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/standard.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Standard</h3>
-                      <span>For the basics</span>
-                    </div>
-                    <span className="price">$15</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Up to 5 Website</p>
-                      </li>
-                      <li>
-                        <p>50 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>10 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>2 Domains access</p>
-                      </li>
-                      <li>
-                        <p>Support on request</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="pricing_block highlited_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/unlimited.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Unlimited</h3>
-                      <span>For the professionals</span>
-                    </div>
-                    <span className="price">$99</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Unlimited Website</p>
-                      </li>
-                      <li>
-                        <p>200 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>20 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>10 Domains access</p>
-                      </li>
-                      <li>
-                        <p>24/7 Customer support</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="pricing_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/premium.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Premium</h3>
-                      <span>For small team</span>
-                    </div>
-                    <span className="price">$55</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Up to 10 Website</p>
-                      </li>
-                      <li>
-                        <p>100 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>15 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>4 Domains access</p>
-                      </li>
-                      <li>
-                        <p>24/7 Customer support</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
+              <div className="faq_panel">
+                <div className="accordion" id="accordionExample">
+                  {serviceDetails?.faqSection.faqs.map((faq, index) => {
+                    const first = index === 0;
+                    return (
+                      <div
+                        key={index}
+                        className="card"
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                      >
+                        <div
+                          className="card-header"
+                          id={`heading-${index + 1}`}
+                        >
+                          <h2 className="mb-0">
+                            <button
+                              type="button"
+                              className="btn btn-link active"
+                              data-toggle="collapse"
+                              data-target={`#collapse-${index + 1}`}
+                            >
+                              <i className="icon_faq icofont-plus"></i>{" "}
+                              {faq.question}
+                            </button>
+                          </h2>
+                        </div>
+                        <div
+                          id={`collapse-${index + 1}`}
+                          className={`collapse ${first ? "show" : ""}`}
+                          aria-labelledby={`heading-${index + 1}`}
+                          data-parent="#accordionExample"
+                        >
+                          <div className="card-body">
+                            <p>{faq.answer}</p>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
-
-            <div className="pricing_pannel yearly_plan">
-              <div className="row">
-                <div className="col-md-4">
-                  <div className="pricing_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/standard.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Standard</h3>
-                      <span>For the basics</span>
-                    </div>
-                    <span className="price">$150</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Up to 10 Website</p>
-                      </li>
-                      <li>
-                        <p>100 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>25 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>4 Domains access</p>
-                      </li>
-                      <li>
-                        <p>Support on request</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="pricing_block highlited_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/unlimited.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Unlimited</h3>
-                      <span>For the professionals</span>
-                    </div>
-                    <span className="price">$999</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Unlimited Website</p>
-                      </li>
-                      <li>
-                        <p>400 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>40 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>20 Domains access</p>
-                      </li>
-                      <li>
-                        <p>24/7 Customer support</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
-                </div>
-
-                <div className="col-md-4">
-                  <div className="pricing_block">
-                    <div className="icon">
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/images/services/premium.png"
-                        alt="image"
-                      />
-                    </div>
-                    <div className="pkg_name">
-                      <h3>Premium</h3>
-                      <span>For small team</span>
-                    </div>
-                    <span className="price">$550</span>
-                    <ul className="benifits">
-                      <li>
-                        <p>Up to 20 Website</p>
-                      </li>
-                      <li>
-                        <p>200 GB disk space</p>
-                      </li>
-                      <li>
-                        <p>25 Customize sub pages</p>
-                      </li>
-                      <li>
-                        <p>8 Domains access</p>
-                      </li>
-                      <li>
-                        <p>24/7 Customer support</p>
-                      </li>
-                    </ul>
-                    <a href="#" className="btn white_btn">
-                      BUY NOW
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p
-              className="contact_text"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              Not sure what to choose ? <a href="#">contact us</a> for custom
-              packages
-            </p>
-          </div>
-        </section> */}
-
-        <section className="row_am faq_section">
-          <div className="container">
-            <div
-              className="section_title"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-delay="300"
-            >
-              <h2>
-                <span>FAQ</span> - Frequently Asked Questions
-              </h2>
-              <p>
-                here are answer to our most ferquent questions that we have been
-                asked by our clients before working with us.
-              </p>
-            </div>
-            <div className="faq_panel">
-              <div className="accordion" id="accordionExample">
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingOne">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link active"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                      >
-                        <i className="icon_faq icofont-plus"></i> How long does
-                        it take to start seeing results?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseOne"
-                    className="collapse show"
-                    aria-labelledby="headingOne"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        You’ll start seeing traffic and engagement within the
-                        first 30–45 days. Qualified lead flow usually
-                        strengthens by Month 2–3, especially when SEO and
-                        content are layered with paid campaigns.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingTwo">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                      >
-                        <i className="icon_faq icofont-plus"></i> Do you write
-                        all the content for us?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseTwo"
-                    className="collapse"
-                    aria-labelledby="headingTwo"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        Yes. Our team handles content strategy, writing,
-                        editing, SEO optimization, and publishing. We
-                        collaborate with you for brand voice and accuracy,
-                        especially for location-specific content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingThree">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                      >
-                        <i className="icon_faq icofont-plus"></i> Will this work
-                        for off-plan or secondary property sales?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseThree"
-                    className="collapse"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        Absolutely. We customize content and funnel strategy
-                        based on your inventory — off-plan, secondary, rentals,
-                        or investor-focused. The messaging is tailored to fit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingFour">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseFour"
-                      >
-                        <i className="icon_faq icofont-plus"></i>Can I choose
-                        the topics or keywords?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    className="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        Yes. We provide a full keyword and content plan based on
-                        your business goals, and you’ll have approval over all
-                        topics before production begins.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingFour">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseFour"
-                      >
-                        <i className="icon_faq icofont-plus"></i>What’s included
-                        in the monthly service?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    className="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        Each plan includes SEO blog content, social Media
-                        content calendar, website optimization, performance
-                        tracking, and optional paid campaign management. Premium
-                        tiers include video shooting, scripting, editing, funnel
-                        setup, and A/B testing.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingFour">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseFour"
-                      >
-                        <i className="icon_faq icofont-plus"></i>How does this
-                        integrate with our current website or CRM?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    className="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        We can publish directly on your website as long as it
-                        meets the basic criteria for SEO optimization and
-                        connect lead forms to your CRM or WhatsApp. No need to
-                        change platforms — we work around your tools if they are
-                        up to date and helps you in long run.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="card"
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                >
-                  <div className="card-header" id="headingFour">
-                    <h2 className="mb-0">
-                      <button
-                        type="button"
-                        className="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseFour"
-                      >
-                        <i className="icon_faq icofont-plus"></i>Is there a
-                        long-term contract?
-                      </button>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    className="collapse"
-                    aria-labelledby="headingFour"
-                    data-parent="#accordionExample"
-                  >
-                    <div className="card-body">
-                      <p>
-                        We work on a monthly retainer basis with a recommended 3
-                        to 8-month commitment to see full value. You can cancel
-                        or scale up anytime.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         <section className="row_am interface_section">
           <div className="container-fluid">
@@ -1613,75 +786,21 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              <h2>Seamless Content Workflow, Built for Real Estate Teams</h2>
-              <p>
-                From strategy to execution, everything is structured — so you
-                always know what’s being published, when, and why it matters.
-              </p>
+              <h2>{serviceDetails?.interfaceSection.title}</h2>
+              <p>{serviceDetails?.interfaceSection.description}</p>
             </div>
 
             <div className="screen_slider">
               <div id="screen_slider" className="owl-carousel owl-theme">
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-1.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-2.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-3.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-4.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-5.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-                <div className="item">
-                  <div className="screen_frame_img">
-                    <Image
-                      width={300}
-                      height={300}
-                      src="/images/services/screen-3.png"
-                      alt="image"
-                    />
-                  </div>
-                </div>
+                {serviceDetails?.interfaceSection.images.map((img, index) => {
+                  return (
+                    <div key={index} className="item">
+                      <div className="screen_frame_img">
+                        <Image width={300} height={300} src={img} alt="image" />
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -1699,30 +818,21 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-8">
                   <div className="free_text">
                     <div className="section_title">
-                      <h2>
-                        🔥 Ready to Attract Leads Who Are Already Sold on You?
-                      </h2>
-                      <span className="text-white">What You Get:</span>
+                      <h2>{serviceDetails?.freeAppSection.title}</h2>
+                      <span className="text-white">
+                        {serviceDetails?.freeAppSection.labelList}
+                      </span>
                       <ul className="text-white list-group-cta">
-                        <li>
-                          Content that ranks and get views on Google and social
-                          media and resonates with real buyers
-                        </li>
-                        <li>
-                          A steady stream of inbound leads who already know,
-                          like, and trust you
-                        </li>
-                        <li>
-                          Less time selling and convincing — more time closing
-                        </li>
-                        <li>
-                          A brand that feels familiar before you ever follow up
-                        </li>
+                        {serviceDetails?.freeAppSection.freeAppList.map(
+                          (freeItem, index) => {
+                            return <li key={index}>{freeItem}</li>;
+                          }
+                        )}
                       </ul>
                     </div>
                     <ul className="app_btn ml-0">
                       <li>
-                        <Link href="#">I want it !</Link>
+                        <Link href="/contact">I want it !</Link>
                       </li>
                     </ul>
                   </div>
@@ -1759,12 +869,8 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="100"
             >
-              <h2>Wanna handle it yourself for free? we got your back</h2>
-              <p>
-                We believe in giving in order to receive, in our blog we break
-                down each and every step of a successful real estate content
-                marketing strategy so you can start doing it yourself today!
-              </p>
+              <h2>{serviceDetails?.latestStory.title}</h2>
+              <p>{serviceDetails?.latestStory.labelList}</p>
             </div>
             <div className="row">
               <div className="col-md-4">
