@@ -7884,3 +7884,9 @@ Footer Area CSS
 } /*# sourceMappingURL=globals.css.map */
 
 /* ----------------- service details new design ---------------------- */
+.list-group-cta{
+  margin-left: 20px;
+}
+.list-group-cta > li{
+  list-style-type: disc;
+}

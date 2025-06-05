@@ -1590,6 +1590,7 @@ iframe#youtubevideo {
 .free_app_section {
   padding-top: 70px;
   position: relative;
+  height: fit-content;
 }
 
 .free_app_section .container {
@@ -1635,16 +1636,20 @@ iframe#youtubevideo {
 .free_app_section .container .free_app_inner .free_text .app_btn {
   display: flex;
   align-items: center;
+  /* justify-content: start; */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .free_app_section .container .free_app_inner .free_text .app_btn li a {
   display: block;
-  padding: 12px 30px;
+  padding: 12px 50px;
   background-color: var(--bg-white);
   border: 2px solid var(--purple);
   position: relative;
   border-radius: 12px;
   transition: 0.4s all;
+  font-weight: bold;
 }
 
 .free_app_section .container .free_app_inner .free_text .app_btn li a:hover {
@@ -1654,7 +1659,7 @@ iframe#youtubevideo {
 }
 
 .free_app_section .container .free_app_inner .free_text .app_btn li:last-child {
-  margin-left: 25px;
+  /* margin-left: 25px; */
 }
 
 .free_app_section .container .free_app_inner .free_img {
@@ -3413,4 +3418,60 @@ header.fix_style.white_header {
 
 .map_section {
   margin: 50px 0;
+}
+/* service lead form landing page */
+
+.lead-form-container {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 30px;
+  gap: 10px 0;
+  
+}
+.lead-form-container > h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bg-purple);
+  margin-bottom: 10px;
+}
+.lead-form-container section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px 0;
+}
+.lead-form-container section label{
+  font-weight: 600;
+  color: var(--body-text-purple);
+  font-size: 14px;
+}
+.lead-form-container section input{
+  width: 100%;
+  height: 40px;
+  border: 0.5px solid #dadada;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+.lead-form-container>section:last-child{
+  /* display: flex; */
+  margin-top: 20px;
+  height: auto;
+}
+.lead-form-container>section:last-child>button{
+  width: 100%;
+  height: 40px;
+  font-weight: 700;
+  background-color: var(--purple);
+  color: white;
+  border: 0.5px solid #dadada;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+.lead-form-container>section:last-child>button:hover{
+  color: var(--purple);
+  background-color: white;
+  transition: 0.3s all ease-in-out;
 }

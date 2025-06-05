@@ -1,14 +1,15 @@
 "use client";
 import Image from "next/image";
 import Script from "next/script";
-
-import "@/../styles/css/style.css"
-import "@/../styles/css/icofont.min.css"
-import "@/../styles/css/magnific-popup.min.css"
-import "@/../styles/css/owl.carousel.min.css"
-import "@/../styles/css/responsive.css"
-import "@/../styles/css/responsive - Copy.css"
+import "@/../styles/css/style.css";
+import "@/../styles/css/icofont.min.css";
+import "@/../styles/css/magnific-popup.min.css";
+import "@/../styles/css/owl.carousel.min.css";
+import "@/../styles/css/responsive.css";
+import "@/../styles/css/responsive - Copy.css";
 import { useEffect } from "react";
+import Link from "next/link";
+import LeadForm from "./leadform";
 const ServiceDetailsNew = () => {
   useEffect(() => {
     const script = document.createElement("script");
@@ -22,11 +23,15 @@ const ServiceDetailsNew = () => {
       }
     };
   }, []);
+  // "" | "" | "" | ""
   return (
     <>
       <Script src="/service-page/js/jquery.js" strategy="afterInteractive" />
       <Script src="/service-page/js/jquery.js" strategy="afterInteractive" />
-      <Script src="/service-page/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
+      <Script
+        src="/service-page/js/jquery.magnific-popup.min.js"
+        strategy="afterInteractive"
+      />
       <Script src="/service-page/js/aos.js" strategy="afterInteractive" />
       <Script
         src="/service-page/js/owl.carousel.min.js"
@@ -47,15 +52,30 @@ const ServiceDetailsNew = () => {
             <div className="row">
               <span className="banner_shape1">
                 {" "}
-                <Image width={20} height={20} src="/images/services/banner-shape1.png" alt="image" />{" "}
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/services/banner-shape1.png"
+                  alt="image"
+                />{" "}
               </span>
               <span className="banner_shape2">
                 {" "}
-                <Image width={20} height={20} src="/images/services/banner-shape2.png" alt="image" />{" "}
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/services/banner-shape2.png"
+                  alt="image"
+                />{" "}
               </span>
               <span className="banner_shape3">
                 {" "}
-                <Image width={20} height={20} src="/images/services/banner-shape3.png" alt="image" />{" "}
+                <Image
+                  width={20}
+                  height={20}
+                  src="/images/services/banner-shape3.png"
+                  alt="image"
+                />{" "}
               </span>
 
               <div
@@ -64,11 +84,13 @@ const ServiceDetailsNew = () => {
                 data-aos-duration="1500"
               >
                 <div className="banner_text">
-                  <h1>Best way to manage your customers easily.</h1>
+                  <h1>
+                    Content That Does the Talking — So You Can Do the Closing.
+                  </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and setting
-                    indus orem Ipsum has been the industrys standard dummy text
-                    ever.
+                    Sell effortlessly with real estate content marketing — build
+                    trust before the buyer arrives, and close deals with
+                    warmed-up leads.
                   </p>
                 </div>
 
@@ -86,7 +108,12 @@ const ServiceDetailsNew = () => {
                       title="XJj2PbenIsU"
                     >
                       <span className="play_btn">
-                        <Image width={300} height={300} src="/images/services/play_icon.png" alt="image" />
+                        <Image
+                          width={300}
+                          height={300}
+                          src="/images/services/play_icon.png"
+                          alt="image"
+                        />
                         <div className="waves-block">
                           <div className="waves wave-1"></div>
                           <div className="waves wave-2"></div>
@@ -109,7 +136,9 @@ const ServiceDetailsNew = () => {
               <div className="row d-flex justify-content-center">
                 <div className="col-md-2 col-lg-2 col-sm-4 col-xs-4 d-none d-lg-block">
                   <div className="banner_screen screen1">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/hero-image-5.png"
                       alt="image"
@@ -119,7 +148,9 @@ const ServiceDetailsNew = () => {
 
                 <div className="col-md-4 col-lg-2 col-sm-4 col-xs-4">
                   <div className="banner_screen screen2">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_animation"
                       src="/images/services/hero-image-4.png"
                       alt="image"
@@ -129,7 +160,9 @@ const ServiceDetailsNew = () => {
 
                 <div className="col-md-4 col-lg-3 col-sm-4 col-xs-4">
                   <div className="banner_screen screen3">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/hero-image-1.png"
                       alt="image"
@@ -139,7 +172,9 @@ const ServiceDetailsNew = () => {
 
                 <div className="col-md-4 col-lg-2 col-sm-4 col-xs-4">
                   <div className="banner_screen screen4">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_animation"
                       src="/images/services/hero-image-2.png"
                       alt="image"
@@ -149,7 +184,9 @@ const ServiceDetailsNew = () => {
 
                 <div className="col-md-2 col-lg-2 col-sm-4 col-xs-4 d-none d-lg-block">
                   <div className="banner_screen screen5">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/hero-image-3.png"
                       alt="image"
@@ -166,12 +203,16 @@ const ServiceDetailsNew = () => {
             <ul className="app_btn" data-aos="fade-in" data-aos-duration="1500">
               <li>
                 <a href="#" className="app_store">
-                  <Image width={130} height={130}
+                  <Image
+                    width={130}
+                    height={130}
                     className="blue_img"
                     src="/images/services/appstore_blue.png"
                     alt="image"
                   />
-                  <Image width={130} height={130}
+                  <Image
+                    width={130}
+                    height={130}
                     className="white_img"
                     src="/images/services/appstore_white.png"
                     alt="image"
@@ -180,12 +221,16 @@ const ServiceDetailsNew = () => {
               </li>
               <li>
                 <a href="#">
-                  <Image width={150} height={150}
+                  <Image
+                    width={150}
+                    height={150}
                     className="blue_img"
                     src="/images/services/googleplay_blue.png"
                     alt="image"
                   />
-                  <Image width={150} height={150}
+                  <Image
+                    width={150}
+                    height={150}
                     className="white_img"
                     src="/images/services/googleplay_white.png"
                     alt="image"
@@ -206,7 +251,12 @@ const ServiceDetailsNew = () => {
               >
                 <li>
                   <div className="icon">
-                    <Image width={100} height={100} src="/images/services/download.png" alt="image" />
+                    <Image
+                      width={100}
+                      height={100}
+                      src="/images/services/download.png"
+                      alt="image"
+                    />
                   </div>
                   <div className="text">
                     <p>
@@ -215,7 +265,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>M+</span>
                     </p>
-                    <p>Download</p>
+                    <p>Views</p>
                   </div>
                 </li>
               </div>
@@ -227,7 +277,12 @@ const ServiceDetailsNew = () => {
               >
                 <li>
                   <div className="icon">
-                    <Image width={100} height={100} src="/images/services/followers.png" alt="image" />
+                    <Image
+                      width={100}
+                      height={100}
+                      src="/images/services/followers.png"
+                      alt="image"
+                    />
                   </div>
                   <div className="text">
                     <p>
@@ -236,7 +291,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>M+</span>
                     </p>
-                    <p>Followers</p>
+                    <p>Gained Followers</p>
                   </div>
                 </li>
               </div>
@@ -248,7 +303,12 @@ const ServiceDetailsNew = () => {
               >
                 <li>
                   <div className="icon">
-                    <Image width={100} height={100} src="/images/services/reviews.png" alt="image" />
+                    <Image
+                      width={100}
+                      height={100}
+                      src="/images/services/reviews.png"
+                      alt="image"
+                    />
                   </div>
                   <div className="text">
                     <p>
@@ -257,7 +317,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>+</span>
                     </p>
-                    <p>Reviews</p>
+                    <p>Leads</p>
                   </div>
                 </li>
               </div>
@@ -269,7 +329,12 @@ const ServiceDetailsNew = () => {
               >
                 <li>
                   <div className="icon">
-                    <Image width={100} height={100} src="/images/services/countries.png" alt="image" />
+                    <Image
+                      width={100}
+                      height={100}
+                      src="/images/services/countries.png"
+                      alt="image"
+                    />
                   </div>
                   <div className="text">
                     <p>
@@ -278,7 +343,7 @@ const ServiceDetailsNew = () => {
                       </span>
                       <span>+</span>
                     </p>
-                    <p>Countries</p>
+                    <p>Clients</p>
                   </div>
                 </li>
               </div>
@@ -290,17 +355,22 @@ const ServiceDetailsNew = () => {
           <div className="container">
             <div className="features_inner">
               <div
-                className="section_title"
+                className="section_title mb-5"
                 data-aos="fade-up"
                 data-aos-duration="1500"
                 data-aos-delay="300"
               >
                 <h2>
-                  <span>Features</span> that makes app different!
+                  Wasting Thousands on Ads & Outreach,
+                  <br /> but Still No Quality Leads?
                 </h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typese
-                  tting <br /> indus orem Ipsum has beenthe standard dummy.
+                  You’re answering the same questions over and over. Prospects
+                  ghost after initial contact. Your team wastes time chasing
+                  uninterested people instead of closing real buyers.
+                  <br /> And the worst part? Your competitors are building trust
+                  before the conversation even starts — with content that
+                  educates, nurtures, and positions them as experts.
                 </p>
               </div>
 
@@ -313,39 +383,23 @@ const ServiceDetailsNew = () => {
                       data-aos-duration="1500"
                     >
                       <div className="image">
-                        <Image width={300} height={300} src="/images/services/features1.png" alt="image" />
+                        <Image
+                          width={300}
+                          height={300}
+                          src="/images/services/features1.png"
+                          alt="image"
+                        />
                       </div>
                       <div className="text">
-                        <h4>Secure data</h4>
+                        <h4>📉 Cold Leads, Wasted Effort</h4>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typese tting <br /> indus orem Ipsum has beenthe
-                          standard dummy.
+                          Your inbox is full of leads that go nowhere. You’re
+                          chasing unqualified prospects who aren’t ready to buy
+                          — wasting time your team should spend closing.
                         </p>
                       </div>
                     </div>
                   </div>
-
-                  <div className="col-md-4">
-                    <div
-                      className="feature_box"
-                      data-aos="fade-up"
-                      data-aos-duration="1700"
-                    >
-                      <div className="image">
-                        <Image width={300} height={300} src="/images/services/features2.png" alt="image" />
-                      </div>
-                      <div className="text">
-                        <h4>Automate everything</h4>
-                        <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typese tting <br /> indus orem Ipsum has beenthe
-                          standard dummy.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
                   <div className="col-md-4">
                     <div
                       className="feature_box"
@@ -353,14 +407,44 @@ const ServiceDetailsNew = () => {
                       data-aos-duration="1900"
                     >
                       <div className="image">
-                        <Image width={300} height={300} src="/images/services/features3.png" alt="image" />
+                        <Image
+                          width={300}
+                          height={300}
+                          src="/images/services/features3.png"
+                          alt="image"
+                        />
                       </div>
                       <div className="text">
-                        <h4>Secure data</h4>
+                        <h4>⏳ Repeating the Same Sales Pitch</h4>
                         <p>
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typese tting <br /> indus orem Ipsum has beenthe
-                          standard dummy.
+                          Your agents answer the same questions over and over.
+                          Without educational content, every conversation starts
+                          from scratch — costing time and energy.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div
+                      className="feature_box"
+                      data-aos="fade-up"
+                      data-aos-duration="1700"
+                    >
+                      <div className="image">
+                        <Image
+                          width={300}
+                          height={300}
+                          src="/images/services/features2.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div className="text">
+                        <h4>🔇 Invisible in Search Results</h4>
+                        <p>
+                          If you’re not ranking for key property or
+                          location-based searches, you’re losing deals to
+                          competitors who get found first — and appear more
+                          credible.
                         </p>
                       </div>
                     </div>
@@ -381,14 +465,18 @@ const ServiceDetailsNew = () => {
                   data-aos-duration="1500"
                 >
                   <div className="frame_img">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/about-frame.png"
                       alt="image"
                     />
                   </div>
                   <div className="screen_img">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_animation"
                       src="/images/services/about-screen.png"
                       alt="image"
@@ -404,37 +492,37 @@ const ServiceDetailsNew = () => {
                     data-aos-duration="1500"
                     data-aos-delay="100"
                   >
-                    <h2>
-                      Some awesome words <span>about app.</span>
-                    </h2>
+                    <h2>Here’s What Happens When You Start Doing It Right</h2>
 
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry lorem Ipsum has been the industrys
-                      standard dummy text ever since the when an unknown printer
-                      took a galley of type and. Lorem ipsum dolor sit amet.
+                      When your real estate content marketing is built for your
+                      potential buyers, you build relationship with your leads
+                      even before they pick up the phone to call you, or fill
+                      that form. and this way you...
                     </p>
 
                     <ul className="list">
                       <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Simply
-                        dummy text of the printing and
+                        <i className="icofont-verification-check"></i> Attract a
+                        consistent flow of inbound, high-intent buyers
                       </li>
                       <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i>{" "}
-                        Typesetting industry lorem Ipsum has been the
+                        <i className="icofont-verification-check"></i> Spend
+                        less on ads by growing organic traffic over time
                       </li>
                       <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Industrys
-                        standard dummy text
+                        <i className="icofont-verification-check"></i> Rank
+                        higher on Google for property and location-based
+                        searches
                       </li>
                       <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i> Simply
-                        dummy text of the printing and
+                        <i className="icofont-verification-check"></i> Engage
+                        prospects who are already informed and ready to take
+                        action
                       </li>
                       <li data-aos="fade-up" data-aos-duration="1500">
-                        <i className="icofont-verification-check"></i>{" "}
-                        Typesetting industry lorem Ipsum has been the
+                        <i className="icofont-verification-check"></i> Save your
+                        team time by answering key questions before the call
                       </li>
                     </ul>
                   </div>
@@ -445,7 +533,7 @@ const ServiceDetailsNew = () => {
                     data-aos="fade-in"
                     data-aos-duration="1500"
                   >
-                    START FREE TRIAL
+                    yes I want that!
                   </a>
                 </div>
               </div>
@@ -465,35 +553,49 @@ const ServiceDetailsNew = () => {
                     data-aos-delay="100"
                   >
                     <h2>
-                      Beautiful design with <span>modern UI</span>
+                      How It Works? A Real Estate Content Engine Built to
+                      Perform
                     </h2>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry lorem Ipsum has been the industrys
-                      standard dummy text ever since the when an unknown printer
-                      took a galley of type and.
+                      We combine SEO, storytelling, and strategic distribution
+                      to turn your content into a lead-generation system, your
+                      content will handle the heavy work, building relationship
+                      with your prospects, ignite interest in them, convert them
+                      to a HOT lead, even while you are sleeping.
                     </p>
                   </div>
                   <ul className="design_block">
                     <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>Carefully designed</h4>
+                      <h4>✅ Strategic Content Plan</h4>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        type esetting industry lorem Ipsum has.
+                        We start with keyword research and audience insights to
+                        map content around what real estate buyers are already
+                        searching for — from location guides to investment tips.
                       </p>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>Seamless Sync</h4>
+                      <h4>🎯 SEO + Visibility Optimization</h4>
                       <p>
-                        Simply dummy text of the printing and typesetting
-                        inustry lorem Ipsum has Lorem dollar summit.
+                        Every page, blog, and landing is optimized to rank for
+                        location-specific and intent-driven searches like “buy
+                        apartment in Dubai Marina” or “villas with ROI.”
                       </p>
                     </li>
                     <li data-aos="fade-up" data-aos-duration="1500">
-                      <h4>Access Drive</h4>
+                      <h4>🤝 Trust-Building Formats</h4>
                       <p>
-                        Printing and typesetting industry lorem Ipsum has been
-                        the industrys standard dummy text of type setting.
+                        We produce the right content formats to match the buyer
+                        journey: blog posts, social captions, WhatsApp replies,
+                        email nurture sequences, and more — all designed to warm
+                        leads before they contact you.
+                      </p>
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="1500">
+                      <h4>🔄 Integrated with Your Sales Funnel</h4>
+                      <p>
+                        We connect your content to landing pages, lead forms,
+                        and CRM workflows — so your sales team spends less time
+                        explaining and more time closing.
                       </p>
                     </li>
                   </ul>
@@ -506,24 +608,32 @@ const ServiceDetailsNew = () => {
                   data-aos-duration="1500"
                 >
                   <div className="left_img">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/modern01.png"
                       alt="image"
                     />
                   </div>
                   <div className="right_img">
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/secure_data.png"
                       alt="image"
                     />
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/modern02.png"
                       alt="image"
                     />
-                    <Image width={300} height={300}
+                    <Image
+                      width={300}
+                      height={300}
                       className="moving_position_animatin"
                       src="/images/services/modern03.png"
                       alt="image"
@@ -545,11 +655,13 @@ const ServiceDetailsNew = () => {
                 data-aos-delay="300"
               >
                 <h2>
-                  <span>How it works</span> - 3 easy steps
+                  🎯 How We Turn Views Into Buyers – In 3 Conversion-Driven
+                  Steps
                 </h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typese
-                  tting <br /> indus orem Ipsum has beenthe standard dummy.
+                  Here&apos;s what happens when you use Real Estate conent
+                  marketing this is how we turn content into qualified real
+                  estate leads that actually convert:
                 </p>
               </div>
               <div className="step_block">
@@ -560,7 +672,7 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-right"
                       data-aos-duration="1500"
                     >
-                      <h4>Download app</h4>
+                      <h4>Attract the Right Audience</h4>
                       <div className="app_icon">
                         <a href="#">
                           <i className="icofont-brand-android-robot"></i>
@@ -572,7 +684,14 @@ const ServiceDetailsNew = () => {
                           <i className="icofont-brand-windows"></i>
                         </a>
                       </div>
-                      <p>Download App either for Windows, Mac or Android</p>
+                      <p>
+                        We create SEO-optimized, high-value content based on
+                        what real estate buyers are searching for and have
+                        interest in — so the right people land on your website
+                        and social media channels from the start. (yes you read
+                        it right, social media in 2025 is all about keywords and
+                        intent too)
+                      </p>
                     </div>
                     <div className="step_number">
                       <h3>01</h3>
@@ -582,7 +701,12 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-left"
                       data-aos-duration="1500"
                     >
-                      <Image width={300} height={300} src="/images/services/download_app.jpg" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/download_app.jpg"
+                        alt="image"
+                      />
                     </div>
                   </li>
 
@@ -592,11 +716,14 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-left"
                       data-aos-duration="1500"
                     >
-                      <h4>Create account</h4>
-                      <span>14 days free trial</span>
+                      <h4>Build Trust Before the Inquiry</h4>
+                      {/* <span>14 days free trial</span> */}
                       <p>
-                        Sign up free for App account. One account for all
-                        devices.
+                        Each blog, Reel, video, guide, and landing page is
+                        designed to answer buyer questions, agitate their pain,
+                        capture their interest, highlight your expertise, and
+                        warm up leads before they ever fill out a form or pick
+                        up the phone to call you.
                       </p>
                     </div>
                     <div className="step_number">
@@ -607,7 +734,12 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-right"
                       data-aos-duration="1500"
                     >
-                      <Image width={300} height={300} src="/images/services/create_account.jpg" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/create_account.jpg"
+                        alt="image"
+                      />
                     </div>
                   </li>
 
@@ -617,13 +749,15 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-right"
                       data-aos-duration="1500"
                     >
-                      <h4>It’s done, enjoy the app</h4>
-                      <span>
+                      <h4>Convert with Purpose-Built CTAs</h4>
+                      {/* <span>
                         Have any questions check our <a href="#">FAQs</a>
-                      </span>
+                      </span> */}
                       <p>
-                        Get most amazing app experience,Explore and share the
-                        app
+                        We lead viewers toward action, covertly and overtly —
+                        with custom CTAs, Lead magnets, WhatsApp integration,
+                        and CRM-ready lead forms that make it easy to engage,
+                        book, or request more info.
                       </p>
                     </div>
                     <div className="step_number">
@@ -634,7 +768,12 @@ const ServiceDetailsNew = () => {
                       data-aos="fade-left"
                       data-aos-duration="1500"
                     >
-                      <Image width={300} height={300} src="/images/services/enjoy_app.jpg" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/enjoy_app.jpg"
+                        alt="image"
+                      />
                     </div>
                   </li>
                 </ul>
@@ -651,12 +790,11 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              <h2>
-                What our <span>customer say</span>
-              </h2>
+              <h2>What Real Estate Pros Say About Us</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
+                Buyers aren’t the only ones we help. Agents, developers, and
+                marketing teams trust us to turn content into qualified leads —
+                month after month.
               </p>
             </div>
             <div
@@ -685,18 +823,23 @@ const ServiceDetailsNew = () => {
                       </span>
                     </div>
                     <p className="review">
-                      “ Lorem Ipsum is simply dummy text of the printing and
-                      typese tting us orem Ipsum has been lorem beenthe standar
-                      dummy. ”
+                      “We were tired of cold leads that ghosted. Once we
+                      launched content marketing with this team, inquiries got
+                      more qualified — and conversions went up.” — Shayna John,
+                      Marketing Lead, Careative Inc
                     </p>
                     <div className="testimonial_img">
-                      <Image width={100} height={100} src="/images/services/testimonial_user1.png" alt="image" />
+                      <Image
+                        width={100}
+                        height={100}
+                        src="/images/services/testimonial_user1.png"
+                        alt="image"
+                      />
                     </div>
-                    <h3>Shayna John</h3>
-                    <span className="designation">Careative inc</span>
+                    <h3>Durmuş Özge</h3>
+                    <span className="designation">Founder & Owner</span>
                   </div>
                 </div>
-
                 <div className="item">
                   <div className="testimonial_slide_box">
                     <div className="rating">
@@ -717,18 +860,23 @@ const ServiceDetailsNew = () => {
                       </span>
                     </div>
                     <p className="review">
-                      “ Lorem Ipsum is simply dummy text of the printing and
-                      typese tting us orem Ipsum has been lorem beenthe standar
-                      dummy. ”
+                      “We were tired of cold leads that ghosted. Once we
+                      launched content marketing with this team, inquiries got
+                      more qualified — and conversions went up.” — Shayna John,
+                      Marketing Lead, Careative Inc
                     </p>
                     <div className="testimonial_img">
-                      <Image width={500} height={500} src="/images/services/testimonial_user2.png" alt="image" />
+                      <Image
+                        width={100}
+                        height={100}
+                        src="/images/services/testimonial_user1.png"
+                        alt="image"
+                      />
                     </div>
-                    <h3>Willium Den</h3>
-                    <span className="designation">Careative inc</span>
+                    <h3>Durmuş Özge</h3>
+                    <span className="designation">Founder & Owner</span>
                   </div>
                 </div>
-
                 <div className="item">
                   <div className="testimonial_slide_box">
                     <div className="rating">
@@ -749,15 +897,21 @@ const ServiceDetailsNew = () => {
                       </span>
                     </div>
                     <p className="review">
-                      “ Lorem Ipsum is simply dummy text of the printing and
-                      typese tting us orem Ipsum has been lorem beenthe standar
-                      dummy. ”
+                      “We were tired of cold leads that ghosted. Once we
+                      launched content marketing with this team, inquiries got
+                      more qualified — and conversions went up.” — Shayna John,
+                      Marketing Lead, Careative Inc
                     </p>
                     <div className="testimonial_img">
-                      <Image width={500} height={500} src="/images/services/testimonial_user3.png" alt="image" />
+                      <Image
+                        width={100}
+                        height={100}
+                        src="/images/services/testimonial_user1.png"
+                        alt="image"
+                      />
                     </div>
-                    <h3>Cyrus Stephen</h3>
-                    <span className="designation">Careative inc</span>
+                    <h3>Durmuş Özge</h3>
+                    <span className="designation">Founder & Owner</span>
                   </div>
                 </div>
               </div>
@@ -779,16 +933,22 @@ const ServiceDetailsNew = () => {
                   <span>
                     <i className="icofont-star-new"></i>
                   </span>
-                  <p>5.0 / 5.0</p>
+                  <p>4.8/5.0</p>
                 </div>
-                <h3>2578</h3>
+                <h3>86</h3>
                 <a href="#">
-                  TOTAL USER REVIEWS <i className="icofont-arrow-right-new"></i>
+                  see our testimonial and case studies{" "}
+                  <i className="icofont-arrow-right-new"></i>
                 </a>
               </div>
 
               <div className="avtar_faces">
-                <Image width={5000} height={5000} src="/images/services/avtar_testimonial.png" alt="image" />
+                <Image
+                  width={5000}
+                  height={5000}
+                  src="/images/services/avtar_testimonial.png"
+                  alt="image"
+                />
               </div>
             </div>
           </div>
@@ -803,11 +963,13 @@ const ServiceDetailsNew = () => {
               data-aos-delay="100"
             >
               <h2>
-                Trusted by <span>150+</span> companies
+                Trusted by <span>150+</span> Real Estate Brands, Developers &
+                Agents
               </h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
+                From boutique agencies to international property groups — real
+                estate professionals trust us to turn content into closings, and
+                browsers into buyers.
               </p>
             </div>
 
@@ -820,42 +982,82 @@ const ServiceDetailsNew = () => {
               <div id="company_slider" className="owl-carousel owl-theme">
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/paypal.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/paypal.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/spoty.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/spoty.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/shopboat.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/shopboat.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/slack.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/slack.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/envato.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/envato.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/paypal.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/paypal.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/spoty.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/spoty.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="logo">
-                    <Image width={300} height={300} src="/images/services/shopboat.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/shopboat.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
               </div>
@@ -863,7 +1065,7 @@ const ServiceDetailsNew = () => {
           </div>
         </section>
 
-        <section className="row_am pricing_section" id="pricing">
+        {/* <section className="row_am pricing_section" id="pricing">
           <div className="container">
             <div
               className="section_title"
@@ -901,7 +1103,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/standard.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/standard.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Standard</h3>
@@ -934,7 +1141,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block highlited_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/unlimited.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/unlimited.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Unlimited</h3>
@@ -967,7 +1179,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/premium.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/premium.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Premium</h3>
@@ -1004,7 +1221,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/standard.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/standard.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Standard</h3>
@@ -1037,7 +1259,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block highlited_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/unlimited.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/unlimited.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Unlimited</h3>
@@ -1070,7 +1297,12 @@ const ServiceDetailsNew = () => {
                 <div className="col-md-4">
                   <div className="pricing_block">
                     <div className="icon">
-                      <Image width={300} height={300} src="/images/services/premium.png" alt="image" />
+                      <Image
+                        width={300}
+                        height={300}
+                        src="/images/services/premium.png"
+                        alt="image"
+                      />
                     </div>
                     <div className="pkg_name">
                       <h3>Premium</h3>
@@ -1111,7 +1343,7 @@ const ServiceDetailsNew = () => {
               packages
             </p>
           </div>
-        </section>
+        </section> */}
 
         <section className="row_am faq_section">
           <div className="container">
@@ -1125,8 +1357,8 @@ const ServiceDetailsNew = () => {
                 <span>FAQ</span> - Frequently Asked Questions
               </h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
+                here are answer to our most ferquent questions that we have been
+                asked by our clients before working with us.
               </p>
             </div>
             <div className="faq_panel">
@@ -1144,8 +1376,8 @@ const ServiceDetailsNew = () => {
                         data-toggle="collapse"
                         data-target="#collapseOne"
                       >
-                        <i className="icon_faq icofont-plus"></i> How can i pay
-                        ?
+                        <i className="icon_faq icofont-plus"></i> How long does
+                        it take to start seeing results?
                       </button>
                     </h2>
                   </div>
@@ -1157,13 +1389,10 @@ const ServiceDetailsNew = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry lorem Ipsum has. been the industrys
-                        standard dummy text ever since the when an unknown
-                        printer took a galley of type and scrambled it to make a
-                        type specimen book. It has survived not only five cen
-                        turies but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
+                        You’ll start seeing traffic and engagement within the
+                        first 30–45 days. Qualified lead flow usually
+                        strengthens by Month 2–3, especially when SEO and
+                        content are layered with paid campaigns.
                       </p>
                     </div>
                   </div>
@@ -1181,8 +1410,8 @@ const ServiceDetailsNew = () => {
                         data-toggle="collapse"
                         data-target="#collapseTwo"
                       >
-                        <i className="icon_faq icofont-plus"></i> How to setup
-                        account ?
+                        <i className="icon_faq icofont-plus"></i> Do you write
+                        all the content for us?
                       </button>
                     </h2>
                   </div>
@@ -1194,13 +1423,10 @@ const ServiceDetailsNew = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry lorem Ipsum has. been the industrys
-                        standard dummy text ever since the when an unknown
-                        printer took a galley of type and scrambled it to make a
-                        type specimen book. It has survived not only five cen
-                        turies but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
+                        Yes. Our team handles content strategy, writing,
+                        editing, SEO optimization, and publishing. We
+                        collaborate with you for brand voice and accuracy,
+                        especially for location-specific content.
                       </p>
                     </div>
                   </div>
@@ -1218,8 +1444,8 @@ const ServiceDetailsNew = () => {
                         data-toggle="collapse"
                         data-target="#collapseThree"
                       >
-                        <i className="icon_faq icofont-plus"></i>What is process
-                        to get refund ?
+                        <i className="icon_faq icofont-plus"></i> Will this work
+                        for off-plan or secondary property sales?
                       </button>
                     </h2>
                   </div>
@@ -1231,13 +1457,9 @@ const ServiceDetailsNew = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry lorem Ipsum has. been the industrys
-                        standard dummy text ever since the when an unknown
-                        printer took a galley of type and scrambled it to make a
-                        type specimen book. It has survived not only five cen
-                        turies but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
+                        Absolutely. We customize content and funnel strategy
+                        based on your inventory — off-plan, secondary, rentals,
+                        or investor-focused. The messaging is tailored to fit.
                       </p>
                     </div>
                   </div>
@@ -1255,8 +1477,8 @@ const ServiceDetailsNew = () => {
                         data-toggle="collapse"
                         data-target="#collapseFour"
                       >
-                        <i className="icon_faq icofont-plus"></i>What is process
-                        to get refund ?
+                        <i className="icon_faq icofont-plus"></i>Can I choose
+                        the topics or keywords?
                       </button>
                     </h2>
                   </div>
@@ -1268,13 +1490,112 @@ const ServiceDetailsNew = () => {
                   >
                     <div className="card-body">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry lorem Ipsum has. been the industrys
-                        standard dummy text ever since the when an unknown
-                        printer took a galley of type and scrambled it to make a
-                        type specimen book. It has survived not only five cen
-                        turies but also the leap into electronic typesetting,
-                        remaining essentially unchanged.
+                        Yes. We provide a full keyword and content plan based on
+                        your business goals, and you’ll have approval over all
+                        topics before production begins.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="card"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <div className="card-header" id="headingFour">
+                    <h2 className="mb-0">
+                      <button
+                        type="button"
+                        className="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        <i className="icon_faq icofont-plus"></i>What’s included
+                        in the monthly service?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    className="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                  >
+                    <div className="card-body">
+                      <p>
+                        Each plan includes SEO blog content, social Media
+                        content calendar, website optimization, performance
+                        tracking, and optional paid campaign management. Premium
+                        tiers include video shooting, scripting, editing, funnel
+                        setup, and A/B testing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="card"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <div className="card-header" id="headingFour">
+                    <h2 className="mb-0">
+                      <button
+                        type="button"
+                        className="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        <i className="icon_faq icofont-plus"></i>How does this
+                        integrate with our current website or CRM?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    className="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                  >
+                    <div className="card-body">
+                      <p>
+                        We can publish directly on your website as long as it
+                        meets the basic criteria for SEO optimization and
+                        connect lead forms to your CRM or WhatsApp. No need to
+                        change platforms — we work around your tools if they are
+                        up to date and helps you in long run.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="card"
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
+                  <div className="card-header" id="headingFour">
+                    <h2 className="mb-0">
+                      <button
+                        type="button"
+                        className="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        <i className="icon_faq icofont-plus"></i>Is there a
+                        long-term contract?
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    className="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                  >
+                    <div className="card-body">
+                      <p>
+                        We work on a monthly retainer basis with a recommended 3
+                        to 8-month commitment to see full value. You can cancel
+                        or scale up anytime.
                       </p>
                     </div>
                   </div>
@@ -1292,12 +1613,10 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="300"
             >
-              <h2>
-                Beautifull <span>interface</span>
-              </h2>
+              <h2>Seamless Content Workflow, Built for Real Estate Teams</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
+                From strategy to execution, everything is structured — so you
+                always know what’s being published, when, and why it matters.
               </p>
             </div>
 
@@ -1305,32 +1624,62 @@ const ServiceDetailsNew = () => {
               <div id="screen_slider" className="owl-carousel owl-theme">
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-1.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-1.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-2.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-2.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-3.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-3.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-4.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-4.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-5.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-5.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
                 <div className="item">
                   <div className="screen_frame_img">
-                    <Image width={300} height={300} src="/images/services/screen-3.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/screen-3.png"
+                      alt="image"
+                    />
                   </div>
                 </div>
               </div>
@@ -1347,40 +1696,55 @@ const ServiceDetailsNew = () => {
               data-aos-delay="100"
             >
               <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-8">
                   <div className="free_text">
                     <div className="section_title">
-                      <h2>Let’s download free from apple and play store</h2>
-                      <p>
-                        Instant free download from apple and play store orem
-                        Ipsum is simply dummy text of the printing. and typese
-                        tting indus orem Ipsum has beenthe standard
-                      </p>
+                      <h2>
+                        🔥 Ready to Attract Leads Who Are Already Sold on You?
+                      </h2>
+                      <span className="text-white">What You Get:</span>
+                      <ul className="text-white list-group-cta">
+                        <li>
+                          Content that ranks and get views on Google and social
+                          media and resonates with real buyers
+                        </li>
+                        <li>
+                          A steady stream of inbound leads who already know,
+                          like, and trust you
+                        </li>
+                        <li>
+                          Less time selling and convincing — more time closing
+                        </li>
+                        <li>
+                          A brand that feels familiar before you ever follow up
+                        </li>
+                      </ul>
                     </div>
-                    <ul className="app_btn">
+                    <ul className="app_btn ml-0">
                       <li>
-                        <a href="#">
-                          <Image width={300} height={300} src="/images/services/appstore_blue.png" alt="image" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <Image width={300} height={300} src="/images/services/googleplay_blue.png" alt="image" />
-                        </a>
+                        <Link href="#">I want it !</Link>
                       </li>
                     </ul>
                   </div>
                 </div>
 
-                <div className="col-md-6">
-                  <div className="free_img">
-                    <Image width={300} height={300} src="/images/services/download-screen01.png" alt="image" />
-                    <Image width={300} height={300}
+                <div className="col-md-4">
+                  {/* <div className="free_img">
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/download-screen01.png"
+                      alt="image"
+                    />
+                    <Image
+                      width={300}
+                      height={300}
                       className="mobile_mockup"
                       src="/images/services/download-screen02.png"
                       alt="image"
                     />
-                  </div>
+                  </div> */}
+                  <LeadForm />
                 </div>
               </div>
             </div>
@@ -1395,12 +1759,11 @@ const ServiceDetailsNew = () => {
               data-aos-duration="1500"
               data-aos-delay="100"
             >
-              <h2>
-                Read latest <span>story</span>
-              </h2>
+              <h2>Wanna handle it yourself for free? we got your back</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typese
-                tting <br /> indus orem Ipsum has beenthe standard dummy.
+                We believe in giving in order to receive, in our blog we break
+                down each and every step of a successful real estate content
+                marketing strategy so you can start doing it yourself today!
               </p>
             </div>
             <div className="row">
@@ -1411,7 +1774,12 @@ const ServiceDetailsNew = () => {
                   data-aos-duration="1500"
                 >
                   <div className="story_img">
-                    <Image width={300} height={300} src="/images/services/story01.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/story01.png"
+                      alt="image"
+                    />
                     <span>45 min ago</span>
                   </div>
                   <div className="story_text">
@@ -1432,7 +1800,12 @@ const ServiceDetailsNew = () => {
                   data-aos-duration="1500"
                 >
                   <div className="story_img">
-                    <Image width={300} height={300} src="/images/services/story02.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/story02.png"
+                      alt="image"
+                    />
                     <span>45 min ago</span>
                   </div>
                   <div className="story_text">
@@ -1453,7 +1826,12 @@ const ServiceDetailsNew = () => {
                   data-aos-duration="1500"
                 >
                   <div className="story_img">
-                    <Image width={300} height={300} src="/images/services/story03.png" alt="image" />
+                    <Image
+                      width={300}
+                      height={300}
+                      src="/images/services/story03.png"
+                      alt="image"
+                    />
                     <span>45 min ago</span>
                   </div>
                   <div className="story_text">

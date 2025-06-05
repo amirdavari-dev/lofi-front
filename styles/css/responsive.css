@@ -359,7 +359,7 @@
     .interface_section .owl-item .screen_frame_img img {transform: scale(1);}
 
     /* download section */
-    .free_app_section .container .free_app_inner {padding: 50px 15px; padding-bottom: 0; z-index: 99;}
+    .free_app_section .container .free_app_inner {padding: 200px 30px;height: 835px; z-index: 99;}
     .free_app_section .container .free_app_inner .free_img {margin-top: 0; justify-content: center;}
     .free_app_section .container .free_app_inner .free_img img {max-width: 100%;}
     .free_app_section .container .free_app_inner .free_text .section_title {text-align: center;}
