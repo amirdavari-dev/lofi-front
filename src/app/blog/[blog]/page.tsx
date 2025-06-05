@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PodcastLayout from "@/components/Blog/podcast/podcastLaout";
 import { headers } from "next/headers";
+import dateFormater from "../../../../utils/dateFormater";
 type Props = {
   params: Promise<{
     blog: string;
@@ -17,20 +18,17 @@ export default async function Page({ params }: Props) {
   const header = await headers();
   const host = header.get("host");
   const blogDetails: BlogItem = await getBlog({ blogId: +blog });
-  const blogDate = new Date(blogDetails.create_at);
-  const year = blogDate.getFullYear();
-  const month = String(blogDate.getMonth() + 1).padStart(2, "0");
-  const day = String(blogDate.getDate()).padStart(2, "0");
-  const formatBlogDate = `${year}-${month}-${day}`;
+  const publishDate = dateFormater(blogDetails.create_at);
+  const modifiedDate = dateFormater(blogDetails.update_at);
   const extension = blogDetails.audio_name.split(".").pop();
-
+  const logo = `http://${host}/favicon.ico`;
   const schemaPodcast = {
     "@context": "https://schema.org",
     "@type": "PodcastEpisode",
     name: blogDetails.title_podcast,
     description: blogDetails.description_podcast,
     url: `http://${host}/blog/${blog}`,
-    datePublished: formatBlogDate,
+    datePublished: publishDate,
     associatedMedia: {
       "@type": "MediaObject",
       contentUrl:
@@ -48,26 +46,63 @@ export default async function Page({ params }: Props) {
       `/files/blog-images/${blogDetails.cover_podcast}`,
     publisher: {
       "@type": "Organization",
-      name: "RealReach",
+      name: "Real Rich",
       logo: {
         "@type": "ImageObject",
-        url: `http://${host}/favicon.ico`,
+        url: logo,
       },
     },
   };
-
+  const schemaBlog = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: blogDetails.title,
+    description: blogDetails.description,
+    image: {
+      "@type": "ImageObject",
+      url:
+        process.env.NEXT_PUBLIC_BASE_URL +
+        `/files/blog-images/${blogDetails.image_name}`,
+      width: 300,
+      height: 400,
+    },
+    author: {
+      "@type": "Person",
+      name: blogDetails.author_podcast,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Real Rich",
+      logo: {
+        "@type": "ImageObject",
+        url: logo,
+        width: 48,
+        height: 48,
+      },
+    },
+    datePublished: publishDate,
+    dateModified: modifiedDate,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `http://${host}/blog/${blog}`,
+    },
+  };
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaPodcast) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBlog) }}
+      />
       {/* <Navbar /> */}
       <NavbarStyle2 />
       <main>
         {/* <div className="blog-details-area ptb-100 blog-custom" dangerouslySetInnerHTML={{ __html: blogDetails1 }}></div> */}
         {/* <BlogDetailsContent /> */}
-        <div className="blog-container">
+        <section className="blog-container">
           <div className="blog-content">
             <section className="blog-first-section">
               <p className="social-agents">
@@ -100,7 +135,7 @@ export default async function Page({ params }: Props) {
             ></div>
           </div>
           <BlogSidebar />
-        </div>
+        </section>
       </main>
 
       <Footer />
