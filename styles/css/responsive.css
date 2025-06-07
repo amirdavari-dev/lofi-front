@@ -282,7 +282,7 @@
     .trusted_section .company_logos img {max-width: 70%;}
 
     /* statastic section */
-    .statistic_section .app_statstic{ flex-direction: column; }
+    /* .statistic_section .app_statstic{ flex-direction: column; } */
     .statistic_section .app_statstic li{ padding-bottom: 35px; }
 
     /* features section */
@@ -467,6 +467,7 @@
     .map_section {margin: 15px 0;}
 
     .app_solution_section .app_images ul li .waves-block {  left: 88px; }
+    
 
 }
 

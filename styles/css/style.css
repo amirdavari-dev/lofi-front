@@ -3488,3 +3488,7 @@ header.fix_style.white_header {
   background-color: white;
   transition: 0.3s all ease-in-out;
 }
+/* hamburger style */
+.hamburger-menu{
+  display: none;
+}

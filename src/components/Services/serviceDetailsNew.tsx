@@ -200,7 +200,7 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
             <div className="container">
               <ul className="app_statstic" id="counter">
                 <div
-                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12"
+                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 col-6"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -231,7 +231,7 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                 </div>
 
                 <div
-                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 "
+                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 col-6 "
                   data-aos="fade-up"
                   data-aos-duration="1200"
                 >
@@ -262,7 +262,7 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                 </div>
 
                 <div
-                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 "
+                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 col-6 "
                   data-aos="fade-up"
                   data-aos-duration="1400"
                 >
@@ -293,7 +293,7 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                 </div>
 
                 <div
-                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 "
+                  className="col-md-3 col-lg-3 col-sm-6 col-xs-12 col-6 "
                   data-aos="fade-up"
                   data-aos-duration="1600"
                 >
