@@ -14,11 +14,11 @@ export const serviceDetailsContent = [
         "Sell effortlessly with real estate content marketing — build trust before the buyer arrives, and close deals with warmed-up leads.",
     },
     bannerImages: [
-      "/images/services/new-service-details/realestate-marketing/Best way to manage your customers easily. 1.png",
-      "/images/services/new-service-details/realestate-marketing/Best way to manage your customers easily. 2.png",
-      "/images/services/new-service-details/realestate-marketing/Best way to manage your customers easily. 3.png",
-      "/images/services/new-service-details/realestate-marketing/Best way to manage your customers easily. 4.png",
-      "/images/services/new-service-details/realestate-marketing/Best way to manage your customers easily. 5.png",
+      "/images/services/hero-image-5.png",
+      "/images/services/hero-image-5.png",
+      "/images/services/hero-image-5.png",
+      "/images/services/hero-image-5.png",
+      "/images/services/hero-image-5.png",
     ],
     featuresSection: {
       title:
@@ -27,22 +27,19 @@ export const serviceDetailsContent = [
         "You’re answering the same questions over and over. Prospects ghost after initial contact. Your team wastes time chasing uninterested people instead of closing real buyers. <br /> And the worst part? Your competitors are building trust before the conversation even starts — with content that educates, nurtures, and positions them as experts.",
       featureList: [
         {
-          image:
-            "/images/services/new-service-details/realestate-marketing/Content That Gets Indexed & Converts.png",
+          image: "/images/services/features1.png",
           title: "📉 Cold Leads, Wasted Effort",
           description:
             "Your inbox is full of leads that go nowhere. You’re chasing unqualified prospects who aren’t ready to buy — wasting time your team should spend closing.",
         },
         {
-          image:
-            "/images/services/new-service-details/realestate-marketing/Local & International SEO.png",
+          image: "/images/services/features1.png",
           title: "⏳ Repeating the Same Sales Pitch",
           description:
             "Your agents answer the same questions over and over. Without educational content, every conversation starts from scratch — costing time and energy.",
         },
         {
-          image:
-            "/images/services/new-service-details/realestate-marketing/Technical SEO Optimization.png",
+          image: "/images/services/features1.png",
           title: "🔇 Invisible in Search Results",
           description:
             "If you’re not ranking for key property or location-based searches, you’re losing deals to competitors who get found first — and appear more credible.",
@@ -62,15 +59,15 @@ export const serviceDetailsContent = [
       ],
       link: "yes I want that!",
       images: [
-        "/images/services/new-service-details/realestate-marketing/Search Visibility That Delivers Results.png",
-        "/images/services/new-service-details/realestate-marketing/Search Visibility That Delivers Results 2.png",
+        "/images/services/about-frame.png",
+        "/images/services/about-screen.png",
       ],
     },
     modernUiSection: {
       images: [
-        "/images/services/new-service-details/realestate-marketing/Built to Rank, Designed to Convert 3.png",
-        "/images/services/new-service-details/realestate-marketing/Built to Rank, Designed to Convert 4.png",
-        "/images/services/new-service-details/realestate-marketing/Built to Rank, Designed to Convert 2.png",
+        "/images/services/secure_data.png",
+        "/images/services/modern02.png",
+        "/images/services/modern03.png",
       ],
       title: "How It Works? A Real Estate Content Engine Built to Perform",
       description:
@@ -107,19 +104,19 @@ export const serviceDetailsContent = [
           title: "Attract the Right Audience",
           description:
             " We create SEO-optimized, high-value content based on what real estate buyers are searching for and have interest in — so the right people land on your website and social media channels from the start. (yes you read it right, social media in 2025 is all about keywords and intent too)",
-          img: "/images/services/new-service-details/realestate-marketing/Full SEO Audit.png",
+          img: "/images/services/download_app.jpg",
         },
         {
           title: "Build Trust Before the Inquiry",
           description:
             "Each blog, Reel, video, guide, and landing page is designed to answer buyer questions, agitate their pain, capture their interest, highlight your expertise, and warm up leads before they ever fill out a form or pick up the phone to call you.",
-          img: "/images/services/new-service-details/realestate-marketing/Track & Scale.png",
+          img: "/images/services/create_account.jpg",
         },
         {
           title: "Convert with Purpose-Built CTAs",
           description:
             "We lead viewers toward action, covertly and overtly — with custom CTAs, Lead magnets, WhatsApp integration, and CRM-ready lead forms that make it easy to engage, book, or request more info.",
-          img: "/images/services/new-service-details/realestate-marketing/Strategy + Implementation.png",
+          img: "/images/services/enjoy_app.jpg",
         },
       ],
     },
@@ -214,12 +211,12 @@ export const serviceDetailsContent = [
       description:
         "From strategy to execution, everything is structured — so you always know what’s being published, when, and why it matters.",
       images: [
-        "/images/services/new-service-details/realestate-marketing/Search Visibility That Delivers Results (1).png",
-        // "/images/services/screen-2.png",
-        // "/images/services/screen-3.png",
-        // "/images/services/screen-4.png",
-        // "/images/services/screen-5.png",
-        // "/images/services/screen-3.png",
+        "/images/services/screen-1.png",
+        "/images/services/screen-2.png",
+        "/images/services/screen-3.png",
+        "/images/services/screen-4.png",
+        "/images/services/screen-5.png",
+        "/images/services/screen-3.png",
       ],
     },
     freeAppSection: {
@@ -260,10 +257,6 @@ export const serviceDetailsContent = [
         "We help agents, developers, and agencies generate real buyer leads through Google Ads, Meta, email nurturing, and strategic retargeting.",
     },
     bannerImages: [
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
       "/images/services/hero-image-5.png",
     ],
     featuresSection: {
@@ -407,10 +400,58 @@ export const serviceDetailsContent = [
       title: "Real Questions from Paid Campaign Clients",
       description: "",
       faqs: [
-        // {
-        //   question: "",
-        //   answer: "",
-        // },
+        {
+          question:
+            "Are Meta and Google Ads still worth it for real estate lead generation?",
+          answer:
+            "Yes, but only if you target the right audience with the right message. Broad campaigns waste budget fast. Successful real estate campaigns use laser-focused targeting (location, buyer intent, demographics) with compelling creatives — and always lead to a high-converting landing page or lead form.",
+        },
+        {
+          question:
+            "How much budget do I need to get real results from paid ads?",
+          answer:
+            "There’s no one-size-fits-all answer. For markets like Dubai, Istanbul, or North Cyprus, a typical monthly ad budget starts from $1,500–$3,000 for Meta and $2,000–$5,000 for Google PPC. However, the key is not just budget — it’s how effectively it’s managed and tracked.",
+        },
+        {
+          question:
+            "What platform is best for advertising luxury or off-plan properties — Meta, Google, or TikTok?",
+          answer: `
+              It depends on the target audience and property type:<br />
+              &nbsp;&nbsp;&nbsp;•        Google Ads = High-intent buyers searching for properties now.<br />
+              &nbsp;&nbsp;&nbsp;•        Meta Ads = Great for retargeting, building brand presence, and capturing interest.<br />
+              &nbsp;&nbsp;&nbsp;•        TikTok = Effective for viral property tours and branding (especially for younger or overseas buyers).<br />
+              &nbsp;&nbsp;&nbsp;•        LinkedIn = Works well for investor-driven campaigns and B2B partnerships.
+          `,
+        },
+        {
+          question:
+            "Why do I get leads from paid ads, but most of them don’t answer or convert?",
+          answer: `
+            This often means there’s a mismatch between targeting, messaging, and lead handling. Some common issues:<br />
+              &nbsp;&nbsp;&nbsp;•        Ads are too broad (attracting unqualified leads).<br />
+              &nbsp;&nbsp;&nbsp;•        Landing pages lack credibility or clarity.<br />
+              &nbsp;&nbsp;&nbsp;•        No follow-up system in place.<br />
+            Fixing these issues increases lead quality and conversion dramatically.<br />
+          `,
+        },
+        {
+          question:
+            "Can I stop using portals like Property Finder or Bayut if I run my own ads?",
+          answer:
+            "Yes — gradually. Paid ads can help reduce dependence on property portals by giving you full control over your leads. However, success requires a solid backend: optimized website, CRM, follow-up system, and retargeting campaigns to stay top of mind.",
+        },
+        {
+          question:
+            "How do I track the ROI of my marketing campaigns properly?",
+          answer: `
+            ROI tracking starts with:<br />
+              &nbsp;&nbsp;&nbsp;•        Conversion-optimized landing pages.<br />
+              &nbsp;&nbsp;&nbsp;•        Event tracking (e.g. calls, form fills, WhatsApp clicks).<br />
+              &nbsp;&nbsp;&nbsp;•        Analytics tools (GA4, Meta Pixel, etc.).<br />
+              &nbsp;&nbsp;&nbsp;•        CRM integration to trace lead quality.<br />
+            Without these, you’re flying blind — and likely wasting ad spend.
+          `,
+        },
       ],
     },
     interfaceSection: {
@@ -420,10 +461,6 @@ export const serviceDetailsContent = [
       images: [
         "/images/services/screen-1.png",
         "/images/services/screen-2.png",
-        "/images/services/screen-3.png",
-        "/images/services/screen-4.png",
-        "/images/services/screen-5.png",
-        "/images/services/screen-3.png",
       ],
     },
     freeAppSection: {
@@ -461,11 +498,7 @@ export const serviceDetailsContent = [
         "We help real estate companies boost visibility on Google and generate qualified organic traffic through expert SEO strategies tailored to your market.",
     },
     bannerImages: [
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
-      "/images/services/hero-image-5.png",
+      "/images/services/new-service-details/realestate-seo/realestate-cover.png",
     ],
     featuresSection: {
       title: "Why Our Real Estate SEO Works",
@@ -473,19 +506,22 @@ export const serviceDetailsContent = [
         "From website development and keyword research to technical SEO, we build a search engine presence that brings buyers to your site — not just browsers. we make your brand stands out in eye's of Google and Users.",
       featureList: [
         {
-          image: "/images/services/features1.png",
+          image:
+            "/images/services/new-service-details/realestate-seo/Local & International SEO.png",
           title: "Local & International SEO",
           description:
             "Target neighborhood buyers or international investors with geo-specific keywords and multi-language SEO implementation.",
         },
         {
-          image: "/images/services/features1.png",
+          image:
+            "/images/services/new-service-details/realestate-seo/Technical SEO Optimization.png",
           title: "Technical SEO Optimization",
           description:
             "From page speed to mobile UX and structured data — we ensure Google loves your site and ranks it accordingly.",
         },
         {
-          image: "/images/services/features1.png",
+          image:
+            "/images/services/new-service-details/realestate-seo/Content That Gets Indexed & Converts.png",
           title: "Content That Gets Indexed & Converts",
           description:
             "We write SEO-driven pages, blog content, and landing copy tailored to buyer intent and high-ranking real estate queries.",
@@ -494,28 +530,28 @@ export const serviceDetailsContent = [
     },
     aboutAppsection: {
       images: [
-        "/images/services/about-frame.png",
-        "/images/services/about-screen.png",
+        "/images/services/new-service-details/realestate-seo/Search Visibility That Delivers Results.png",
+        "/images/services/new-service-details/realestate-seo/Search Visibility That Delivers Results 2.png",
       ],
 
       title: "Search Visibility That Delivers Results",
       description:
         "Consistent content, structured optimization, and data-backed strategy to help your brand own high-value real estate keywords.",
       aboutAppList: [
-        "✓ Optimized Real Estate Website Development.",
-        "✓ On-Page SEO (Metadata, Internal Linking, Headers)",
-        "✓ Off-Page SEO (Backlinks, Citations, PR)",
-        "✓ Local SEO & Google Business Optimization",
-        "✓ SEO Blog Strategy",
-        "✓ Technical Audits and Fixes",
+        "Optimized Real Estate Website Development.",
+        "On-Page SEO (Metadata, Internal Linking, Headers)",
+        "Off-Page SEO (Backlinks, Citations, PR)",
+        "Local SEO & Google Business Optimization",
+        "SEO Blog Strategy",
+        "Technical Audits and Fixes",
       ],
       link: "Get My Free SEO Audit",
     },
     modernUiSection: {
       images: [
-        "/images/services/secure_data.png",
-        "/images/services/modern02.png",
-        "/images/services/modern03.png",
+        "/images/services/new-service-details/realestate-seo/Built to Rank, Designed to Convert ORG.png",
+        // "/images/services/modern02.png",
+        // "/images/services/modern03.png",
       ],
       title: "Built to Rank, Designed to Convert",
       description:
@@ -546,19 +582,19 @@ export const serviceDetailsContent = [
           title: "Full SEO Audit",
           description:
             "We evaluate your website, structure, keywords, and backlinks to identify gaps and opportunities.",
-          img: "/images/services/download_app.jpg",
+          img: "/images/services/new-service-details/realestate-seo/Full SEO Audit.png",
         },
         {
           title: "Strategy + Implementation",
           description:
             "We deliver technical fixes, build optimized pages, and launch a custom content strategy for your target buyers.",
-          img: "/images/services/create_account.jpg",
+          img: "/images/services/new-service-details/realestate-seo/Strategy + Implementation.png",
         },
         {
           title: "Track & Scale",
           description:
             "We monitor rankings and traffic monthly — then expand your visibility across more keywords and regions.",
-          img: "/images/services/enjoy_app.jpg",
+          img: "/images/services/new-service-details/realestate-seo/Track & Scale.png",
         },
       ],
     },
@@ -570,21 +606,21 @@ export const serviceDetailsContent = [
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
@@ -607,25 +643,46 @@ export const serviceDetailsContent = [
     faqSection: {
       title: "Your  Real Estate SEO Questions, Answered",
       description: "",
-      faqs: null,
-      // [
-      //   {
-      //     question: "",
-      //     answer: "",
-      //   },
-      // ],
+      faqs: [
+        {
+          question:
+            "Can SEO really generate leads for real estate, or is it just about visibility?",
+          answer:
+            "SEO isn’t just for visibility — it’s about putting your properties in front of high-intent buyers searching on Google. By targeting keywords like “buy apartment in Dubai Marina” or “off-plan villas in Alanya,” SEO drives inbound traffic that’s already interested in what you offer. Combined with CRO and lead magnets, this traffic becomes qualified leads",
+        },
+        {
+          question:
+            "Why should I invest in SEO if I already use Property Finder, Bayut, or Meta Ads?",
+          answer:
+            "Platforms like Bayut or Meta Ads are pay-to-play. SEO, however, builds your own asset — a lead-generating website that performs 24/7. Over time, you reduce dependency on paid listings and ads. After 4–6 months, SEO can bring you free, organic leads consistently and build long-term brand equity",
+        },
+        {
+          question:
+            "How long does it take to see results from SEO in real estate?",
+          answer:
+            "SEO is not instant — but it’s compounding. Typically, with the right technical setup, content strategy, and backlink building, you start seeing meaningful traction within 90 days. Full impact often comes between 4–6 months. A tailored 90-day roadmap is recommended to track progress against KPIs",
+        },
+        {
+          question:
+            "My website was made years ago. Can SEO still work without redesigning it?",
+          answer:
+            "If your current site lacks structure, speed, or mobile optimization, then SEO won’t perform well. Real estate SEO today demands fast load times, mobile responsiveness, clean code, and lead-capture systems. Sometimes it’s more cost-effective to rebuild the site with SEO-first architecture than to patch an old one",
+        },
+        {
+          question:
+            "What if I don’t have time to manage content and SEO work myself?",
+          answer:
+            "You don’t have to. A professional real estate SEO team handles everything from technical optimization to content production, lead capture, and analytics. You focus on closing deals — the system brings the traffic and leads",
+        },
+      ],
     },
     interfaceSection: {
       title: "Optimized Structure. Beautiful Delivery.",
       description:
         "Whether you target investors, renters, or overseas buyers — our SEO-first design framework ensures every visitor is just one step from conversion.",
       images: [
-        "/images/services/screen-1.png",
-        "/images/services/screen-2.png",
-        "/images/services/screen-3.png",
-        "/images/services/screen-4.png",
-        "/images/services/screen-5.png",
-        "/images/services/screen-3.png",
+        "/images/services/new-service-details/realestate-seo/optimized 1.png",
+        "/images/services/new-service-details/realestate-seo/optimized 2.png",
       ],
     },
     freeAppSection: {
@@ -809,7 +866,56 @@ export const serviceDetailsContent = [
     faqSection: {
       title: "FAQ - Frequently Asked Questions",
       description: "",
-      faqs: null,
+      faqs: [
+        {
+          question: "Is HushLeads a one-time setup or an ongoing service?",
+          answer:
+            "HushLeads is an ongoing performance marketing service, not a one-time install or software tool. It’s designed as an 8-month partnership where we continuously optimize your SEO, run targeted ad campaigns, generate leads, and improve conversion — month after month.",
+        },
+        {
+          question: "What exactly is included in the HushLeads service?",
+          answer: `
+            HushLeads includes a full performance system:<br />
+            &nbsp;&nbsp;&nbsp;•        SEO (on-page, off-page, technical fixes, keyword research, backlink building)<br />
+            &nbsp;&nbsp;&nbsp;•        Paid Ads (Meta, Google, TikTok — ad strategy, targeting, A/B testing)<br />
+            &nbsp;&nbsp;&nbsp;•        Landing Pages and website optimization<br />
+            &nbsp;&nbsp;&nbsp;•        Monthly performance reporting<br />
+            &nbsp;&nbsp;&nbsp;•        Competitor analysis and market research<br />
+            We act as your outsourced growth team, focused on real estate buyer acquisition.
+          `,
+        },
+        {
+          question: "Why does HushLeads require an 8-month contract?",
+          answer:
+            "Real estate SEO and paid ads take time to build momentum. The first months are about fixing foundations, launching campaigns, collecting data, and optimizing. By month 3, we start seeing clear results — and by months 4–8, we’re scaling. The 8-month model ensures we deliver compounding growth, not just spikes.",
+        },
+        {
+          question:
+            "How do I know if HushLeads is actually working for my business?",
+          answer: `
+            Every month, you receive:<br />
+            &nbsp;&nbsp;&nbsp;•        Clear reports showing leads, traffic, cost-per-lead, and ad performance<br />
+            &nbsp;&nbsp;&nbsp;•        Call and form tracking to know exactly who contacted you<br />
+            &nbsp;&nbsp;&nbsp;•        SEO progress reports (rankings, backlink growth, content performance)<br />
+            You’ll always know what you’re paying for — and how it’s impacting your bottom line.
+          `,
+        },
+        {
+          question: "Do I need a new website for HushLeads to work?",
+          answer:
+            "Not necessarily. If your current website is well-built, we’ll optimize it. But if it’s outdated, slow, or unstructured, we’ll build custom SEO-first landing pages designed to convert traffic into qualified leads.",
+        },
+        {
+          question: "Can I cancel HushLeads at any time?",
+          answer:
+            "HushLeads is a performance partnership with an 8-month commitment — because growth takes time. Canceling early breaks the system before it starts working at full potential. That said, we’re fully transparent, and you’ll always see monthly progress and value.",
+        },
+        {
+          question: "Who is HushLeads for — agents or developers?",
+          answer:
+            "Both. Whether you’re a real estate agent, brokerage, or developer, HushLeads is built to attract buyers to your listings and projects — through your own brand, not through third-party platforms.",
+        },
+      ],
     },
     interfaceSection: {
       title: "See how our users get leads",

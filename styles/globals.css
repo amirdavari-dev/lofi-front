@@ -45,7 +45,6 @@ Default CSS
   --fontSize: 16px;
   --transition: 0.5s;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -6339,6 +6338,7 @@ Value Trade Area CSS
   padding-left: 30px;
   padding-right: 30px;
 }
+
 
 .value-trade-card {
   position: relative;

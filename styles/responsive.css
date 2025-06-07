@@ -3674,4 +3674,8 @@
   .podcast-explain{
     margin-bottom: 5px;
   }
+  .logo-footer{
+    width: 100%;
+    min-width: 100%;
+  }
 }

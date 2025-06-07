@@ -195,30 +195,44 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    // Add minus icon for collapse element which is open by default
     $(".collapse.show").each(function () {
       $(this)
         .prev(".card-header")
         .find(".icon_faq")
-        .addClass("icofont-minus")
-        .removeClass("icofont-plus");
+        .attr("src", function () {
+          return $(this).data("minus");
+        });
     });
-
-
-    // Toggle plus minus icon on show hide of collapse element
+  
     $(".collapse").on("show.bs.collapse", function () {
-        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-plus").addClass("icofont-minus");
-      })
-      .on("hide.bs.collapse", function () {
-        $(this).prev(".card-header").find(".icon_faq").removeClass("icofont-minus").addClass("icofont-plus");
-      });
-
-      $(".collapse").on("show.bs.collapse", function () {
-        $(this).prev(".card-header").children('h2').children('.btn').addClass("active");
-      })
-      .on("hide.bs.collapse", function () {
-        $(this).prev(".card-header").children('h2').children('.btn').removeClass("active");
-      });
+      $(this)
+        .prev(".card-header")
+        .find(".icon_faq")
+        .attr("src", function () {
+          return $(this).data("minus");
+        });
+  
+      $(this)
+        .prev(".card-header")
+        .children("h2")
+        .children(".btn")
+        .addClass("active");
+    });
+  
+    $(".collapse").on("hide.bs.collapse", function () {
+      $(this)
+        .prev(".card-header")
+        .find(".icon_faq")
+        .attr("src", function () {
+          return $(this).data("plus");
+        });
+  
+      $(this)
+        .prev(".card-header")
+        .children("h2")
+        .children(".btn")
+        .removeClass("active");
+    });
   });
 
 

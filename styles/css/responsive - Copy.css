@@ -14,7 +14,7 @@
 @media screen and (max-width:1300px) {
 
 	/* banner section */
-    .banner_section { padding-top: 150px; }
+    .banner_section { padding-top: 150px;height: 700px; margin-bottom: 100px; }
     .banner_section .banner_text h1 { font-size: 45px; }    
     .features_section .feature_detail .feature_box {width: 350px;}
 
@@ -91,10 +91,13 @@
     .banner_section .banner_slider .left_icon {left: 0;}
     .banner_section .banner_slider .right_icon {right: 0;}
 
-    .banner_section .banner_images { margin: 100px 0 0 0; }
+    .banner_section .banner_images { margin: 180px 0 0 0; padding: 0 10px; }
     .banner_section .banner_images .banner_screen.screen2 { margin-top: 100px; }
+    .banner_section .banner_images .banner_screen { margin-top: 120px; }
     .banner_section .banner_images .banner_screen.screen4 { margin-top: 100px; }
-
+    .feature-inner-p{
+        padding: 0 20px;
+    }
     /* features section */
     .features_section .feature_detail .feature_img {width: 275px;}
     .features_section .feature_detail .feature_box .data_block {margin-bottom: 30px;}
@@ -254,7 +257,7 @@
 
     /* faq section */
     .faq_section .faq_panel .card-header h2 {text-align: left;}
-    .faq_section .faq_panel .card-header .btn {font-size: 16px; padding-right: 30px;}
+    .faq_section .faq_panel .card-header .btn {font-size: 16px; padding-right: 30px; }
     .faq_section .faq_panel .card-body p {text-align: left;}
 
     /* interface section */
@@ -262,7 +265,7 @@
     .interface_section .owl-item .screen_frame_img img {transform: scale(1);}
 
     /* download section */
-    .free_app_section .container .free_app_inner {padding: 50px 15px; padding-bottom: 0; z-index: 99;}
+    .free_app_section .container .free_app_inner {padding: 50px 15px; padding-bottom: 2px; z-index: 99;height: fit-content;}
     .free_app_section .container .free_app_inner .free_img {margin-top: 0; justify-content: center;}
     .free_app_section .container .free_app_inner .free_img img {max-width: 100%;}
     .free_app_section .container .free_app_inner .free_text .section_title {text-align: center;}

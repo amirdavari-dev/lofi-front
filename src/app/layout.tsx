@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${titillium_web.variable} ${cabin.variable}`}>
+      <body className={`${titillium_web.variable} ${cabin.variable} overflow-x-hidden`}>
         {children}
 
         <AosAnimation />

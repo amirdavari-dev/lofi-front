@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                   <Image
                     src="/images/logo.png"
                     alt="logo"
-                    width={350}
+                    width={300}
                     height={160}
                   />
                 </Link>

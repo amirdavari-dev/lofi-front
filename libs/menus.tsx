@@ -31,17 +31,17 @@ export const menus = [
   },
   {
     label: "Services",
-    link: "#",
-    submenu: [
-      {
-        label: "Services",
-        link: "/services/",
-      },
-      {
-        label: "Services Details",
-        link: "/services/details/",
-      },
-    ],
+    link: "/services",
+    // submenu: [
+    //   {
+    //     label: "Services",
+    //     link: "/services/",
+    //   },
+    //   {
+    //     label: "Services Details",
+    //     link: "/services/details/",
+    //   },
+    // ],
   },
   {
     label: "Case Studies",

@@ -36,6 +36,7 @@
   --bg-white: #ffffff;
   --slider-dots-color: #d4d2dd;
   --light-bg: #dfdaf3;
+  --mainColor: #10335e;
 }
 
 /* ------Common-Css------------- */
@@ -53,6 +54,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--body-text-purple);
   background-color: var(--light-purple);
+  overflow-x: hidden;
 }
 
 .page_wrapper {
@@ -111,7 +113,7 @@ button:focus,
 
 /* purple button */
 .puprple_btn {
-  background-color: var(--purple);
+  background-color: var(--mainColor);
   color: var(--text-white);
   border-radius: 50px;
   padding: 10px 40px;
@@ -194,13 +196,13 @@ button:focus,
   display: block;
   width: 15px;
   height: 15px;
-  background-color: var(--slider-dots-color);
+  background-color: var(--slider-dots-color) !important;
   border-radius: 15px;
   margin: 0 5px;
 }
 
 .owl-carousel .owl-dots button.active {
-  background-color: var(--purple);
+  background-color: var(--purple) !important;
 }
 
 /* -------------Preloader-Css-Start-------------- */
@@ -535,7 +537,9 @@ header.fixed .navbar {
 .banner_section {
   padding-top: 200px;
   position: relative;
+  height: 100vh;
   background-image: url(/images/services/herobg.png);
+  margin-bottom: 250px;
 }
 
 .banner_section .container {
@@ -543,7 +547,7 @@ header.fixed .navbar {
 }
 
 .banner_section .banner_images {
-  margin: 240px 0 0 0;
+  margin:180px 0 0 0;
   max-width: 100%;
   padding: 0 50px;
 }
@@ -559,7 +563,6 @@ header.fixed .navbar {
 .banner_section .banner_images .banner_screen img {
   max-width: 100%;
   border-radius: 16px;
-  border: #131546 solid 1px;
 }
 
 .banner_section .banner_images .banner_screen.screen1 {
@@ -613,9 +616,8 @@ header.fixed .navbar {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 350px;
   background-position: center;
-  margin-top: -350px;
+  margin-top: -550px;
 }
 
 .banner_section .row {
@@ -1009,6 +1011,9 @@ iframe#youtubevideo {
 .about_app_section .about_text .section_title h2 {
   margin-bottom: 15px;
 }
+.feature-inner-p{
+  padding: 0 80px;
+}
 
 .about_app_section .about_text .list {
   margin-top: 45px;
@@ -1149,7 +1154,7 @@ iframe#youtubevideo {
   transform: translateX(-50%);
   width: 4px;
   height: calc(100% + 100px);
-  background-color: var(--light-bg);
+  background-color: var(--mainColor);
 }
 
 .how_it_works .step_block ul li:first-child::after {
@@ -1160,7 +1165,7 @@ iframe#youtubevideo {
   transform: translateX(-50%);
   width: 14px;
   height: 14px;
-  background-color: var(--light-bg);
+  background-color: var(--mainColor);
   border-radius: 15px;
 }
 
@@ -1300,7 +1305,10 @@ iframe#youtubevideo {
   .testimonial_img
   img {
   margin: 0 auto;
-  width: 150px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* testimonials heading h3 */
@@ -1531,13 +1539,17 @@ iframe#youtubevideo {
 
 .faq_section .faq_panel .card-header .btn {
   padding: 0;
-  color: var(--dark-purple);
+  color: var(--mainColor);
   font-weight: 600;
   font-size: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  gap: 0 4px;
 }
 
 .faq_section .faq_panel .card-header .btn.active {
-  color: var(--purple);
+  color: var(--dark-purple);
 }
 
 .faq_panel .accordion button,
@@ -1551,6 +1563,7 @@ iframe#youtubevideo {
   right: 20px;
   color: #839bc0;
 }
+
 
 /* faq heading h2 */
 .faq_section .faq_panel .card-header h2 {
@@ -1598,7 +1611,7 @@ iframe#youtubevideo {
 }
 
 .free_app_section .container .free_app_inner {
-  background-color: var(--bg-purple);
+  background-color: var(--mainColor);
   border-radius: 30px;
   padding: 20px 100px;
   padding-bottom: 50px;
@@ -1645,7 +1658,6 @@ iframe#youtubevideo {
   display: block;
   padding: 12px 50px;
   background-color: var(--bg-white);
-  border: 2px solid var(--purple);
   position: relative;
   border-radius: 12px;
   transition: 0.4s all;
@@ -1677,7 +1689,7 @@ iframe#youtubevideo {
   position: fixed;
   left: 0;
   top: 0;
-  background-color: rgba(50, 35, 111, 0.95);
+  background-color:#10335eeb ;
   width: 100%;
   height: 100%;
   z-index: 99999;
@@ -1734,7 +1746,7 @@ iframe#youtubevideo {
 
 /* latest story link text */
 .latest_story .story_box .story_text a {
-  color: var(--purple);
+  color: var(--mainColor);
   margin-top: 25px;
   display: block;
   font-size: 14px;
