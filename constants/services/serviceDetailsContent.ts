@@ -128,21 +128,21 @@ export const serviceDetailsContent = [
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
@@ -246,10 +246,10 @@ export const serviceDetailsContent = [
   {
     keyService: "realestate-marketing",
     statisticSection: {
-      first: { value: "", title: "Leads Generated" },
-      second: { value: "", title: "CTR" },
-      third: { value: "", title: "Conversions" },
-      fourth: { value: "", title: "Cities Targeted" },
+      first: { value: "43", title: "Leads Generated" },
+      second: { value: "38", title: "CTR" },
+      third: { value: "61", title: "Conversions" },
+      fourth: { value: "12", title: "Cities Targeted" },
     },
     bannerSection: {
       title: "Not every ad campaign generates quality leads",
@@ -257,7 +257,7 @@ export const serviceDetailsContent = [
         "We help agents, developers, and agencies generate real buyer leads through Google Ads, Meta, email nurturing, and strategic retargeting.",
     },
     bannerImages: [
-      "/images/services/hero-image-5.png",
+      "/images/services/new-service-details/realestate-marketing/home page.png",
     ],
     featuresSection: {
       title: "What Makes Our Real Estate Marketing Different",
@@ -265,19 +265,19 @@ export const serviceDetailsContent = [
         "We don’t just run ads — we build systems that attract, convert, and follow up with your ideal clients.",
       featureList: [
         {
-          image: "/images/services/features1.png",
+          image: "/images/services/new-service-details/realestate-marketing/reach-more-potential-customers-mobil.png",
           title: "Targeted Google & Meta Ads",
           description:
             "Reach high-intent buyers with tailored campaigns across search, display, and social platforms.",
         },
         {
-          image: "/images/services/features3.png",
+          image: "/images/services/new-service-details/realestate-marketing/email.png",
           title: "Email & SMS Lead Nurturing",
           description:
             "Stay top-of-mind with automated messages that build trust and move leads through your funnel.",
         },
         {
-          image: "/images/services/features2.png",
+          image: "/images/services/new-service-details/realestate-marketing/efficient-time-management-mobil.png",
           title: "CRM-Integrated Funnels",
           description:
             "We connect your campaigns to forms, WhatsApp, and your CRM for seamless lead capture and follow-up.",
@@ -286,27 +286,24 @@ export const serviceDetailsContent = [
     },
     aboutAppsection: {
       images: [
-        "/images/services/about-frame.png",
-        "/images/services/about-screen.png",
+        "/images/services/new-service-details/realestate-marketing/real-compa.png",
       ],
 
       title: "Real Campaigns. Real Closings.",
       description:
         "We launch full-funnel real estate marketing built to attract real buyers — not random clicks.",
       aboutAppList: [
-        "✓ Google Search, Display, and YouTube Ads",
-        "✓ Meta Campaigns for Instagram & Facebook",
-        "✓ SMS + Email Campaign Automation",
-        "✓ Retargeting Campaigns",
-        "✓ CRM & WhatsApp Integration",
+        "Google Search, Display, and YouTube Ads",
+        "Meta Campaigns for Instagram & Facebook",
+        "SMS + Email Campaign Automation",
+        "Retargeting Campaigns",
+        "CRM & WhatsApp Integration",
       ],
       link: "Book My Free Paid Ads Strategy Call",
     },
     modernUiSection: {
       images: [
-        "/images/services/secure_data.png",
-        "/images/services/modern02.png",
-        "/images/services/modern03.png",
+        "/images/services/new-service-details/realestate-marketing/modern.png",
       ],
       title: "A Conversion-Focused Ad Experience",
       description:
@@ -337,19 +334,19 @@ export const serviceDetailsContent = [
           title: "Audit & Strategy",
           description:
             "We audit your current efforts and build a custom paid campaign plan.",
-          img: "/images/services/download_app.jpg",
+          img: "/images/services/new-service-details/realestate-marketing/automed-campaign-optimization.png",
         },
         {
           title: "Launch Paid Campaigns",
           description:
             "We launch and manage ads across Google, Meta, and retargeting platforms.",
-          img: "/images/services/create_account.jpg",
+          img: "/images/services/new-service-details/realestate-marketing/automed-campaign-optimization-1.png",
         },
         {
           title: "Capture, Qualify, Convert",
           description:
             "Leads hit your inbox, WhatsApp, or CRM — already warmed up.",
-          img: "/images/services/enjoy_app.jpg",
+          img: "/images/services/new-service-details/realestate-marketing/Track & Scale 1.png",
         },
       ],
     },
@@ -361,21 +358,21 @@ export const serviceDetailsContent = [
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
@@ -459,8 +456,8 @@ export const serviceDetailsContent = [
       description:
         "Mobile-optimized ad experiences, fast-loading funnels, and clear CTAs — all built to convert.",
       images: [
-        "/images/services/screen-1.png",
-        "/images/services/screen-2.png",
+        "/images/services/new-service-details/realestate-marketing/optimized 1.png",
+        "/images/services/new-service-details/realestate-marketing/optimized 2.png",
       ],
     },
     freeAppSection: {
@@ -487,10 +484,10 @@ export const serviceDetailsContent = [
   {
     keyService: "realestate-seo",
     statisticSection: {
-      first: { value: "", title: "Pages Ranked" },
-      second: { value: "", title: "Organic Visitors" },
-      third: { value: "", title: "Leads Captured" },
-      fourth: { value: "", title: "Keywords Tracked" },
+      first: { value: "100", title: "Pages Ranked" },
+      second: { value: "10", title: "Organic Visitors" },
+      third: { value: "560", title: "Leads Captured" },
+      fourth: { value: "18", title: "Keywords Tracked" },
     },
     bannerSection: {
       title: "Rank Higher. Get Seen First. Close More Deals.",
@@ -828,21 +825,21 @@ export const serviceDetailsContent = [
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },
         {
           description:
             "“We were tired of cold leads that ghosted. Once we launched content marketing with this team, inquiries got more qualified — and conversions went up.” — Shayna John, Marketing Lead, Careative Inc",
-          img: "/images/services/testimonial_user1.png",
+          img: "/images/user/durmus.png",
           name: "Durmuş Özge",
           position: "Founder & Owner",
         },

@@ -215,7 +215,12 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                     </div>
                     <div className="text">
                       <p>
-                        <span className="counter-value" data-count="17">
+                        <span
+                          className="counter-value"
+                          data-count={
+                            serviceDetails.statisticSection.first.value ?? 17
+                          }
+                        >
                           0
                         </span>
                         <span>M+</span>
@@ -241,7 +246,12 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                     </div>
                     <div className="text">
                       <p>
-                        <span className="counter-value" data-count="08">
+                        <span
+                          className="counter-value"
+                          data-count={
+                            serviceDetails.statisticSection.second.value ?? "08"
+                          }
+                        >
                           0{" "}
                         </span>
                         <span>M+</span>
@@ -267,7 +277,12 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                     </div>
                     <div className="text">
                       <p>
-                        <span className="counter-value" data-count="2300">
+                        <span
+                          className="counter-value"
+                          data-count={
+                            serviceDetails.statisticSection.third.value ?? 8000
+                          }
+                        >
                           1500
                         </span>
                         <span>+</span>
@@ -293,7 +308,12 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                     </div>
                     <div className="text">
                       <p>
-                        <span className="counter-value" data-count="150">
+                        <span
+                          className="counter-value"
+                          data-count={
+                            serviceDetails.statisticSection.fourth.value ?? 150
+                          }
+                        >
                           0
                         </span>
                         <span>+</span>
@@ -380,15 +400,17 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                         alt="image"
                       />
                     </div>
-                    <div className="screen_img">
-                      <Image
-                        width={205}
-                        height={218}
-                        className="moving_animation"
-                        src={serviceDetails.aboutAppsection.images[1]}
-                        alt="image"
-                      />
-                    </div>
+                    {serviceDetails.aboutAppsection.images[1] && (
+                      <div className="screen_img">
+                        <Image
+                          width={205}
+                          height={218}
+                          className="moving_animation"
+                          src={serviceDetails.aboutAppsection.images[1]}
+                          alt="image"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -763,7 +785,9 @@ const ServiceDetailsNew = ({ service }: { service: string }) => {
                             data-parent="#accordionExample"
                           >
                             <div className="card-body">
-                              <p dangerouslySetInnerHTML={{__html:faq.answer}}></p>
+                              <p
+                                dangerouslySetInnerHTML={{ __html: faq.answer }}
+                              ></p>
                             </div>
                           </div>
                         </div>

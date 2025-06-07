@@ -17,7 +17,7 @@ const LeadForm = () => {
         <input id="" type="text" placeholder="your'e Email" />
       </section>
       <section className="col-12">
-        <button type="button">Send</button>
+        <button type="button" className="leadform-send-btn">Send</button>
       </section>
     </form>
   );

@@ -986,7 +986,7 @@ iframe#youtubevideo {
   max-width: 100%;
 }
 
-.about_app_section .about_img::before {
+/* .about_app_section .about_img::before {
   content: "";
   position: absolute;
   left: 38%;
@@ -997,7 +997,7 @@ iframe#youtubevideo {
   background-color: var(--bg-white);
   border-radius: 100%;
   z-index: -1;
-}
+} */
 
 .about_app_section .about_img .screen_img {
   margin-left: -135px;
@@ -1551,7 +1551,9 @@ iframe#youtubevideo {
 .faq_section .faq_panel .card-header .btn.active {
   color: var(--dark-purple);
 }
-
+.faq_panel .accordion{
+  border: none;
+}
 .faq_panel .accordion button,
 .faq_panel .accordion button:hover,
 .faq_panel .accordion button:focus {
@@ -3437,13 +3439,12 @@ header.fix_style.white_header {
   background-color: #fff;
   padding: 20px 10px;
   border-radius: 30px;
-  gap: 10px 0;
-  
+  gap: 20px 0;
 }
 .lead-form-container > h4 {
   font-weight: 600;
   font-size: 18px;
-  color: var(--bg-purple);
+  color: var(--mainColor);
   margin-bottom: 10px;
 }
 .lead-form-container section {
@@ -3455,7 +3456,7 @@ header.fix_style.white_header {
 }
 .lead-form-container section label{
   font-weight: 600;
-  color: var(--body-text-purple);
+  color: var(--mainColor);
   font-size: 14px;
 }
 .lead-form-container section input{
@@ -3475,7 +3476,7 @@ header.fix_style.white_header {
   width: 100%;
   height: 40px;
   font-weight: 700;
-  background-color: var(--purple);
+  background-color: var(--mainColor);
   color: white;
   border: 0.5px solid #dadada;
   outline: none;
@@ -3483,7 +3484,7 @@ header.fix_style.white_header {
   border-radius: 15px;
 }
 .lead-form-container>section:last-child>button:hover{
-  color: var(--purple);
+  color: var(--mainColor);
   background-color: white;
   transition: 0.3s all ease-in-out;
 }
